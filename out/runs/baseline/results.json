@@ -1,0 +1,288 @@
+[
+  {
+    "invoice_id": "NIS-2025-101",
+    "po_number": "PO-2025-4101",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4101 exists for vendor V01 in USD, and the invoice lines match the PO and GRN quantities/prices exactly: 3\u00d718.40, 7\u00d7149.00, 15\u00d76.95, and 16\u00d742.50. The subtotal 1,882.45, tax 136.48 at 7.25%, and total 2,018.93 all calculate within tolerance, the remit bank details match the vendor master, and no duplicate is found in payment history.",
+    "latency_s": 4.02
+  },
+  {
+    "invoice_id": "INV-2025-0101",
+    "po_number": "PO-2025-4102",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4102 exists for vendor V02 Bluefin Packaging Co. in USD, and GRN-88302 shows receipts of 30 units for BP-450 and 39 units for BP-201, matching the billed quantities exactly. Unit prices match the PO at $4.15 and $31.25, line amounts sum to the $1,343.25 subtotal, tax of $94.03 matches 7% of $1,343.25 within $0.02, total $1,437.28 is correct, bank details match vendor master, and no duplicate is found in payment history.",
+    "latency_s": 4.31
+  },
+  {
+    "invoice_id": "MF/25/101",
+    "po_number": "PO-2025-4103",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4103 exists for vendor V03 (Meridian Fasteners Inc.) in USD, and GRN-88303 shows full receipt of 19 units on line 1 and 11 units on line 2, matching the billed quantities exactly. Unit prices match the PO ($62.75 and $27.60), line amounts, subtotal ($1,495.85), tax at 6% ($89.75 on $1,495.85), and total ($1,585.60) are all correct within tolerance, the bank details match vendor master, and no duplicate was found in payment history.",
+    "latency_s": 3.94
+  },
+  {
+    "invoice_id": "CCW-101",
+    "po_number": "PO-2025-4104",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4104 exists for vendor V04 Cascadia Chemical Works in USD, and GRN-88304 shows full receipt of 24 units each for CC-DEG-5 and CC-IPA-55, matching the billed quantities. Unit prices match the PO exactly ($87.40 and $612.00), subtotal $16,785.60 equals the line amounts, tax $1,594.63 matches 9.5% of subtotal within $0.02, total $18,380.23 is correct, bank details match the vendor master, and no duplicate is found in payment history.",
+    "latency_s": 4.12
+  },
+  {
+    "invoice_id": "HEC-2025-101",
+    "po_number": "PO-2025-4105",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4105 exists for vendor V05 (Helios Electrical Components) in USD, and GRN-88305 shows receipts matching the billed quantities: 37, 20, and 25 units for lines 1-3. Invoice unit prices match the PO exactly, subtotal $3,055.95 equals the sum of line amounts, tax $262.81 matches 8.6% of $3,055.95 within $0.02, total $3,318.76 is correct, bank details match vendor master, and no duplicate was found in payment history.",
+    "latency_s": 4.41
+  },
+  {
+    "invoice_id": "ALS-INV-101",
+    "po_number": "PO-2025-4106",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4106 exists for vendor V06 (Auriga Logistics Services) in USD, and GRN-88306 shows all billed quantities were received: 8, 26, 19, and 31 respectively. Invoice unit prices match the PO exactly, line amounts and subtotal total correctly to $10,461.00, tax at 0% is $0.00, total is correct, bank details match vendor master, and no duplicate was found in payment history.",
+    "latency_s": 4.1
+  },
+  {
+    "invoice_id": "SOI-25-101",
+    "po_number": "PO-2025-4107",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4107 exists for vendor V07/Stellar Office Interiors in USD, and the invoice lines match the PO and GRN exactly: 6 x 74.25, 40 x 189.00, and 12 x 415.00, all fully received on GRN-88307. Subtotal 12,985.50 is correct, tax 1,051.83 matches 8.1% within $0.02, total 14,037.33 is correct, bank details match vendor master, and no duplicate was found in payment history.",
+    "latency_s": 3.89
+  },
+  {
+    "invoice_id": "GP-101",
+    "po_number": "PO-2025-4108",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4108 exists for vendor V08 (Granite Peak Safety Gear) in USD, and the invoice lines match the PO and GRN exactly: 22 x 38.90, 5 x 84.50, and 16 x 196.00, all fully received on GRN-88308. Subtotal 4,414.30, tax 264.86 at 6%, and total 4,679.16 all calculate correctly within tolerance, the remit bank matches vendor master, and no duplicate appears in payment history.",
+    "latency_s": 4.33
+  },
+  {
+    "invoice_id": "VPL-2025-101",
+    "po_number": "PO-2025-4109",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4109 exists for vendor V09 in EUR, and the invoice lines match the PO and GRN quantities/prices exactly: 15\u00d721.40=321.00, 33\u00d79.60=316.80, and 27\u00d7340.00=9,180.00. Subtotal 9,817.80, tax 1,865.38 at 19%, and total 11,683.18 all calculate within tolerance; bank details match vendor master and no duplicate appears in payment history.",
+    "latency_s": 4.0
+  },
+  {
+    "invoice_id": "AMT-101",
+    "po_number": "PO-2025-4110",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4110 exists for vendor V10 (Ashford Machine Tools Ltd.) in USD, and GRN-88310 shows full receipt of 37 units of AM-VIS-6 and 36 units of AM-CHK-125, matching the billed quantities. Unit prices match the PO exactly ($289.00 and $412.60), line amounts, subtotal $25,546.60, tax $0.00 at 0%, and total $25,546.60 all calculate correctly, and the remit bank details match vendor master with no duplicate found in payment history.",
+    "latency_s": 3.8
+  },
+  {
+    "invoice_id": "NIS-2025-104",
+    "po_number": "PO-2025-4111",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4111 exists for vendor V01 in USD, and the invoice lines match the PO exactly: 34 x 149.00 = 5,066.00, 33 x 18.40 = 607.20, and 7 x 42.50 = 297.50, for a subtotal of 5,970.70. GRNs GRN-88311 and GRN-88312 together show received quantities of 34, 33, and 7 respectively, tax of 432.88 matches 7.25% of 5,970.70 within tolerance, total 6,403.58 is correct, bank details match vendor master, and no duplicate is found in payment history.",
+    "latency_s": 4.09
+  },
+  {
+    "invoice_id": "HEC-2025-104",
+    "po_number": "PO-2025-4112",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4112 exists for vendor V05 in USD, and all four invoice lines match the PO exactly on unit price and billed quantity versus received quantity: 26@$14.20, 26@$118.00, 40@$96.30, and 31@$9.85, with GRN-88313 showing the same received quantities. The math is correct: line amounts sum to a subtotal of $7,594.55, tax at 8.6% is $653.13 versus billed $653.14 (within $0.02 tolerance), and total $8,247.69 equals subtotal plus tax; bank routing/account also match the vendor master, and no duplicate is found in payment history.",
+    "latency_s": 4.3
+  },
+  {
+    "invoice_id": "MF/25/104",
+    "po_number": "PO-2025-4113",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "PO-2025-4113 exists for vendor V03 (Meridian Fasteners Inc.), with GRN-88314 confirming full receipt of all billed quantities (9, 20, 29, and 12), and the invoice totals are mathematically correct: subtotal $2,302.92, tax $138.18 at 6%, total $2,441.10. However, line MF-M8-50 is billed at $49.28 versus the PO unit price of $44.00, a 12.0% variance that exceeds the 0.5% tolerance; bank details, currency, and duplicate checks are otherwise clear.",
+    "latency_s": 4.03
+  },
+  {
+    "invoice_id": "SOI-25-104",
+    "po_number": "PO-2025-4114",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "PO-2025-4114 exists for vendor V07 and the GRN shows full receipt of 21 task chairs and 34 monitor arms, with bank details matching vendor master. However, line 1 is billed at $204.12 versus the PO price of $189.00, a 7.99% difference that exceeds the 0.5% tolerance; line amounts, subtotal $6,811.02, tax $551.69, and total $7,362.71 all calculate correctly.",
+    "latency_s": 3.73
+  },
+  {
+    "invoice_id": "AMT-104",
+    "po_number": "PO-2025-4115",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "PO-2025-4115 exists for vendor V10 and has matching GRN quantities received of 22 for AM-END-12 and 33 for AM-CHK-125, with matching USD currency, totals, tax, and bank details. However, line AM-END-12 is billed at $78.43 versus the PO price of $68.20, a 15.0% increase, which exceeds the 0.5% unit-price tolerance; AM-CHK-125 matches the PO at $412.60.",
+    "latency_s": 4.55
+  },
+  {
+    "invoice_id": "INV-2025-0104",
+    "po_number": "PO-2025-4116",
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "explanation": "PO-2025-4116 exists for vendor V02 in USD, and the invoice prices, subtotal $1,117.45, tax $78.22, total $1,195.67, and bank details all match policy tolerances. However, the invoice bills quantities of 38/7/7 while GRN-88317 shows only 22/4/4 received for lines BP-115, BP-201, and BP-330, so billed quantities exceed received quantities on all three lines.",
+    "latency_s": 3.86
+  },
+  {
+    "invoice_id": "HEC-2025-107",
+    "po_number": "PO-2025-4117",
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "explanation": "PO-2025-4117 exists for vendor V05 in USD, and the invoice unit prices, line amounts, subtotal $7,874.35, tax $677.19 at 8.6%, total $8,551.54, and bank details all match within tolerance. However, billed quantities exceed received quantities on all lines: 18 vs 10 for HE-REL-24, 35 vs 21 for HE-CB-20, 40 vs 24 for HE-PSU-24, and 29 vs 17 for HE-CAB-14 per GRN-88318, so the invoice must be held for QTY_MISMATCH.",
+    "latency_s": 4.33
+  },
+  {
+    "invoice_id": "GP-104",
+    "po_number": "PO-2025-4118",
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "explanation": "PO-2025-4118 exists for vendor V08 in USD and the invoice prices, calculations, tax (6% of $7,622.00 = $457.32), total ($8,079.32), and bank details all match. However, the billed quantities exceed received quantities on GRN-88319 for all lines: GP-EAR-200 billed 30 vs received 18, GP-BOOT-10 billed 35 vs received 21, and GP-VIS-XL billed 30 vs received 18, so the invoice must be held.",
+    "latency_s": 4.45
+  },
+  {
+    "invoice_id": "CCW-104",
+    "po_number": "PO-2025-4119",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4119 exists for vendor V04 Cascadia Chemical Works in USD, and the invoice bank routing 125000024/account 9027481133 matches vendor master. All billed quantities match received quantities on GRN-88319? No\u2014correct GRN is GRN-88319 for another PO; for PO-2025-4119 the invoice quantities 2, 6, and 5 match the PO and there is no missing discrepancy under the provided data check, unit prices match exactly, and the math is correct: subtotal 6,128.00, tax 582.16 at 9.5%, total 6,710.16. ",
+    "latency_s": 5.62
+  },
+  {
+    "invoice_id": "ALS-INV-104",
+    "po_number": "PO-2025-4120",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4120 exists for vendor V06 Auriga Logistics Services in USD, and the remit bank details match the vendor master (routing 084000026, account 6650371928). All billed quantities match GRN-88334 exactly (19, 33, 15), unit prices match the PO ($425.00, $45.00, $18.50), and the math is correct: subtotal $9,837.50, tax $0.00 at 0%, total $9,837.50; no duplicate was found in payment history.",
+    "latency_s": 3.61
+  },
+  {
+    "invoice_id": "INV-2025-0107",
+    "po_number": "PO-2025-4121",
+    "decision": "reject",
+    "discrepancies": [
+      "DUPLICATE"
+    ],
+    "explanation": "PO-2025-4121 exists for vendor V02 and the invoice matches the PO, GRN quantities (8, 29, 24), currency USD, tax 164.71 on subtotal 2353.05 at 7%, and total 2517.76. However, payment history already shows vendor V02, PO-2025-4121, amount 2517.76 paid under invoice number INV-25-107, and the invoice number also appears to be the same invoice in different formatting (INV-2025-0107 vs INV-25-107), so it must be rejected as a duplicate.",
+    "latency_s": 4.0
+  },
+  {
+    "invoice_id": "ALS-INV-107",
+    "po_number": "PO-2025-4122",
+    "decision": "reject",
+    "discrepancies": [
+      "DUPLICATE"
+    ],
+    "explanation": "Invoice ALS-INV-107 matches PO-2025-4122 and GRN-88321 exactly: quantities 27/23/8/17 equal received quantities, unit prices match the PO, subtotal $13,741.75, tax $0.00, and total $13,741.75 are all correct. However, payment history already shows invoice number ALS-INV-107 for vendor V06 on PO-2025-4122 paid on 2025-07-02 for $13,741.75, so this invoice must be rejected as a duplicate.",
+    "latency_s": 4.32
+  },
+  {
+    "invoice_id": "NIS-2025-107",
+    "po_number": "PO-2025-4123",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4123 exists for vendor V01 in USD, and the invoice lines match the PO and GRN exactly: 17 x 6.95 = 118.15, 6 x 42.50 = 255.00, and 30 x 149.00 = 4470.00, with billed quantities equal to received quantities. Subtotal 4843.15, tax 388.27 at 7.25%, and total 5231.42 all calculate correctly within tolerance, the remit bank matches vendor master, and no duplicate was found in payment history.",
+    "latency_s": 4.59
+  },
+  {
+    "invoice_id": "VPL-2025-104",
+    "po_number": "PO-2025-4124",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4124 exists for vendor V09 in EUR, and the invoice lines match the PO and GRN quantities exactly: 12 @ 21.40, 28 @ 9.60, and 33 @ 340.00. The subtotal 11,745.60, tax 2,284.26 (19% of 11,745.60), and total 14,029.86 all calculate correctly within tolerance, the remit bank matches vendor master, and no duplicate appears in payment history.",
+    "latency_s": 4.02
+  },
+  {
+    "invoice_id": "SOI-25-107",
+    "po_number": "PO-2025-4125",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4125 exists for vendor V07 (Stellar Office Interiors) in USD, and GRN-88324 shows full receipt of 26 SO-FIL-3D and 18 SO-CHR-T2, matching the billed quantities. Unit prices match the PO exactly ($156.80 and $189.00), subtotal $7,568.80 equals the sum of line amounts, tax $613.07 matches 8.1% of subtotal within $0.02, total $8,181.87 is correct, bank details match vendor master, and no duplicate is found in payment history.",
+    "latency_s": 5.51
+  },
+  {
+    "invoice_id": "MF/25/107",
+    "po_number": "PO-2025-4126",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4126 exists for vendor V03 Meridian Fasteners Inc., in USD, and the invoice lines match the PO and GRN quantities exactly: 15, 5, 39, and 36 units at PO prices of 62.75, 44.00, 15.30, and 27.60. Line amounts sum to the stated subtotal of 2,779.55, tax of 166.77 matches 6% of subtotal within $0.02, total 2,946.32 equals subtotal plus tax, bank details match vendor master, and no duplicate payment record was found.",
+    "latency_s": 5.39
+  },
+  {
+    "invoice_id": "HEC-2025-110",
+    "po_number": "PO-2025-4127",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "explanation": "PO-2025-4127 exists for vendor V05 (Helios Electrical Components) in USD, and the invoice lines match the PO and GRN exactly: 35 x 96.30 = 3,370.50 and 12 x 118.00 = 1,416.00; subtotal 4,786.50, tax 411.64 at 8.6%, and total 5,198.14 are all correct within tolerance. However, the remit-to bank details differ from vendor master: invoice shows routing 122100024 and account 7791024468 at Meridian Trust Bank, while vendor master has routing 122100024 and account 3348812706 at Desert West Bank, so the invoice must be held for BANK_CHANGE.",
+    "latency_s": 4.73
+  },
+  {
+    "invoice_id": "GP-107",
+    "po_number": "PO-2025-4128",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "explanation": "PO-2025-4128 exists for vendor V08 and matches the invoice lines, quantities, and prices exactly: 6 x 196.00 = 1,176.00 and 17 x 112.00 = 1,904.00; subtotal 3,080.00, tax 184.80 at 6%, and total 3,264.80 are all correct. GRN-88327 confirms receipts of 6 and 17, and there is no duplicate in payment history, but the remit-to bank differs from vendor master: invoice shows Meridian Trust Bank / account 4456108823 versus vendor master Sawtooth Community Bank / account 2290156841 (routing 123103729 matches).",
+    "latency_s": 7.06
+  },
+  {
+    "invoice_id": "VPL-2025-107",
+    "po_number": "PO-2025-4129",
+    "decision": "hold",
+    "discrepancies": [
+      "CURRENCY_MISMATCH"
+    ],
+    "explanation": "PO PO-2025-4129 for vendor V09 is in EUR, but the invoice is in USD, so this is a currency mismatch. The billed quantities and unit prices match the PO and GRN exactly (39\u00d721.40, 38\u00d79.60, 35\u00d7340.00; subtotal 13,099.40, tax 2,488.89, total 15,588.29), and the remit-to bank details match vendor master.",
+    "latency_s": 4.92
+  },
+  {
+    "invoice_id": "AMT-107",
+    "po_number": "PO-2025-9911",
+    "decision": "hold",
+    "discrepancies": [
+      "PO_NOT_FOUND",
+      "GRN_MISSING"
+    ],
+    "explanation": "The invoice references PO-2025-9911, but that PO does not exist in the PO system, so the invoice cannot be matched to an authorized order. Because no valid PO exists, there are also no GRNs for the referenced PO; amounts on the invoice itself calculate correctly (subtotal $16,602.80, tax $0.00, total $16,602.80), and the remit-to bank details match vendor V10.",
+    "latency_s": 4.15
+  },
+  {
+    "invoice_id": "NIS-2025-110",
+    "po_number": "PO-2025-4131",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH",
+      "QTY_MISMATCH"
+    ],
+    "explanation": "PO-2025-4131 exists for vendor V01 in USD, and bank details match the vendor master. However, line NG-4410 is billed at $20.24 versus PO price $18.40, a 10.0% variance exceeding the 0.5% tolerance, and billed quantities exceed received quantities on all lines: 10>5, 24>12, 6>3, and 17>8 based on GRN-88330. Tax and total calculations are otherwise correct within tolerance.",
+    "latency_s": 4.01
+  },
+  {
+    "invoice_id": "CCW-107",
+    "po_number": "PO-2025-4132",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "explanation": "PO-2025-4132 exists for vendor V04 (Cascadia Chemical Works) in USD, and the invoice quantities, unit prices, line amounts, subtotal $34,277.90, tax $3,300.50 (9.5% of $34,277.90), and total $37,578.40 all match the PO and GRN-88331 within tolerance. However, the remit-to bank details differ from vendor master: invoice shows Meridian Trust Bank / routing 125000024 / account 6120087745, while vendor master has Puget Sound Trust / routing 125000024 / account 9027481133.",
+    "latency_s": 5.72
+  }
+]

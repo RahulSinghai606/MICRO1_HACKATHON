@@ -37,6 +37,19 @@ report:          ## render the batch Audit Packet for the final run
 queue:           ## build the human approval queue from the final run
 	$(PY) -m matchpoint.hitl build --run agent_final
 
+review-ui:       ## web UI for the human approval queue (http://localhost:8765)
+	$(PY) -m matchpoint.review_ui
+
+stress:          ## held-out batch: baseline + final on the seed-43 world
+	MATCHPOINT_WORLD=stress $(PY) -m matchpoint.baseline --run-name baseline_stress
+	MATCHPOINT_WORLD=stress $(PY) -m matchpoint.agent --config final --run-name agent_final_stress
+	MATCHPOINT_WORLD=stress $(PY) eval/run_eval.py --run baseline_stress --run agent_final_stress
+
+ablations:       ## removed experiment (v1cot) + engine-only ablation
+	$(PY) -m matchpoint.agent --config v1cot --run-name agent_v1cot
+	$(PY) -m matchpoint.agent --config engine_only --run-name agent_engine_only
+	$(PY) eval/run_eval.py --run agent_v1cot --run agent_engine_only
+
 trajectories:    ## render all trajectories to markdown
 	for r in baseline agent_v1 agent_v2 agent_v3 agent_final; do \
 		$(PY) -m matchpoint.render_traj --run $$r; done

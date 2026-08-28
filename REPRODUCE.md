@@ -83,13 +83,49 @@ make queue             # builds out/approval_queue.json from the final run
 No real payment system is touched: `execute` appends rows to `out/sandbox_ledger.csv`,
 and only for invoices a human approved in `review`.
 
-## 7. Render trajectories to markdown
+Prefer a browser over the CLI for review? `make review-ui` serves the same queue at
+http://localhost:8765 with approve/hold/reject buttons.
+
+## 7. Ablations and the removed experiment
+
+```bash
+.venv/bin/python -m matchpoint.agent --config v1cot --run-name agent_v1cot          # removed: prompted CoT arithmetic
+.venv/bin/python -m matchpoint.agent --config engine_only --run-name agent_engine_only  # ablation: no matcher LLM
+.venv/bin/python eval/run_eval.py --run agent_v1cot --run agent_engine_only
+```
+
+## 8. Held-out stress batch (generalization check)
+
+The stress world (seed 43, disjoint invoice numbers) ships committed, OCR cache included.
+
+```bash
+MATCHPOINT_WORLD=stress .venv/bin/python -m matchpoint.baseline --run-name baseline_stress
+MATCHPOINT_WORLD=stress .venv/bin/python -m matchpoint.agent --config final --run-name agent_final_stress
+MATCHPOINT_WORLD=stress .venv/bin/python eval/run_eval.py --run baseline_stress --run agent_final_stress
+```
+
+To regenerate it from scratch: `.venv/bin/python data/generate.py --seed 43 --world stress`
+(then `MATCHPOINT_WORLD=stress .venv/bin/python -m matchpoint.ocr --live`, needs a Mistral key).
+
+## 9. Cheap-model robustness runs (optional)
+
+Point the same pipeline at any OpenAI-compatible model, e.g. via OpenRouter:
+
+```bash
+LLM_BASE_URL=https://openrouter.ai/api/v1 LLM_API_KEY=<key> LLM_MODEL=z-ai/glm-5.3-flash \
+  .venv/bin/python -m matchpoint.baseline --run-name baseline_glm
+```
+
+Note: `est_cost_usd_*` in the scorer uses the gpt-5.4 price assumptions declared at the
+top of `eval/run_eval.py`; for other models compare token counts, or edit the two constants.
+
+## 10. Render trajectories to markdown
 
 ```bash
 make trajectories      # trajectories/<run>.md for every run
 ```
 
-## 8. Optional extras
+## 11. Optional extras
 
 ```bash
 .venv/bin/python -m matchpoint.ocr --live     # re-OCR the PNGs (needs MISTRAL_API_KEY)

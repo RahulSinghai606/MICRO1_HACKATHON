@@ -1,0 +1,350 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<title>AP Audit Packet — agent_final</title><style>
+:root { --ink:#1a2233; --muted:#5b6472; --line:#e3e7ee; --bg:#f6f7fa; --card:#ffffff; --accent:#1f3a5f; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+.wrap { max-width:980px; margin:0 auto; padding:48px 28px 80px; }
+header.masthead { border-bottom:3px solid var(--accent); padding-bottom:18px; margin-bottom:28px; }
+.masthead h1 { margin:0; font-size:26px; letter-spacing:.2px; }
+.masthead .sub { color:var(--muted); margin-top:6px; font-size:13.5px; }
+.kpis { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:26px 0 34px; }
+.kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+.kpi .n { font-size:24px; font-weight:700; }
+.kpi .l { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.6px; margin-top:2px; }
+table.sum { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line);
+  border-radius:10px; overflow:hidden; font-size:13.5px; }
+table.sum th { text-align:left; background:var(--accent); color:#fff; padding:9px 12px; font-weight:600; }
+table.sum td { padding:8px 12px; border-top:1px solid var(--line); }
+.badge { display:inline-block; padding:2px 10px; border-radius:20px; font-size:11.5px; font-weight:700; letter-spacing:.4px; }
+.inv { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 24px; margin:18px 0; page-break-inside:avoid; }
+.inv h3 { margin:0 0 4px; font-size:17px; }
+.inv .meta { color:var(--muted); font-size:13px; margin-bottom:12px; }
+.ev { margin:10px 0 0; padding:12px 14px; border-radius:8px; background:#fbf6ef; border:1px solid #eadfc8; }
+.ev.clean { background:#f2f8f4; border-color:#d5e8dc; }
+.ev b.code { font-family:ui-monospace,Menlo,monospace; font-size:12px; }
+ul.checks { color:var(--muted); font-size:13px; margin:10px 0 0; padding-left:20px; }
+.expl { margin-top:10px; font-size:14px; }
+.hr { border:none; border-top:1px solid var(--line); margin:34px 0 26px; }
+.sig { display:flex; gap:60px; margin-top:40px; }
+.sig .line { flex:1; border-top:1px solid var(--ink); padding-top:6px; font-size:12.5px; color:var(--muted); }
+footer { color:var(--muted); font-size:12px; margin-top:44px; }
+@media print { body{background:#fff} .inv{border-color:#bbb} }
+</style></head><body><div class='wrap'>
+<header class='masthead'>
+  <h1>Accounts Payable — Invoice Audit Packet</h1>
+  <div class='sub'>Harborview Manufacturing Inc. · Batch of 32 supplier invoices · Generated August 28, 2026 19:21 UTC
+  · Pipeline run <b>agent_final</b> · Every flag below is backed by a deterministic check; no payment is executed without human sign-off.</div>
+</header>
+<div class='kpis'>
+  <div class='kpi'><div class='n'>32</div><div class='l'>Invoices</div></div>
+  <div class='kpi'><div class='n' style='color:#0e6e3c'>12</div><div class='l'>Ready to pay</div></div>
+  <div class='kpi'><div class='n' style='color:#8a5a00'>18</div><div class='l'>On hold</div></div>
+  <div class='kpi'><div class='n' style='color:#9c1f1f'>2</div><div class='l'>Rejected</div></div>
+  <div class='kpi'><div class='n'>$172,767.36</div><div class='l'>USD value flagged</div></div>
+</div>
+<table class='sum'>
+<tr><th>Invoice</th><th>Vendor</th><th>PO</th><th style='text-align:right'>Total</th><th>Decision</th><th>Discrepancies</th><th>Human review</th></tr>
+<tr><td><a href='#iALS-INV-107' style='color:var(--accent)'>ALS-INV-107</a></td><td>AURIGA LOGISTICS SERVICES</td><td>PO-2025-4122</td><td style='text-align:right'>$13,741.75</td><td><span class='badge' style='color:#9c1f1f;background:#fbe9e9'>REJECT — DO NOT PAY</span></td><td>DUPLICATE</td><td>pending</td></tr><tr><td><a href='#iINV-2025-0107' style='color:var(--accent)'>INV-2025-0107</a></td><td>Bluefin Packaging Co.</td><td>PO-2025-4121</td><td style='text-align:right'>$2,517.76</td><td><span class='badge' style='color:#9c1f1f;background:#fbe9e9'>REJECT — DO NOT PAY</span></td><td>DUPLICATE</td><td>pending</td></tr><tr><td><a href='#iALS-INV-104' style='color:var(--accent)'>ALS-INV-104</a></td><td>AURIGA LOGISTICS SERVICES</td><td>PO-2025-4120</td><td style='text-align:right'>$9,837.50</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>GRN_MISSING</td><td>pending</td></tr><tr><td><a href='#iAMT-104' style='color:var(--accent)'>AMT-104</a></td><td>Ashford Machine Tools Ltd.</td><td>PO-2025-4115</td><td style='text-align:right'>$15,341.26</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>PRICE_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iAMT-107' style='color:var(--accent)'>AMT-107</a></td><td>Ashford Machine Tools Ltd.</td><td>PO-2025-9911</td><td style='text-align:right'>$16,602.80</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>PO_NOT_FOUND</td><td>pending</td></tr><tr><td><a href='#iCCW-104' style='color:var(--accent)'>CCW-104</a></td><td>Cascadia Chemical Works</td><td>PO-2025-4119</td><td style='text-align:right'>$6,710.16</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>GRN_MISSING</td><td>pending</td></tr><tr><td><a href='#iCCW-107' style='color:var(--accent)'>CCW-107</a></td><td>Cascadia Chemical Works</td><td>PO-2025-4132</td><td style='text-align:right'>$37,578.40</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>BANK_CHANGE, TAX_ERROR</td><td>pending</td></tr><tr><td><a href='#iGP-104' style='color:var(--accent)'>GP-104</a></td><td>Granite Peak Safety Gear</td><td>PO-2025-4118</td><td style='text-align:right'>$8,079.32</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>QTY_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iGP-107' style='color:var(--accent)'>GP-107</a></td><td>Granite Peak Safety Gear</td><td>PO-2025-4128</td><td style='text-align:right'>$3,264.80</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>BANK_CHANGE</td><td>pending</td></tr><tr><td><a href='#iHEC-2025-107' style='color:var(--accent)'>HEC-2025-107</a></td><td>Helios Electrical Components</td><td>PO-2025-4117</td><td style='text-align:right'>$8,551.54</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>QTY_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iHEC-2025-110' style='color:var(--accent)'>HEC-2025-110</a></td><td>Helios Electrical Components</td><td>PO-2025-4127</td><td style='text-align:right'>$5,198.14</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>BANK_CHANGE</td><td>pending</td></tr><tr><td><a href='#iINV-2025-0104' style='color:var(--accent)'>INV-2025-0104</a></td><td>Bluefin Packaging Co.</td><td>PO-2025-4116</td><td style='text-align:right'>$1,195.67</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>QTY_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iMF/25/104' style='color:var(--accent)'>MF/25/104</a></td><td>MERIDIAN FASTENERS INC.</td><td>PO-2025-4113</td><td style='text-align:right'>$2,441.10</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>PRICE_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iMF/25/107' style='color:var(--accent)'>MF/25/107</a></td><td>MERIDIAN FASTENERS INC.</td><td>PO-2025-4126</td><td style='text-align:right'>$2,946.32</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>TOTAL_ERROR</td><td>pending</td></tr><tr><td><a href='#iNIS-2025-107' style='color:var(--accent)'>NIS-2025-107</a></td><td>Northgate Industrial Supply LLC</td><td>PO-2025-4123</td><td style='text-align:right'>$5,231.42</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>TAX_ERROR</td><td>pending</td></tr><tr><td><a href='#iNIS-2025-110' style='color:var(--accent)'>NIS-2025-110</a></td><td>Northgate Industrial Supply LLC</td><td>PO-2025-4131</td><td style='text-align:right'>$2,396.55</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>PRICE_MISMATCH, QTY_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iSOI-25-104' style='color:var(--accent)'>SOI-25-104</a></td><td>Stellar Office Interiors</td><td>PO-2025-4114</td><td style='text-align:right'>$7,362.71</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>PRICE_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iSOI-25-107' style='color:var(--accent)'>SOI-25-107</a></td><td>Stellar Office Interiors</td><td>PO-2025-4125</td><td style='text-align:right'>$8,181.87</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>TOTAL_ERROR</td><td>pending</td></tr><tr><td><a href='#iVPL-2025-104' style='color:var(--accent)'>VPL-2025-104</a></td><td>VIREO PRINT &amp; LABEL GMBH</td><td>PO-2025-4124</td><td style='text-align:right'>€14,029.86</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>TAX_ERROR</td><td>pending</td></tr><tr><td><a href='#iVPL-2025-107' style='color:var(--accent)'>VPL-2025-107</a></td><td>VIREO PRINT &amp; LABEL GMBH</td><td>PO-2025-4129</td><td style='text-align:right'>$15,588.29</td><td><span class='badge' style='color:#8a5a00;background:#fdf3e0'>HOLD — INVESTIGATE</span></td><td>CURRENCY_MISMATCH</td><td>pending</td></tr><tr><td><a href='#iALS-INV-101' style='color:var(--accent)'>ALS-INV-101</a></td><td>AURIGA LOGISTICS SERVICES</td><td>PO-2025-4106</td><td style='text-align:right'>$10,461.00</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iAMT-101' style='color:var(--accent)'>AMT-101</a></td><td>Ashford Machine Tools Ltd.</td><td>PO-2025-4110</td><td style='text-align:right'>$25,546.60</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iCCW-101' style='color:var(--accent)'>CCW-101</a></td><td>Cascadia Chemical Works</td><td>PO-2025-4104</td><td style='text-align:right'>$18,380.23</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iGP-101' style='color:var(--accent)'>GP-101</a></td><td>Granite Peak Safety Gear</td><td>PO-2025-4108</td><td style='text-align:right'>$4,679.16</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iHEC-2025-101' style='color:var(--accent)'>HEC-2025-101</a></td><td>Helios Electrical Components</td><td>PO-2025-4105</td><td style='text-align:right'>$3,318.76</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iHEC-2025-104' style='color:var(--accent)'>HEC-2025-104</a></td><td>Helios Electrical Components</td><td>PO-2025-4112</td><td style='text-align:right'>$8,247.69</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iINV-2025-0101' style='color:var(--accent)'>INV-2025-0101</a></td><td>Bluefin Packaging Co.</td><td>PO-2025-4102</td><td style='text-align:right'>$1,437.28</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iMF/25/101' style='color:var(--accent)'>MF/25/101</a></td><td>MERIDIAN FASTENERS INC.</td><td>PO-2025-4103</td><td style='text-align:right'>$1,585.60</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iNIS-2025-101' style='color:var(--accent)'>NIS-2025-101</a></td><td>Northgate Industrial Supply LLC</td><td>PO-2025-4101</td><td style='text-align:right'>$2,018.93</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iNIS-2025-104' style='color:var(--accent)'>NIS-2025-104</a></td><td>Northgate Ind. Supply (a div. of NIS Holdings)</td><td>PO-2025-4111</td><td style='text-align:right'>$6,403.58</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iSOI-25-101' style='color:var(--accent)'>SOI-25-101</a></td><td>Stellar Office Interiors</td><td>PO-2025-4107</td><td style='text-align:right'>$14,037.33</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr><tr><td><a href='#iVPL-2025-101' style='color:var(--accent)'>VPL-2025-101</a></td><td>VIREO PRINT &amp; LABEL GMBH</td><td>PO-2025-4109</td><td style='text-align:right'>€11,683.18</td><td><span class='badge' style='color:#0e6e3c;background:#e7f5ec'>READY TO PAY</span></td><td>—</td><td>pending</td></tr>
+</table>
+<hr class='hr'>
+<h2 style='font-size:19px'>Case detail &amp; evidence</h2>
+
+<div class='inv' id='iALS-INV-107'>
+  <h3>ALS-INV-107 <span class='badge' style='color:#9c1f1f;background:#fbe9e9;margin-left:8px'>REJECT — DO NOT PAY</span></h3>
+  <div class='meta'>AURIGA LOGISTICS SERVICES &nbsp;·&nbsp; PO PO-2025-4122
+   &nbsp;·&nbsp; Invoice date 2025-07-05 &nbsp;·&nbsp; Total $13,741.75 USD</div>
+  <div class='ev'><b class='code'>DUPLICATE</b> — Paid 2025-07-02 as ALS-INV-107 (13741.75 USD): invoice number already paid (normalized match); same vendor + PO + amount already paid.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4122 exists for vendor V06 in USD, invoice line prices match the PO, billed quantities match GRN-88321 receipts exactly (27, 23, 8, and 17), and arithmetic/bank checks passed. However, payment history already shows invoice ALS-INV-107 for vendor V06 and PO PO-2025-4122 paid on 2025-07-02 for the same amount, USD 13,741.75, so this invoice is a duplicate and must be rejected.</div>
+  <ul class='checks'><li>PO PO-2025-4122 found (vendor V06).</li><li>SKU AL-LTL-STD: price OK (425.00).</li><li>SKU AL-LTL-STD: qty OK (27 &lt;= received 27).</li><li>SKU AL-LIFT: price OK (45.00).</li><li>SKU AL-LIFT: qty OK (23 &lt;= received 23).</li><li>SKU AL-WHS-P: price OK (18.50).</li><li>SKU AL-WHS-P: qty OK (8 &lt;= received 8).</li><li>SKU AL-FUEL: price OK (63.75).</li><li>SKU AL-FUEL: qty OK (17 &lt;= received 17).</li><li>Tax OK (0.00 ~= 0.00).</li></ul>
+  
+</div>
+<div class='inv' id='iINV-2025-0107'>
+  <h3>INV-2025-0107 <span class='badge' style='color:#9c1f1f;background:#fbe9e9;margin-left:8px'>REJECT — DO NOT PAY</span></h3>
+  <div class='meta'>Bluefin Packaging Co. &nbsp;·&nbsp; PO PO-2025-4121
+   &nbsp;·&nbsp; Invoice date 2025-07-28 &nbsp;·&nbsp; Total $2,517.76 USD</div>
+  <div class='ev'><b class='code'>DUPLICATE</b> — Paid 2025-06-14 as INV-25-107 (2517.76 USD): same vendor + PO + amount already paid.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4121 exists for vendor V02 in USD, GRN GRN-88320 shows full receipts of 8, 29, and 24 units for lines 1-3, and arithmetic/bank checks passed. However, payment history already contains a paid invoice for the same vendor, PO, and total amount: invoice INV-25-107 for PO-2025-4121, amount 2517.76 USD, paid on 2025-06-14, so this invoice must be rejected as a duplicate.</div>
+  <ul class='checks'><li>PO PO-2025-4121 found (vendor V02).</li><li>SKU BP-450: price OK (4.15).</li><li>SKU BP-450: qty OK (8 &lt;= received 8).</li><li>SKU BP-201: price OK (31.25).</li><li>SKU BP-201: qty OK (29 &lt;= received 29).</li><li>SKU BP-330: price OK (58.90).</li><li>SKU BP-330: qty OK (24 &lt;= received 24).</li><li>Tax OK (164.71 ~= 164.71).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iALS-INV-104'>
+  <h3>ALS-INV-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>AURIGA LOGISTICS SERVICES &nbsp;·&nbsp; PO PO-2025-4120
+   &nbsp;·&nbsp; Invoice date 2025-07-08 &nbsp;·&nbsp; Total $9,837.50 USD</div>
+  <div class='ev'><b class='code'>GRN_MISSING</b> — No goods receipt notes exist for PO-2025-4120.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4120 exists for vendor V06 and the invoice matches the PO on currency (USD) and line prices: AL-LTL-STD 19 @ 425.00, AL-LIFT 33 @ 45.00, and AL-WHS-P 15 @ 18.50. No goods receipt notes exist for this PO, so the invoice cannot be three-way matched; duplicate search found no prior payment match, and arithmetic/bank checks passed (subtotal 9837.50, tax 0.00, total 9837.50; bank account 6650371928 / routing 084000026 matches vendor master).</div>
+  <ul class='checks'><li>PO PO-2025-4120 found (vendor V06).</li><li>SKU AL-LTL-STD: price OK (425.00).</li><li>SKU AL-LIFT: price OK (45.00).</li><li>SKU AL-WHS-P: price OK (18.50).</li><li>Tax OK (0.00 ~= 0.00).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iAMT-104'>
+  <h3>AMT-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Ashford Machine Tools Ltd. &nbsp;·&nbsp; PO PO-2025-4115
+   &nbsp;·&nbsp; Invoice date 2025-07-27 &nbsp;·&nbsp; Total $15,341.26 USD</div>
+  <div class='ev'><b class='code'>PRICE_MISMATCH</b> — SKU AM-END-12: billed 78.43 vs PO 68.20 (15.0% &gt; 0.5% tolerance).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4115 exists in USD for vendor V10, and GRN totals show line 1 received 22 and line 2 received 33, matching the billed quantities; duplicate search found no prior payment match, and arithmetic/tax/bank checks passed. However, invoice line SKU AM-END-12 bills unit price 78.43 while the PO unit price is 68.20, which exceeds the 0.5% tolerance; line 2 matches at 412.60, so the invoice must be held for PRICE_MISMATCH.</div>
+  <ul class='checks'><li>PO PO-2025-4115 found (vendor V10).</li><li>SKU AM-END-12: qty OK (22 &lt;= received 22).</li><li>SKU AM-CHK-125: price OK (412.60).</li><li>SKU AM-CHK-125: qty OK (33 &lt;= received 33).</li><li>Tax OK (0.00 ~= 0.00).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iAMT-107'>
+  <h3>AMT-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Ashford Machine Tools Ltd. &nbsp;·&nbsp; PO PO-2025-9911
+   &nbsp;·&nbsp; Invoice date 2025-07-20 &nbsp;·&nbsp; Total $16,602.80 USD</div>
+  <div class='ev'><b class='code'>PO_NOT_FOUND</b> — PO &#x27;PO-2025-9911&#x27; not present in the PO system.</div>
+  <div class='expl'><b>Analyst summary:</b> The referenced PO &#x27;PO-2025-9911&#x27; does not exist in the PO system, so the invoice must be placed on hold. Duplicate screening found no prior payment match for vendor V10 and invoice AMT-107 / total 16602.80, and the verifier also confirmed tax 0.00 and remit-to bank details match the vendor master.</div>
+  <ul class='checks'><li>Tax OK (0.00 ~= 0.00).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iCCW-104'>
+  <h3>CCW-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Cascadia Chemical Works &nbsp;·&nbsp; PO PO-2025-4119
+   &nbsp;·&nbsp; Invoice date 2025-06-28 &nbsp;·&nbsp; Total $6,710.16 USD</div>
+  <div class='ev'><b class='code'>GRN_MISSING</b> — No goods receipt notes exist for PO-2025-4119.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4119 exists for vendor V04 in USD, and the invoice line prices match the PO (612.00, 744.50, and 87.40). However, no goods receipt notes exist for this PO, so the invoice must be held for GRN_MISSING. Arithmetic checks passed, including tax 582.16 at the 9.5% vendor tax rate, bank details match the vendor master, and no duplicate payment was found.</div>
+  <ul class='checks'><li>PO PO-2025-4119 found (vendor V04).</li><li>SKU CC-IPA-55: price OK (612.00).</li><li>SKU CC-COOL-55: price OK (744.50).</li><li>SKU CC-DEG-5: price OK (87.40).</li><li>Tax OK (582.16 ~= 582.16).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iCCW-107'>
+  <h3>CCW-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Cascadia Chemical Works &nbsp;·&nbsp; PO PO-2025-4132
+   &nbsp;·&nbsp; Invoice date 2025-06-04 &nbsp;·&nbsp; Total $37,578.40 USD</div>
+  <div class='ev'><b class='code'>TAX_ERROR</b> — Tax 3300.50 != tax_rate 0.0950 x subtotal 34277.90 = 3256.40 (tolerance $0.02).</div><div class='ev'><b class='code'>BANK_CHANGE</b> — Remit-to account 6120087745 != vendor master 9027481133 — verify with vendor before payment.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4132 exists for vendor V04 in USD, the billed unit prices match the PO (744.5, 87.4, 612.0), and billed quantities 37/21/8 do not exceed received quantities on GRN-88331 (37/21/8); no duplicate payment was found. However, the invoice tax is 3300.50 while the vendor master tax rate of 0.095 applied to subtotal 34277.90 yields 3256.40, and the remit-to bank account 6120087745 differs from the vendor master account 9027481133 (routing 125000024 matches).</div>
+  <ul class='checks'><li>PO PO-2025-4132 found (vendor V04).</li><li>SKU CC-COOL-55: price OK (744.50).</li><li>SKU CC-COOL-55: qty OK (37 &lt;= received 37).</li><li>SKU CC-DEG-5: price OK (87.40).</li><li>SKU CC-DEG-5: qty OK (21 &lt;= received 21).</li><li>SKU CC-IPA-55: price OK (612.00).</li><li>SKU CC-IPA-55: qty OK (8 &lt;= received 8).</li></ul>
+  
+</div>
+<div class='inv' id='iGP-104'>
+  <h3>GP-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Granite Peak Safety Gear &nbsp;·&nbsp; PO PO-2025-4118
+   &nbsp;·&nbsp; Invoice date 2025-06-03 &nbsp;·&nbsp; Total $8,079.32 USD</div>
+  <div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU GP-EAR-200: billed qty 30 &gt; received 18 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU GP-BOOT-10: billed qty 35 &gt; received 21 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU GP-VIS-XL: billed qty 30 &gt; received 18 (summed across 1 GRN(s)).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4118 exists and matches the invoice in USD, with unit prices matching the PO on all three lines; arithmetic also passed, including subtotal 7622.00, tax 457.32 at 6%, and total 8079.32, and the remit-to bank matches vendor V08. However, billed quantities exceed received quantities on every line: GP-EAR-200 billed 30 vs received 18, GP-BOOT-10 billed 35 vs received 21, and GP-VIS-XL billed 30 vs received 18 (GRN-88319), so the invoice must be held for QTY_MISMATCH.</div>
+  <ul class='checks'><li>PO PO-2025-4118 found (vendor V08).</li><li>SKU GP-EAR-200: price OK (38.90).</li><li>SKU GP-BOOT-10: price OK (112.00).</li><li>SKU GP-VIS-XL: price OK (84.50).</li><li>Tax OK (457.32 ~= 457.32).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iGP-107'>
+  <h3>GP-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Granite Peak Safety Gear &nbsp;·&nbsp; PO PO-2025-4128
+   &nbsp;·&nbsp; Invoice date 2025-06-19 &nbsp;·&nbsp; Total $3,264.80 USD</div>
+  <div class='ev'><b class='code'>BANK_CHANGE</b> — Remit-to account 4456108823 != vendor master 2290156841 — verify with vendor before payment.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4128 exists for vendor V08 in USD, invoice line prices match the PO (6 × 196.00 and 17 × 112.00), and billed quantities do not exceed receipts on GRN-88327 (received totals: line 1 = 6, line 2 = 17). Arithmetic and tax passed (subtotal 3080.00, tax 184.80 at 6%, total 3264.80), and no duplicate was found, but the remit-to bank account on the invoice is 4456108823 while the vendor master shows 2290156841, so the invoice must be held for bank-change verification.</div>
+  <ul class='checks'><li>PO PO-2025-4128 found (vendor V08).</li><li>SKU GP-HH-CL2: price OK (196.00).</li><li>SKU GP-HH-CL2: qty OK (6 &lt;= received 6).</li><li>SKU GP-BOOT-10: price OK (112.00).</li><li>SKU GP-BOOT-10: qty OK (17 &lt;= received 17).</li><li>Tax OK (184.80 ~= 184.80).</li></ul>
+  
+</div>
+<div class='inv' id='iHEC-2025-107'>
+  <h3>HEC-2025-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Helios Electrical Components &nbsp;·&nbsp; PO PO-2025-4117
+   &nbsp;·&nbsp; Invoice date 2025-06-23 &nbsp;·&nbsp; Total $8,551.54 USD</div>
+  <div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU HE-REL-24: billed qty 18 &gt; received 10 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU HE-CB-20: billed qty 35 &gt; received 21 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU HE-PSU-24: billed qty 40 &gt; received 24 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU HE-CAB-14: billed qty 29 &gt; received 17 (summed across 1 GRN(s)).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4117 exists and matches the invoice currency (USD), vendor V05, prices, tax ($677.19 at 8.6%), total ($8,551.54), and remit-to bank details; no duplicate payment was found. However, billed quantities exceed received quantities on every line: line 1 billed 18 vs received 10, line 2 billed 35 vs 21, line 3 billed 40 vs 24, and line 4 billed 29 vs 17 based on GRN GRN-88318, so the invoice must be held for QTY_MISMATCH.</div>
+  <ul class='checks'><li>PO PO-2025-4117 found (vendor V05).</li><li>SKU HE-REL-24: price OK (14.20).</li><li>SKU HE-CB-20: price OK (9.85).</li><li>SKU HE-PSU-24: price OK (96.30).</li><li>SKU HE-CAB-14: price OK (118.00).</li><li>Tax OK (677.19 ~= 677.19).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iHEC-2025-110'>
+  <h3>HEC-2025-110 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Helios Electrical Components &nbsp;·&nbsp; PO PO-2025-4127
+   &nbsp;·&nbsp; Invoice date 2025-06-28 &nbsp;·&nbsp; Total $5,198.14 USD</div>
+  <div class='ev'><b class='code'>BANK_CHANGE</b> — Remit-to account 7791024468 != vendor master 3348812706 — verify with vendor before payment.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4127 exists for vendor V05 in USD, billed prices match the PO (HE-PSU-24 at 96.3 and HE-CAB-14 at 118.0), and billed quantities 35 and 12 do not exceed received quantities on GRN-88326 (35 and 12). Arithmetic passed including tax 411.64, and no duplicate payment was found for invoice HEC-2025-110 or total 5198.14; however, the remit-to bank account on the invoice is 7791024468 while the vendor master account is 3348812706 (routing 122100024 matches), so the invoice must be held for bank detail verification.</div>
+  <ul class='checks'><li>PO PO-2025-4127 found (vendor V05).</li><li>SKU HE-PSU-24: price OK (96.30).</li><li>SKU HE-PSU-24: qty OK (35 &lt;= received 35).</li><li>SKU HE-CAB-14: price OK (118.00).</li><li>SKU HE-CAB-14: qty OK (12 &lt;= received 12).</li><li>Tax OK (411.64 ~= 411.64).</li></ul>
+  
+</div>
+<div class='inv' id='iINV-2025-0104'>
+  <h3>INV-2025-0104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Bluefin Packaging Co. &nbsp;·&nbsp; PO PO-2025-4116
+   &nbsp;·&nbsp; Invoice date 2025-06-25 &nbsp;·&nbsp; Total $1,195.67 USD</div>
+  <div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU BP-115: billed qty 38 &gt; received 22 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU BP-201: billed qty 7 &gt; received 4 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU BP-330: billed qty 7 &gt; received 4 (summed across 1 GRN(s)).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4116 exists and matches the invoice in USD, with unit prices matching the PO (BP-115 at 12.80, BP-201 at 31.25, BP-330 at 58.90); arithmetic also passed, including subtotal 1117.45, tax 78.22 at 7%, total 1195.67, and bank details matching vendor V02. However, billed quantities exceed received quantities on all three lines: BP-115 billed 38 vs received 22, BP-201 billed 7 vs received 4, and BP-330 billed 7 vs received 4 (GRN count 1, GRN-88317), so the invoice must be held.</div>
+  <ul class='checks'><li>PO PO-2025-4116 found (vendor V02).</li><li>SKU BP-115: price OK (12.80).</li><li>SKU BP-201: price OK (31.25).</li><li>SKU BP-330: price OK (58.90).</li><li>Tax OK (78.22 ~= 78.22).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iMF/25/104'>
+  <h3>MF/25/104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>MERIDIAN FASTENERS INC. &nbsp;·&nbsp; PO PO-2025-4113
+   &nbsp;·&nbsp; Invoice date 2025-07-17 &nbsp;·&nbsp; Total $2,441.10 USD</div>
+  <div class='ev'><b class='code'>PRICE_MISMATCH</b> — SKU MF-M8-50: billed 49.28 vs PO 44.00 (12.0% &gt; 0.5% tolerance).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4113 exists in USD and GRN GRN-88314 shows full receipt of all invoiced quantities (9, 20, 29, and 12 respectively), with no duplicate payment found and bank/tax checks passing. However, line SKU MF-M8-50 is billed at 49.28 versus the PO unit price of 44.00, which exceeds the 0.5% tolerance, so the invoice must be held for PRICE_MISMATCH.</div>
+  <ul class='checks'><li>PO PO-2025-4113 found (vendor V03).</li><li>SKU MF-M8-50: qty OK (9 &lt;= received 9).</li><li>SKU MF-W-8: price OK (15.30).</li><li>SKU MF-W-8: qty OK (20 &lt;= received 20).</li><li>SKU MF-M8-NUT: price OK (27.60).</li><li>SKU MF-M8-NUT: qty OK (29 &lt;= received 29).</li><li>SKU MF-ANC-10: price OK (62.75).</li><li>SKU MF-ANC-10: qty OK (12 &lt;= received 12).</li><li>Tax OK (138.18 ~= 138.18).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iMF/25/107'>
+  <h3>MF/25/107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>MERIDIAN FASTENERS INC. &nbsp;·&nbsp; PO PO-2025-4126
+   &nbsp;·&nbsp; Invoice date 2025-07-02 &nbsp;·&nbsp; Total $2,946.32 USD</div>
+  <div class='ev'><b class='code'>TOTAL_ERROR</b> — Line MF-M8-NUT: amount 1021.60 != qty 36 x unit price 27.60 = 993.60.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4126 exists for vendor V03, the invoice currency matches the PO (USD), all billed quantities match received quantities on GRN-88325, no duplicate payment was found, and the bank details match the vendor master record. However, the invoice fails arithmetic validation: line MF-M8-NUT shows amount 1021.60, but 36 x 27.60 = 993.60, which exceeds the $0.02 tolerance, so the invoice must be placed on hold.</div>
+  <ul class='checks'><li>PO PO-2025-4126 found (vendor V03).</li><li>SKU MF-ANC-10: price OK (62.75).</li><li>SKU MF-ANC-10: qty OK (15 &lt;= received 15).</li><li>SKU MF-M8-50: price OK (44.00).</li><li>SKU MF-M8-50: qty OK (5 &lt;= received 5).</li><li>SKU MF-W-8: price OK (15.30).</li><li>SKU MF-W-8: qty OK (39 &lt;= received 39).</li><li>SKU MF-M8-NUT: price OK (27.60).</li><li>SKU MF-M8-NUT: qty OK (36 &lt;= received 36).</li><li>Tax OK (166.77 ~= 166.77).</li></ul>
+  
+</div>
+<div class='inv' id='iNIS-2025-107'>
+  <h3>NIS-2025-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Northgate Industrial Supply LLC &nbsp;·&nbsp; PO PO-2025-4123
+   &nbsp;·&nbsp; Invoice date 2025-06-21 &nbsp;·&nbsp; Total $5,231.42 USD</div>
+  <div class='ev'><b class='code'>TAX_ERROR</b> — Tax 388.27 != tax_rate 0.0725 x subtotal 4843.15 = 351.13 (tolerance $0.02).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4123 exists for vendor V01, invoice currency USD matches the PO currency USD, billed quantities match received quantities on GRN-88322 (17, 6, and 30), unit prices match the PO (6.95, 42.50, 149.00), bank details match the vendor master, and no duplicate payment was found. The invoice must be held because the tax is incorrect: billed tax is 388.27, but at the vendor master tax rate of 0.0725 on subtotal 4843.15, expected tax is 351.13, which exceeds the $0.02 tolerance.</div>
+  <ul class='checks'><li>PO PO-2025-4123 found (vendor V01).</li><li>SKU NG-7720: price OK (6.95).</li><li>SKU NG-7720: qty OK (17 &lt;= received 17).</li><li>SKU NG-3305: price OK (42.50).</li><li>SKU NG-3305: qty OK (6 &lt;= received 6).</li><li>SKU NG-1180: price OK (149.00).</li><li>SKU NG-1180: qty OK (30 &lt;= received 30).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iNIS-2025-110'>
+  <h3>NIS-2025-110 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Northgate Industrial Supply LLC &nbsp;·&nbsp; PO PO-2025-4131
+   &nbsp;·&nbsp; Invoice date 2025-06-15 &nbsp;·&nbsp; Total $2,396.55 USD</div>
+  <div class='ev'><b class='code'>PRICE_MISMATCH</b> — SKU NG-4410: billed 20.24 vs PO 18.40 (10.0% &gt; 0.5% tolerance).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU NG-4410: billed qty 10 &gt; received 5 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU NG-3305: billed qty 24 &gt; received 12 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU NG-1180: billed qty 6 &gt; received 3 (summed across 1 GRN(s)).</div><div class='ev'><b class='code'>QTY_MISMATCH</b> — SKU NG-7720: billed qty 17 &gt; received 8 (summed across 1 GRN(s)).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4131 exists for vendor V01 in USD, and no duplicate payment was found for invoice NIS-2025-110. However, invoice line SKU NG-4410 bills unit price 20.24 versus PO price 18.40, which exceeds the 0.5% tolerance, and billed quantities exceed received quantities on all lines: line 1 billed 10 vs received 5, line 2 billed 24 vs 12, line 3 billed 6 vs 3, and line 4 billed 17 vs 8. Arithmetic, tax (162.00 at 7.25%), currency, and bank details all match policy.</div>
+  <ul class='checks'><li>PO PO-2025-4131 found (vendor V01).</li><li>SKU NG-3305: price OK (42.50).</li><li>SKU NG-1180: price OK (149.00).</li><li>SKU NG-7720: price OK (6.95).</li><li>Tax OK (162.00 ~= 162.00).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iSOI-25-104'>
+  <h3>SOI-25-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Stellar Office Interiors &nbsp;·&nbsp; PO PO-2025-4114
+   &nbsp;·&nbsp; Invoice date 2025-06-12 &nbsp;·&nbsp; Total $7,362.71 USD</div>
+  <div class='ev'><b class='code'>PRICE_MISMATCH</b> — SKU SO-CHR-T2: billed 204.12 vs PO 189.00 (8.0% &gt; 0.5% tolerance).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4114 exists, GRN-88315 confirms full receipt of 21 units on line 1 and 34 units on line 2, and the invoice currency, tax ($551.69), total ($7,362.71), bank details, and duplicate screening all passed. However, line 1 SKU SO-CHR-T2 is billed at $204.12 versus the PO unit price of $189.00, which exceeds the 0.5% price tolerance; line 2 matches at $74.25.</div>
+  <ul class='checks'><li>PO PO-2025-4114 found (vendor V07).</li><li>SKU SO-CHR-T2: qty OK (21 &lt;= received 21).</li><li>SKU SO-MON-ARM: price OK (74.25).</li><li>SKU SO-MON-ARM: qty OK (34 &lt;= received 34).</li><li>Tax OK (551.69 ~= 551.69).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iSOI-25-107'>
+  <h3>SOI-25-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>Stellar Office Interiors &nbsp;·&nbsp; PO PO-2025-4125
+   &nbsp;·&nbsp; Invoice date 2025-07-23 &nbsp;·&nbsp; Total $8,181.87 USD</div>
+  <div class='ev'><b class='code'>TOTAL_ERROR</b> — Line SO-CHR-T2: amount 3492.00 != qty 18 x unit price 189.00 = 3402.00.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4125 exists for vendor V07 in USD, and received quantities match the invoice: line 1 billed 26 vs received 26, line 2 billed 18 vs received 18; unit prices also match the PO (156.80 and 189.00). However, the arithmetic check found a line total error: SKU SO-CHR-T2 shows amount 3492.00, but 18 x 189.00 = 3402.00, which exceeds the $0.02 tolerance; tax 613.07 matches the vendor tax rate and the bank details match vendor master, with no duplicate payment found.</div>
+  <ul class='checks'><li>PO PO-2025-4125 found (vendor V07).</li><li>SKU SO-FIL-3D: price OK (156.80).</li><li>SKU SO-FIL-3D: qty OK (26 &lt;= received 26).</li><li>SKU SO-CHR-T2: price OK (189.00).</li><li>SKU SO-CHR-T2: qty OK (18 &lt;= received 18).</li><li>Tax OK (613.07 ~= 613.07).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iVPL-2025-104'>
+  <h3>VPL-2025-104 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>VIREO PRINT &amp; LABEL GMBH &nbsp;·&nbsp; PO PO-2025-4124
+   &nbsp;·&nbsp; Invoice date 2025-07-02 &nbsp;·&nbsp; Total €14,029.86 EUR</div>
+  <div class='ev'><b class='code'>TAX_ERROR</b> — Tax 2284.26 != tax_rate 0.1900 x subtotal 11745.60 = 2231.66 (tolerance $0.02).</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4124 exists for vendor V09 in EUR, all three invoice line unit prices match the PO (21.4, 9.6, 340.0), and billed quantities 12/28/33 do not exceed received quantities from GRN-88323 (12/28/33). No duplicate payment was found, and the remit-to bank details match the vendor master, but the invoice tax is incorrect: tax shown is 2284.26 while 19.00% of subtotal 11745.60 is 2231.66, exceeding the $0.02 tolerance, so the invoice must be held.</div>
+  <ul class='checks'><li>PO PO-2025-4124 found (vendor V09).</li><li>SKU VP-LBL-4x6: price OK (21.40).</li><li>SKU VP-LBL-4x6: qty OK (12 &lt;= received 12).</li><li>SKU VP-RIB-110: price OK (9.60).</li><li>SKU VP-RIB-110: qty OK (28 &lt;= received 28).</li><li>SKU VP-TAG-ASSET: price OK (340.00).</li><li>SKU VP-TAG-ASSET: qty OK (33 &lt;= received 33).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iVPL-2025-107'>
+  <h3>VPL-2025-107 <span class='badge' style='color:#8a5a00;background:#fdf3e0;margin-left:8px'>HOLD — INVESTIGATE</span></h3>
+  <div class='meta'>VIREO PRINT &amp; LABEL GMBH &nbsp;·&nbsp; PO PO-2025-4129
+   &nbsp;·&nbsp; Invoice date 2025-06-22 &nbsp;·&nbsp; Total $15,588.29 USD</div>
+  <div class='ev'><b class='code'>CURRENCY_MISMATCH</b> — Invoice currency USD != PO currency EUR.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4129 exists for vendor V09, all three billed unit prices match the PO (21.40, 9.60, 340.00), and billed quantities 39, 38, and 35 do not exceed total receipts on GRN-88328. Arithmetic passed, tax 2,488.89 matches the vendor tax rate, remit-to bank details match the vendor master, and no duplicate was found in payment history. The invoice must be held because it is billed in USD while the PO and vendor master currency are both EUR.</div>
+  <ul class='checks'><li>PO PO-2025-4129 found (vendor V09).</li><li>SKU VP-LBL-4x6: price OK (21.40).</li><li>SKU VP-LBL-4x6: qty OK (39 &lt;= received 39).</li><li>SKU VP-RIB-110: price OK (9.60).</li><li>SKU VP-RIB-110: qty OK (38 &lt;= received 38).</li><li>SKU VP-TAG-ASSET: price OK (340.00).</li><li>SKU VP-TAG-ASSET: qty OK (35 &lt;= received 35).</li><li>Tax OK (2488.89 ~= 2488.89).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iALS-INV-101'>
+  <h3>ALS-INV-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>AURIGA LOGISTICS SERVICES &nbsp;·&nbsp; PO PO-2025-4106
+   &nbsp;·&nbsp; Invoice date 2025-07-06 &nbsp;·&nbsp; Total $10,461.00 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4106 exists for vendor V06 in USD, and all invoice line unit prices match the PO exactly: AL-FUEL 63.75, AL-WHS-P 18.50, AL-LTL-STD 425.00, and AL-LIFT 45.00. GRN-88306 shows received quantities of 8, 26, 19, and 31 respectively, matching the billed quantities exactly; arithmetic check passed, tax 0.00 matches the vendor tax rate of 0.0, bank details match the vendor master, and no duplicate payment or invoice number was found.</div>
+  <ul class='checks'><li>PO PO-2025-4106 found (vendor V06).</li><li>SKU AL-FUEL: price OK (63.75).</li><li>SKU AL-FUEL: qty OK (8 &lt;= received 8).</li><li>SKU AL-WHS-P: price OK (18.50).</li><li>SKU AL-WHS-P: qty OK (26 &lt;= received 26).</li><li>SKU AL-LTL-STD: price OK (425.00).</li><li>SKU AL-LTL-STD: qty OK (19 &lt;= received 19).</li><li>SKU AL-LIFT: price OK (45.00).</li><li>SKU AL-LIFT: qty OK (31 &lt;= received 31).</li><li>Tax OK (0.00 ~= 0.00).</li></ul>
+  
+</div>
+<div class='inv' id='iAMT-101'>
+  <h3>AMT-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Ashford Machine Tools Ltd. &nbsp;·&nbsp; PO PO-2025-4110
+   &nbsp;·&nbsp; Invoice date 2025-07-19 &nbsp;·&nbsp; Total $25,546.60 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4110 exists for vendor V10 in USD, and the invoice line prices match the PO exactly: AM-VIS-6 at 289.00 and AM-CHK-125 at 412.60. GRN-88310 shows full receipt of 37 and 36 units respectively, arithmetic and tax passed (subtotal 25,546.60, tax 0.00, total 25,546.60), bank details match the vendor master, and no duplicate payment or invoice number was found.</div>
+  <ul class='checks'><li>PO PO-2025-4110 found (vendor V10).</li><li>SKU AM-VIS-6: price OK (289.00).</li><li>SKU AM-VIS-6: qty OK (37 &lt;= received 37).</li><li>SKU AM-CHK-125: price OK (412.60).</li><li>SKU AM-CHK-125: qty OK (36 &lt;= received 36).</li><li>Tax OK (0.00 ~= 0.00).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iCCW-101'>
+  <h3>CCW-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Cascadia Chemical Works &nbsp;·&nbsp; PO PO-2025-4104
+   &nbsp;·&nbsp; Invoice date 2025-06-24 &nbsp;·&nbsp; Total $18,380.23 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4104 exists for vendor V04 in USD, and the invoice lines match the PO unit prices exactly: CC-DEG-5 at 87.40 for qty 24 and CC-IPA-55 at 612.00 for qty 24. GRN totals show 24 received on line 1 and 24 on line 2 (GRN-88304), arithmetic checks passed including tax 1,594.63, bank details match the vendor master, and no duplicate payment or invoice number was found.</div>
+  <ul class='checks'><li>PO PO-2025-4104 found (vendor V04).</li><li>SKU CC-DEG-5: price OK (87.40).</li><li>SKU CC-DEG-5: qty OK (24 &lt;= received 24).</li><li>SKU CC-IPA-55: price OK (612.00).</li><li>SKU CC-IPA-55: qty OK (24 &lt;= received 24).</li><li>Tax OK (1594.63 ~= 1594.63).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iGP-101'>
+  <h3>GP-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Granite Peak Safety Gear &nbsp;·&nbsp; PO PO-2025-4108
+   &nbsp;·&nbsp; Invoice date 2025-07-13 &nbsp;·&nbsp; Total $4,679.16 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4108 exists for vendor V08 in USD, and the invoice line prices match the PO exactly: 38.90, 84.50, and 196.00. GRN-88308 shows full receipt of 22, 5, and 16 units respectively, matching billed quantities; arithmetic_check found no arithmetic or tax issues (subtotal 4414.30, tax 264.86 at 6%, total 4679.16), bank details match the vendor master, and no duplicate payment was found.</div>
+  <ul class='checks'><li>PO PO-2025-4108 found (vendor V08).</li><li>SKU GP-EAR-200: price OK (38.90).</li><li>SKU GP-EAR-200: qty OK (22 &lt;= received 22).</li><li>SKU GP-VIS-XL: price OK (84.50).</li><li>SKU GP-VIS-XL: qty OK (5 &lt;= received 5).</li><li>SKU GP-HH-CL2: price OK (196.00).</li><li>SKU GP-HH-CL2: qty OK (16 &lt;= received 16).</li><li>Tax OK (264.86 ~= 264.86).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iHEC-2025-101'>
+  <h3>HEC-2025-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Helios Electrical Components &nbsp;·&nbsp; PO PO-2025-4105
+   &nbsp;·&nbsp; Invoice date 2025-06-02 &nbsp;·&nbsp; Total $3,318.76 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4105 exists for vendor V05 in USD, and all invoice line prices match the PO exactly: HE-CB-20 at 9.85, HE-REL-24 at 14.20, and HE-PSU-24 at 96.30. GRN totals show full receipt against all PO lines (37, 20, and 25 respectively via GRN-88305), arithmetic_check found tax correct at 262.81 and bank details matching the vendor master, and payment history returned no duplicates for invoice HEC-2025-101 / total 3318.76.</div>
+  <ul class='checks'><li>PO PO-2025-4105 found (vendor V05).</li><li>SKU HE-CB-20: price OK (9.85).</li><li>SKU HE-CB-20: qty OK (37 &lt;= received 37).</li><li>SKU HE-REL-24: price OK (14.20).</li><li>SKU HE-REL-24: qty OK (20 &lt;= received 20).</li><li>SKU HE-PSU-24: price OK (96.30).</li><li>SKU HE-PSU-24: qty OK (25 &lt;= received 25).</li><li>Tax OK (262.81 ~= 262.81).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iHEC-2025-104'>
+  <h3>HEC-2025-104 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Helios Electrical Components &nbsp;·&nbsp; PO PO-2025-4112
+   &nbsp;·&nbsp; Invoice date 2025-06-22 &nbsp;·&nbsp; Total $8,247.69 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4112 exists for vendor V05 in USD, all invoiced unit prices match the PO (14.20, 118.00, 96.30, 9.85), and billed quantities 26/26/40/31 do not exceed received quantities on GRN-88313 (26/26/40/31). Arithmetic check passed, including tax 653.14 matching the expected 653.13 within $0.02 tolerance, bank details match the vendor master, and no duplicate payment or invoice number was found.</div>
+  <ul class='checks'><li>PO PO-2025-4112 found (vendor V05).</li><li>SKU HE-REL-24: price OK (14.20).</li><li>SKU HE-REL-24: qty OK (26 &lt;= received 26).</li><li>SKU HE-CAB-14: price OK (118.00).</li><li>SKU HE-CAB-14: qty OK (26 &lt;= received 26).</li><li>SKU HE-PSU-24: price OK (96.30).</li><li>SKU HE-PSU-24: qty OK (40 &lt;= received 40).</li><li>SKU HE-CB-20: price OK (9.85).</li><li>SKU HE-CB-20: qty OK (31 &lt;= received 31).</li><li>Tax OK (653.14 ~= 653.13).</li></ul>
+  
+</div>
+<div class='inv' id='iINV-2025-0101'>
+  <h3>INV-2025-0101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Bluefin Packaging Co. &nbsp;·&nbsp; PO PO-2025-4102
+   &nbsp;·&nbsp; Invoice date 2025-06-25 &nbsp;·&nbsp; Total $1,437.28 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4102 exists for vendor V02 in USD, and the invoice matches the PO line prices exactly: BP-450 at 4.15 for qty 30 and BP-201 at 31.25 for qty 39. GRN GRN-88302 shows receipts of 30 and 39 respectively, arithmetic_check found no tax/total errors (tax 94.03 at 7% on subtotal 1343.25, total 1437.28), the remit-to bank details match vendor master, and payment history returned no duplicate.</div>
+  <ul class='checks'><li>PO PO-2025-4102 found (vendor V02).</li><li>SKU BP-450: price OK (4.15).</li><li>SKU BP-450: qty OK (30 &lt;= received 30).</li><li>SKU BP-201: price OK (31.25).</li><li>SKU BP-201: qty OK (39 &lt;= received 39).</li><li>Tax OK (94.03 ~= 94.03).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iMF/25/101'>
+  <h3>MF/25/101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>MERIDIAN FASTENERS INC. &nbsp;·&nbsp; PO PO-2025-4103
+   &nbsp;·&nbsp; Invoice date 2025-07-04 &nbsp;·&nbsp; Total $1,585.60 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4103 exists for vendor V03 in USD, and the invoice matches the PO line prices exactly: MF-ANC-10 at 19 × 62.75 and MF-M8-NUT at 11 × 27.60. GRN totals show 19 received on line 1 and 11 on line 2 (GRN-88303), arithmetic checks passed including tax 89.75 at 6% on subtotal 1495.85, bank details match the vendor master, and no duplicate payment or invoice was found.</div>
+  <ul class='checks'><li>PO PO-2025-4103 found (vendor V03).</li><li>SKU MF-ANC-10: price OK (62.75).</li><li>SKU MF-ANC-10: qty OK (19 &lt;= received 19).</li><li>SKU MF-M8-NUT: price OK (27.60).</li><li>SKU MF-M8-NUT: qty OK (11 &lt;= received 11).</li><li>Tax OK (89.75 ~= 89.75).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iNIS-2025-101'>
+  <h3>NIS-2025-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Northgate Industrial Supply LLC &nbsp;·&nbsp; PO PO-2025-4101
+   &nbsp;·&nbsp; Invoice date 2025-06-18 &nbsp;·&nbsp; Total $2,018.93 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4101 exists for vendor V01 in USD, and all invoice line prices match the PO exactly: NG-4410 at 18.40, NG-1180 at 149.00, NG-7720 at 6.95, and NG-3305 at 42.50. GRN totals on GRN-88301 fully support the billed quantities (3, 7, 15, and 16 respectively), arithmetic checks passed including subtotal 1,882.45, tax 136.48 at 7.25%, and total 2,018.93, the remit-to bank details match vendor master, and no duplicate payment/invoice was found.</div>
+  <ul class='checks'><li>PO PO-2025-4101 found (vendor V01).</li><li>SKU NG-4410: price OK (18.40).</li><li>SKU NG-4410: qty OK (3 &lt;= received 3).</li><li>SKU NG-1180: price OK (149.00).</li><li>SKU NG-1180: qty OK (7 &lt;= received 7).</li><li>SKU NG-7720: price OK (6.95).</li><li>SKU NG-7720: qty OK (15 &lt;= received 15).</li><li>SKU NG-3305: price OK (42.50).</li><li>SKU NG-3305: qty OK (16 &lt;= received 16).</li><li>Tax OK (136.48 ~= 136.48).</li></ul>
+  
+</div>
+<div class='inv' id='iNIS-2025-104'>
+  <h3>NIS-2025-104 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Northgate Ind. Supply (a div. of NIS Holdings) &nbsp;·&nbsp; PO PO-2025-4111
+   &nbsp;·&nbsp; Invoice date 2025-06-05 &nbsp;·&nbsp; Total $6,403.58 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4111 exists for vendor V01, the invoice currency matches the PO (USD), and all billed unit prices match the PO exactly: NG-1180 at 149.00, NG-4410 at 18.40, and NG-3305 at 42.50. GRNs GRN-88311 and GRN-88312 total receipts of 34, 33, and 7 respectively, exactly matching billed quantities, arithmetic checks passed including tax 432.88 at the 7.25% vendor tax rate, bank details match vendor master, and no duplicate payment or prior invoice number match was found.</div>
+  <ul class='checks'><li>PO PO-2025-4111 found (vendor V01).</li><li>SKU NG-1180: price OK (149.00).</li><li>SKU NG-1180: qty OK (34 &lt;= received 34).</li><li>SKU NG-4410: price OK (18.40).</li><li>SKU NG-4410: qty OK (33 &lt;= received 33).</li><li>SKU NG-3305: price OK (42.50).</li><li>SKU NG-3305: qty OK (7 &lt;= received 7).</li><li>Tax OK (432.88 ~= 432.88).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iSOI-25-101'>
+  <h3>SOI-25-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>Stellar Office Interiors &nbsp;·&nbsp; PO PO-2025-4107
+   &nbsp;·&nbsp; Invoice date 2025-06-06 &nbsp;·&nbsp; Total $14,037.33 USD</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4107 exists for vendor V07 in USD, and the invoice line prices match the PO exactly: SO-MON-ARM 74.25, SO-CHR-T2 189.00, and SO-DSK-60 415.00. GRN totals show full receipt against GRN-88307 (6, 40, and 12 units respectively), arithmetic passed including tax 1,051.83 at the 8.1% vendor tax rate, bank details match the vendor master, and no duplicate payment was found for invoice SOI-25-101 or total 14,037.33.</div>
+  <ul class='checks'><li>PO PO-2025-4107 found (vendor V07).</li><li>SKU SO-MON-ARM: price OK (74.25).</li><li>SKU SO-MON-ARM: qty OK (6 &lt;= received 6).</li><li>SKU SO-CHR-T2: price OK (189.00).</li><li>SKU SO-CHR-T2: qty OK (40 &lt;= received 40).</li><li>SKU SO-DSK-60: price OK (415.00).</li><li>SKU SO-DSK-60: qty OK (12 &lt;= received 12).</li><li>Tax OK (1051.83 ~= 1051.83).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='inv' id='iVPL-2025-101'>
+  <h3>VPL-2025-101 <span class='badge' style='color:#0e6e3c;background:#e7f5ec;margin-left:8px'>READY TO PAY</span></h3>
+  <div class='meta'>VIREO PRINT &amp; LABEL GMBH &nbsp;·&nbsp; PO PO-2025-4109
+   &nbsp;·&nbsp; Invoice date 2025-06-09 &nbsp;·&nbsp; Total €11,683.18 EUR</div>
+  <div class='ev clean'>All three-way-match checks passed. No discrepancies.</div>
+  <div class='expl'><b>Analyst summary:</b> PO PO-2025-4109 exists for vendor V09 in EUR, and all three invoice line unit prices match the PO exactly: 21.40, 9.60, and 340.00. GRN totals from GRN-88309 fully support the billed quantities (15, 33, and 27 respectively), arithmetic checks passed including tax 1,865.38 on subtotal 9,817.80 and total 11,683.18, bank details match the vendor master, and no duplicate payment or prior invoice number was found.</div>
+  <ul class='checks'><li>PO PO-2025-4109 found (vendor V09).</li><li>SKU VP-LBL-4x6: price OK (21.40).</li><li>SKU VP-LBL-4x6: qty OK (15 &lt;= received 15).</li><li>SKU VP-RIB-110: price OK (9.60).</li><li>SKU VP-RIB-110: qty OK (33 &lt;= received 33).</li><li>SKU VP-TAG-ASSET: price OK (340.00).</li><li>SKU VP-TAG-ASSET: qty OK (27 &lt;= received 27).</li><li>Tax OK (1865.38 ~= 1865.38).</li><li>Remit-to bank details match vendor master.</li></ul>
+  
+</div>
+<div class='sig'>
+  <div class='line'>AP Specialist — reviewed &amp; released</div>
+  <div class='line'>AP Manager — batch approval</div>
+  <div class='line'>Date</div>
+</div>
+<footer>Methodology: invoices OCR'd (Mistral OCR), structured by an extraction agent, matched 2-way/3-way
+against PO, GRN, vendor master and payment history by a tool-using matching agent, independently recomputed
+by a deterministic verification engine, and queued for human approval. Payments are simulated in a sandbox
+ledger only. Generated by Matchpoint.</footer>
+</div></body></html>

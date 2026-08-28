@@ -1,0 +1,618 @@
+{
+  "summary": {
+    "run": "agent_v2",
+    "n_cases": 32,
+    "decision_accuracy": 1.0,
+    "exact_match": 0.9375,
+    "discrepancy_precision": 0.9167,
+    "discrepancy_recall": 1.0,
+    "discrepancy_f1": 0.9565,
+    "false_hold_rate": 0.0,
+    "missed_defect_rate": 0.0,
+    "tokens_in_total": 204911,
+    "tokens_out_total": 17787,
+    "est_cost_usd_total": 0.6076,
+    "est_cost_usd_per_invoice": 0.019,
+    "avg_latency_s": 13.68
+  },
+  "cases": [
+    {
+      "invoice_id": "NIS-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4101 exists for vendor V01 and the invoice matches the PO on currency (USD), unit prices, and quantities: billed quantities 3, 7, 15, and 16 do not exceed GRN totals on GRN-88301 for lines 1-4. Arithmetic checks passed, including subtotal 1882.45, tax 136.48 at the vendor tax rate, and total 2018.93; remit-to bank routing 021000021 and account 4402198837 match the vendor master, and no duplicate payment or prior invoice number was found.",
+      "tokens_in": 7060,
+      "tokens_out": 590
+    },
+    {
+      "invoice_id": "INV-2025-0101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4102 exists for vendor V02 in USD, and the invoice matches the PO line prices exactly: BP-450 at 4.15 for qty 30 and BP-201 at 31.25 for qty 39. GRN totals show 30 received on line 1 and 39 on line 2 via GRN-88302, so billed quantities do not exceed receipts; arithmetic check passed including subtotal 1343.25, tax 94.03 at 7%, total 1437.28, bank details matched the vendor master, and no duplicate payment was found.",
+      "tokens_in": 5975,
+      "tokens_out": 526
+    },
+    {
+      "invoice_id": "MF/25/101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4103 exists for vendor V03 in USD, and the invoice matches the PO line prices exactly: MF-ANC-10 at 62.75 for qty 19 and MF-M8-NUT at 27.60 for qty 11. GRN totals show full receipt against the PO (line 1 received 19, line 2 received 11), arithmetic checks passed including tax 89.75 at the 6% vendor tax rate, bank details match the vendor master, and no duplicate payment or invoice number was found.",
+      "tokens_in": 5860,
+      "tokens_out": 518
+    },
+    {
+      "invoice_id": "CCW-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4104 exists for vendor V04 in USD, and the invoice line prices match the PO exactly (CC-DEG-5 at 87.4 and CC-IPA-55 at 612.0). GRN coverage is complete via GRN-88304 with 24 received on line 1 and 24 on line 2, matching billed quantities; arithmetic_check found tax 1594.63 valid, bank details matching vendor master, and payment search found no duplicate for invoice CCW-101 or total 18380.23.",
+      "tokens_in": 6071,
+      "tokens_out": 501
+    },
+    {
+      "invoice_id": "HEC-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4105 exists for vendor V05 in USD, and the invoice line prices match the PO exactly (HE-CB-20 at 9.85, HE-REL-24 at 14.20, HE-PSU-24 at 96.30). GRN totals show full receipt against the PO (line 1: 37, line 2: 20, line 3: 25), arithmetic checks passed including tax 262.81 at the 8.6% vendor tax rate, bank details match the vendor master, and no duplicate payment was found for invoice HEC-2025-101 or total 3318.76.",
+      "tokens_in": 6362,
+      "tokens_out": 564
+    },
+    {
+      "invoice_id": "ALS-INV-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4106 exists for vendor V06 in USD, and all invoice line prices match the PO exactly: AL-FUEL 63.75, AL-WHS-P 18.50, AL-LTL-STD 425.00, and AL-LIFT 45.00. GRN totals from GRN-88306 fully cover the billed quantities (8, 26, 19, and 31 respectively), arithmetic checks passed including subtotal 10,461.00, tax 0.00 at the 0.0 tax rate, and total 10,461.00, the remit-to bank details match vendor master, and no duplicate payment or invoice number was found.",
+      "tokens_in": 6928,
+      "tokens_out": 577
+    },
+    {
+      "invoice_id": "SOI-25-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4107 exists for vendor V07 in USD, and the invoice line prices match the PO exactly: SO-MON-ARM 74.25, SO-CHR-T2 189.00, and SO-DSK-60 415.00. GRN GRN-88307 shows full receipt of 6, 40, and 12 units respectively, arithmetic checks passed including tax 1,051.83 at the 8.1% vendor tax rate, the remit-to bank details match the vendor master, and no duplicate payment or invoice number was found.",
+      "tokens_in": 6515,
+      "tokens_out": 550
+    },
+    {
+      "invoice_id": "GP-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4108 exists for vendor V08 in USD, and all invoiced line prices match the PO exactly (38.90, 84.50, and 196.00). GRN totals show full receipt against all PO lines (22, 5, and 16 units on GRN-88308), arithmetic passed including subtotal 4414.30, tax 264.86 at 6%, and total 4679.16, the remit-to bank matches vendor master, and no duplicate payment or prior invoice GP-101 was found.",
+      "tokens_in": 6357,
+      "tokens_out": 531
+    },
+    {
+      "invoice_id": "VPL-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4109 exists for vendor V09, the invoice currency EUR matches the PO, all billed unit prices match the PO (21.4, 9.6, 340.0), and billed quantities 15/33/27 do not exceed total received quantities 15/33/27 on GRN-88309. Arithmetic check passed including subtotal 9817.80, tax 1865.38 at 19%, and total 11683.18, the remit-to bank details match the vendor master, and payment history returned no duplicate invoice or paid match.",
+      "tokens_in": 6510,
+      "tokens_out": 580
+    },
+    {
+      "invoice_id": "AMT-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4110 exists for vendor V10 in USD, and the invoice line prices match the PO exactly: AM-VIS-6 at 289.00 for qty 37 and AM-CHK-125 at 412.60 for qty 36. GRN-88310 shows full receipt of 37 and 36 units respectively, arithmetic checks passed including subtotal 25546.60, tax 0.00 at a 0.0 tax rate, total 25546.60, the remit-to bank matches the vendor master, and no duplicate payment was found.",
+      "tokens_in": 5855,
+      "tokens_out": 519
+    },
+    {
+      "invoice_id": "NIS-2025-104",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4111 exists for vendor V01 in USD, and the invoice line prices match the PO exactly: NG-1180 at 149.00, NG-4410 at 18.40, and NG-3305 at 42.50. Total received quantities across GRNs GRN-88311 and GRN-88312 equal the billed quantities for each line (34, 33, and 7 respectively), arithmetic checks passed including tax 432.88 and total 6403.58, bank details match the vendor master, and no duplicate payment was found for invoice NIS-2025-104.",
+      "tokens_in": 6910,
+      "tokens_out": 568
+    },
+    {
+      "invoice_id": "HEC-2025-104",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4112 exists for vendor V05 in USD, and all invoice line prices match the PO exactly: 14.20, 118.00, 96.30, and 9.85. Received quantities from GRN-88313 fully cover billed quantities for lines 1-4 (26, 26, 40, and 31 respectively), arithmetic passed including tax 653.14 within tolerance of expected 653.13, bank details match the vendor master, and no duplicate payment was found for invoice HEC-2025-104 or total 8247.69.",
+      "tokens_in": 6947,
+      "tokens_out": 603
+    },
+    {
+      "invoice_id": "MF/25/104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4113 exists, GRN GRN-88314 covers the full billed quantities (9, 20, 29, and 12 units), currency is USD on both invoice and PO, the bank details match vendor master, and no duplicate payment was found. However, line SKU MF-M8-50 is billed at 49.28 while the PO unit price is 44.00, which exceeds the 0.5% unit-price tolerance; arithmetic checks otherwise passed, including subtotal 2302.92, tax 138.18 at 6%, and total 2441.10.",
+      "tokens_in": 6994,
+      "tokens_out": 597
+    },
+    {
+      "invoice_id": "SOI-25-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4114 exists in USD and has GRN GRN-88315 with received quantities matching the invoice (line 1: 21 received vs 21 billed; line 2: 34 received vs 34 billed). However, invoice line SO-CHR-T2 is billed at 204.12 while the PO unit price is 189.00, which exceeds the 0.5% tolerance; the other line price matches, arithmetic passed, bank details match vendor master, and no duplicate payment was found.",
+      "tokens_in": 5952,
+      "tokens_out": 491
+    },
+    {
+      "invoice_id": "AMT-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4115 exists in USD for vendor V10, and GRN-88316 shows received quantities of 22 for line 1 and 33 for line 2, matching the billed quantities. However, invoice line SKU AM-END-12 is billed at 78.43 versus the PO unit price of 68.20, which exceeds the 0.5% tolerance; line 2 matches at 412.60. No duplicate payment was found for vendor V10 / PO-2025-4115 / total 15341.26, and the remit-to bank details and tax check passed.",
+      "tokens_in": 5852,
+      "tokens_out": 535
+    },
+    {
+      "invoice_id": "INV-2025-0104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4116 exists for vendor V02 in USD, invoice unit prices match the PO (BP-115 $12.80, BP-201 $31.25, BP-330 $58.90), arithmetic passed, bank details match vendor master, and no duplicate was found. However, billed quantities exceed received quantities on all lines: line 1 billed 38 vs received 22, line 2 billed 7 vs received 4, and line 3 billed 7 vs received 4 based on GRN GRN-88317, so the invoice must be held for QTY_MISMATCH.",
+      "tokens_in": 6491,
+      "tokens_out": 553
+    },
+    {
+      "invoice_id": "HEC-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4117 exists and matches the invoice in USD, line unit prices, arithmetic, tax ($677.19 at 8.6%), and bank details; no duplicate payment was found for vendor V05. However, billed quantities exceed received quantities on every line: line 1 billed 18 vs received 10, line 2 billed 35 vs 21, line 3 billed 40 vs 24, and line 4 billed 29 vs 17 (GRN-88318), so the invoice must be held.",
+      "tokens_in": 6947,
+      "tokens_out": 600
+    },
+    {
+      "invoice_id": "GP-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "The PO exists and matches the invoice in USD, prices, and bank details, and arithmetic checks passed including tax of 457.32 on subtotal 7622.00 with no duplicate found. However, billed quantities exceed received quantities on every line: line 1 billed 30 vs received 18, line 2 billed 35 vs received 21, and line 3 billed 30 vs received 18 (GRN-88319), so the invoice must be held for QTY_MISMATCH.",
+      "tokens_in": 6337,
+      "tokens_out": 536
+    },
+    {
+      "invoice_id": "CCW-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING",
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": false,
+      "explanation": "PO PO-2025-4119 exists for vendor V04 and the invoice matches the PO on currency (USD), line prices (612.00, 744.50, 87.40), bank details, and arithmetic; no duplicate payment was found for invoice CCW-104 or total 6710.16. However, no GRNs exist for this PO, so received quantity is 0 for all lines; the invoice bills 2 of CC-IPA-55, 6 of CC-COOL-55, and 5 of CC-DEG-5, which exceeds received quantities and triggers both GRN_MISSING and QTY_MISMATCH.",
+      "tokens_in": 6143,
+      "tokens_out": 567
+    },
+    {
+      "invoice_id": "ALS-INV-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING",
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": false,
+      "explanation": "PO PO-2025-4120 exists for vendor V06 and matches the invoice in USD, line unit prices (425.00, 45.00, 18.50), and bank details, and no duplicate payment was found for invoice ALS-INV-104 or total 9837.50. However, no GRNs exist for this PO, so received quantity is 0 for all lines while the invoice bills 19 AL-LTL-STD, 33 AL-LIFT, and 15 AL-WHS-P; therefore both GRN_MISSING and QTY_MISMATCH apply, so the invoice must be held.",
+      "tokens_in": 5988,
+      "tokens_out": 547
+    },
+    {
+      "invoice_id": "INV-2025-0107",
+      "gold": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "pred": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4121 exists for vendor V02 in USD, GRN GRN-88320 shows full receipt of 8, 29, and 24 units for lines 1-3, and arithmetic/bank checks passed including tax 164.71 at the 7% master tax rate. However, payment history already contains a paid invoice for the same vendor, same PO, and same total amount 2517.76 (invoice INV-25-107 paid on 2025-06-14), so this invoice must be rejected as DUPLICATE.",
+      "tokens_in": 6570,
+      "tokens_out": 561
+    },
+    {
+      "invoice_id": "ALS-INV-107",
+      "gold": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "pred": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4122 exists for vendor V06 in USD, all billed quantities match received quantities on GRN-88321 (27, 23, 8, and 17), and the arithmetic/bank checks passed. However, payment history already shows invoice ALS-INV-107 for vendor V06 and PO PO-2025-4122 paid on 2025-07-02 for the same total amount of 13,741.75 USD, so this invoice is a DUPLICATE and must be rejected.",
+      "tokens_in": 7018,
+      "tokens_out": 569
+    },
+    {
+      "invoice_id": "NIS-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4123 exists for vendor V01 in USD, all three invoice line unit prices match the PO (6.95, 42.50, 149.00), and billed quantities 17/6/30 do not exceed received quantities on GRN-88322 (17/6/30). No duplicate payment was found and the remit-to bank matches vendor master, but the arithmetic check flagged TAX_ERROR: invoice tax 388.27 does not match 7.25% of subtotal 4843.15, which is 351.13 within policy tolerance.",
+      "tokens_in": 6534,
+      "tokens_out": 539
+    },
+    {
+      "invoice_id": "VPL-2025-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4124 exists for vendor V09, the invoice currency EUR matches the PO, all billed quantities match received quantities on GRN-88323 (12, 28, and 33), line prices match the PO, the remit-to bank matches vendor master, and no duplicate payment was found. The invoice must be held because tax is incorrect: the invoice shows tax of 2284.26, but at the vendor master tax rate of 0.19 on subtotal 11745.60, the expected tax is 2231.66, which exceeds the $0.02 tolerance.",
+      "tokens_in": 6543,
+      "tokens_out": 591
+    },
+    {
+      "invoice_id": "SOI-25-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4125 exists for vendor V07 in USD, and GRN GRN-88324 shows full receipt of 26 units on line 1 and 18 units on line 2, matching the billed quantities; unit prices also match the PO at 156.80 and 189.00. Payment history returned no duplicate, tax 613.07 matches the vendor tax rate, and bank details match vendor master, but the invoice line for SKU SO-CHR-T2 shows amount 3492.00 while arithmetic_check verified 18 x 189.00 = 3402.00, creating a TOTAL_ERROR and requiring a hold.",
+      "tokens_in": 6034,
+      "tokens_out": 518
+    },
+    {
+      "invoice_id": "MF/25/107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4126 exists for vendor V03, currency matches USD, GRN-88325 covers all billed quantities (15, 5, 39, and 36), prices match the PO, bank details match vendor master, and no duplicate payment was found. However, the invoice fails arithmetic: line SKU MF-M8-NUT shows amount 1021.60, but arithmetic_check verified that 36 x 27.60 = 993.60, creating a TOTAL_ERROR; tax 166.77 was otherwise correct.",
+      "tokens_in": 7041,
+      "tokens_out": 598
+    },
+    {
+      "invoice_id": "HEC-2025-110",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4127 exists for vendor V05 in USD, invoice line prices match the PO (HE-PSU-24 at 96.3 and HE-CAB-14 at 118.0), and billed quantities 35 and 12 do not exceed received quantities on GRN-88326. Arithmetic passed including tax 411.64, and no duplicate payment was found; however, the remit-to bank account on the invoice (7791024468, routing 122100024) differs from the vendor master account (3348812706, routing 122100024), so the invoice must be held for bank-change verification.",
+      "tokens_in": 5884,
+      "tokens_out": 547
+    },
+    {
+      "invoice_id": "GP-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4128 exists for vendor V08 in USD, and the invoice matches the PO line prices (6 \u00d7 196.00 and 17 \u00d7 112.00), received quantities (GRN-88327 shows 6 and 17 received), and arithmetic/tax (subtotal 3080.00, tax 184.80 at 6%, total 3264.80). However, the remit-to bank details do not match vendor master: routing 123103729 matches, but bank account 4456108823 on the invoice differs from master account 2290156841, so the invoice must be held.",
+      "tokens_in": 5811,
+      "tokens_out": 529
+    },
+    {
+      "invoice_id": "VPL-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "CURRENCY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "CURRENCY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4129 exists for vendor V09, all billed quantities match receipts exactly (39, 38, and 35 received on GRN-88328), unit prices match the PO (21.4, 9.6, 340.0), arithmetic passed, bank details match the vendor master, and no duplicate was found. However, the invoice is in USD while the PO and vendor master are in EUR, so this requires a hold for CURRENCY_MISMATCH.",
+      "tokens_in": 6527,
+      "tokens_out": 566
+    },
+    {
+      "invoice_id": "AMT-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PO_NOT_FOUND"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PO_NOT_FOUND"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "The referenced purchase order PO-2025-9911 does not exist in the PO system, so the invoice cannot be matched to an authorized PO. Other checked controls passed: no duplicate payment was found for vendor V10 and total 16602.80 / invoice AMT-107, the invoice currency matches the vendor/PO context currency USD, arithmetic checks passed, and the remit-to bank details match the vendor master record.",
+      "tokens_in": 5145,
+      "tokens_out": 521
+    },
+    {
+      "invoice_id": "NIS-2025-110",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH",
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH",
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4131 exists in USD for vendor V01, and no duplicate payment was found for invoice NIS-2025-110; arithmetic, tax, total, and bank details all passed. However, invoice line SKU NG-4410 bills unit price 20.24 versus PO price 18.40, which exceeds the 0.5% tolerance, and billed quantities exceed received quantities on all lines: line 1 billed 10 vs received 5, line 2 billed 24 vs 12, line 3 billed 6 vs 3, and line 4 billed 17 vs 8 based on GRN-88330.",
+      "tokens_in": 7060,
+      "tokens_out": 599
+    },
+    {
+      "invoice_id": "CCW-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE",
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE",
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO PO-2025-4132 exists for vendor V04 in USD, and the invoice line prices match the PO exactly (744.50, 87.40, and 612.00); received quantities also fully support the billed quantities via GRN-88331 (37, 21, and 8 received). However, the arithmetic check found tax of 3300.50 versus expected tax of 3256.40 at the vendor master tax rate of 9.5% on subtotal 34277.90, exceeding the $0.02 tolerance, and the remit-to bank account 6120087745 differs from the vendor master account 9027481133 (routing 125000024 matches). No duplicate payment was found.",
+      "tokens_in": 6690,
+      "tokens_out": 596
+    }
+  ]
+}

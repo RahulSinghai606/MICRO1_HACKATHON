@@ -1,0 +1,616 @@
+{
+  "summary": {
+    "run": "agent_engine_only",
+    "n_cases": 32,
+    "decision_accuracy": 1.0,
+    "exact_match": 1.0,
+    "discrepancy_precision": 1.0,
+    "discrepancy_recall": 1.0,
+    "discrepancy_f1": 1.0,
+    "false_hold_rate": 0.0,
+    "missed_defect_rate": 0.0,
+    "tokens_in_total": 16080,
+    "tokens_out_total": 6873,
+    "est_cost_usd_total": 0.1244,
+    "est_cost_usd_per_invoice": 0.0039,
+    "avg_latency_s": 3.51
+  },
+  "cases": [
+    {
+      "invoice_id": "NIS-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 538,
+      "tokens_out": 243
+    },
+    {
+      "invoice_id": "INV-2025-0101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 446,
+      "tokens_out": 178
+    },
+    {
+      "invoice_id": "MF/25/101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 487,
+      "tokens_out": 182
+    },
+    {
+      "invoice_id": "CCW-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 489,
+      "tokens_out": 183
+    },
+    {
+      "invoice_id": "HEC-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 481,
+      "tokens_out": 216
+    },
+    {
+      "invoice_id": "ALS-INV-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 525,
+      "tokens_out": 230
+    },
+    {
+      "invoice_id": "SOI-25-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 508,
+      "tokens_out": 208
+    },
+    {
+      "invoice_id": "GP-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 479,
+      "tokens_out": 214
+    },
+    {
+      "invoice_id": "VPL-2025-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 506,
+      "tokens_out": 232
+    },
+    {
+      "invoice_id": "AMT-101",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 485,
+      "tokens_out": 181
+    },
+    {
+      "invoice_id": "NIS-2025-104",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 527,
+      "tokens_out": 219
+    },
+    {
+      "invoice_id": "HEC-2025-104",
+      "gold": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "pred": {
+        "decision": "approve",
+        "discrepancies": []
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "All three-way-match checks passed.",
+      "tokens_in": 517,
+      "tokens_out": 256
+    },
+    {
+      "invoice_id": "MF/25/104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU MF-M8-50: billed 49.28 vs PO 44.00 (12.0% > 0.5% tolerance).",
+      "tokens_in": 551,
+      "tokens_out": 257
+    },
+    {
+      "invoice_id": "SOI-25-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU SO-CHR-T2: billed 204.12 vs PO 189.00 (8.0% > 0.5% tolerance).",
+      "tokens_in": 475,
+      "tokens_out": 171
+    },
+    {
+      "invoice_id": "AMT-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU AM-END-12: billed 78.43 vs PO 68.20 (15.0% > 0.5% tolerance).",
+      "tokens_in": 485,
+      "tokens_out": 181
+    },
+    {
+      "invoice_id": "INV-2025-0104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU BP-115: billed qty 38 > received 22 (summed across 1 GRN(s)). | SKU BP-201: billed qty 7 > received 4 (summed across 1 GRN(s)). | SKU BP-330: billed qty 7 > received 4 (summed across 1 GRN(s)).",
+      "tokens_in": 473,
+      "tokens_out": 210
+    },
+    {
+      "invoice_id": "HEC-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU HE-REL-24: billed qty 18 > received 10 (summed across 1 GRN(s)). | SKU HE-CB-20: billed qty 35 > received 21 (summed across 1 GRN(s)). | SKU HE-PSU-24: billed qty 40 > received 24 (summed across 1 GRN(s)). | SKU HE-CAB-14: billed qty 29 > received 17 (summed across 1 GRN(s)).",
+      "tokens_in": 517,
+      "tokens_out": 256
+    },
+    {
+      "invoice_id": "GP-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU GP-EAR-200: billed qty 30 > received 18 (summed across 1 GRN(s)). | SKU GP-BOOT-10: billed qty 35 > received 21 (summed across 1 GRN(s)). | SKU GP-VIS-XL: billed qty 30 > received 18 (summed across 1 GRN(s)).",
+      "tokens_in": 480,
+      "tokens_out": 213
+    },
+    {
+      "invoice_id": "CCW-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "No goods receipt notes exist for PO-2025-4119.",
+      "tokens_in": 518,
+      "tokens_out": 218
+    },
+    {
+      "invoice_id": "ALS-INV-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "GRN_MISSING"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "No goods receipt notes exist for PO-2025-4120.",
+      "tokens_in": 502,
+      "tokens_out": 202
+    },
+    {
+      "invoice_id": "INV-2025-0107",
+      "gold": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "pred": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Paid 2025-06-14 as INV-25-107 (2517.76 USD): same vendor + PO + amount already paid.",
+      "tokens_in": 475,
+      "tokens_out": 211
+    },
+    {
+      "invoice_id": "ALS-INV-107",
+      "gold": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "pred": {
+        "decision": "reject",
+        "discrepancies": [
+          "DUPLICATE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Paid 2025-07-02 as ALS-INV-107 (13741.75 USD): invoice number already paid (normalized match); same vendor + PO + amount already paid.",
+      "tokens_in": 527,
+      "tokens_out": 231
+    },
+    {
+      "invoice_id": "NIS-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Tax 388.27 != tax_rate 0.0725 x subtotal 4843.15 = 351.13 (tolerance $0.02).",
+      "tokens_in": 506,
+      "tokens_out": 206
+    },
+    {
+      "invoice_id": "VPL-2025-104",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Tax 2284.26 != tax_rate 0.1900 x subtotal 11745.60 = 2231.66 (tolerance $0.02).",
+      "tokens_in": 506,
+      "tokens_out": 232
+    },
+    {
+      "invoice_id": "SOI-25-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Line SO-CHR-T2: amount 3492.00 != qty 18 x unit price 189.00 = 3402.00.",
+      "tokens_in": 479,
+      "tokens_out": 175
+    },
+    {
+      "invoice_id": "MF/25/107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "TOTAL_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Line MF-M8-NUT: amount 1021.60 != qty 36 x unit price 27.60 = 993.60.",
+      "tokens_in": 553,
+      "tokens_out": 258
+    },
+    {
+      "invoice_id": "HEC-2025-110",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Remit-to account 7791024468 != vendor master 3348812706 \u2014 verify with vendor before payment.",
+      "tokens_in": 457,
+      "tokens_out": 186
+    },
+    {
+      "invoice_id": "GP-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Remit-to account 4456108823 != vendor master 2290156841 \u2014 verify with vendor before payment.",
+      "tokens_in": 446,
+      "tokens_out": 176
+    },
+    {
+      "invoice_id": "VPL-2025-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "CURRENCY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "CURRENCY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Invoice currency USD != PO currency EUR.",
+      "tokens_in": 533,
+      "tokens_out": 232
+    },
+    {
+      "invoice_id": "AMT-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PO_NOT_FOUND"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PO_NOT_FOUND"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "PO 'PO-2025-9911' not present in the PO system.",
+      "tokens_in": 550,
+      "tokens_out": 253
+    },
+    {
+      "invoice_id": "NIS-2025-110",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH",
+          "QTY_MISMATCH"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "PRICE_MISMATCH",
+          "QTY_MISMATCH"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "SKU NG-4410: billed 20.24 vs PO 18.40 (10.0% > 0.5% tolerance). | SKU NG-4410: billed qty 10 > received 5 (summed across 1 GRN(s)). | SKU NG-3305: billed qty 24 > received 12 (summed across 1 GRN(s)). | SKU NG-1180: billed qty 6 > received 3 (summed across 1 GRN(s)). | SKU NG-7720: billed qty 17 > received 8 (summed across 1 GRN(s)).",
+      "tokens_in": 538,
+      "tokens_out": 243
+    },
+    {
+      "invoice_id": "CCW-107",
+      "gold": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE",
+          "TAX_ERROR"
+        ]
+      },
+      "pred": {
+        "decision": "hold",
+        "discrepancies": [
+          "BANK_CHANGE",
+          "TAX_ERROR"
+        ]
+      },
+      "decision_correct": true,
+      "exact_match": true,
+      "explanation": "Tax 3300.50 != tax_rate 0.0950 x subtotal 34277.90 = 3256.40 (tolerance $0.02). | Remit-to account 6120087745 != vendor master 9027481133 \u2014 verify with vendor before payment.",
+      "tokens_in": 521,
+      "tokens_out": 220
+    }
+  ]
+}
