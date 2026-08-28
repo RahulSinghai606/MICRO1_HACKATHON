@@ -6,3 +6,5 @@ __pycache__/
 site/node_modules/
 site/.next/
 site/next-env.d.ts
+docs/demo/audio/
+docs/demo/rec/
