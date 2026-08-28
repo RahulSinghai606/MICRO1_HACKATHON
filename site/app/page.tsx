@@ -1,6 +1,8 @@
 import { CloudShader } from "@/components/cloud-shader";
 
 const REPO = "https://github.com/RahulSinghai606/MICRO1_HACKATHON";
+const HERO_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260803_192301_9231ed6b-c55c-4a48-909c-4ebe11cf2e11.mp4";
 
 const kpis = [
   { n: "100%", l: "decision accuracy", s: "vs 81.3% single-prompt baseline" },
@@ -36,20 +38,18 @@ function ArrowIcon() {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#070b14] text-white antialiased">
+    <main className="min-h-screen bg-[#05070d] text-white antialiased">
       {/* ---------- HERO ---------- */}
       <section className="relative h-screen w-full overflow-hidden">
-        <div className="absolute inset-0">
-          <CloudShader
-            className="h-full w-full"
-            speed={0.8}
-            count={6}
-            cloudColor="#8fa3c4"
-            skyTopColor="#070b14"
-            skyBottomColor="#1a2740"
-          />
-        </div>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070b14] via-transparent to-transparent" />
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={HERO_VIDEO}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#05070d] via-black/20 to-transparent" />
 
         <div className="relative z-10 flex h-full flex-col px-5 sm:px-8 lg:px-12">
           <nav className="flex items-center justify-between py-6">
@@ -84,12 +84,12 @@ export default function Home() {
               <p className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white/70 backdrop-blur-lg">
                 micro1 Agentic Workflows Hackathon
               </p>
-              <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.6rem]">
+              <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight drop-shadow-[0_2px_20px_rgba(0,0,0,0.75)] sm:text-5xl lg:text-[3.6rem]">
                 Agents that close the books.
                 <br />
-                <span className="text-white/60">Humans that sign them.</span>
+                <span className="text-emerald-300/90">Humans that sign them.</span>
               </h1>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-white/70">
+              <p className="mt-5 max-w-xl text-base leading-relaxed text-white/85 drop-shadow-[0_1px_8px_rgba(0,0,0,0.8)]">
                 Matchpoint three-way-matches supplier invoices against purchase orders and
                 goods receipts — catching the arithmetic errors, phantom deliveries, duplicates
                 and swapped bank accounts that a single LLM prompt silently approves.
@@ -113,16 +113,16 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row lg:gap-5">
-              <div className="flex flex-col justify-between rounded-2xl bg-white/10 p-5 backdrop-blur-lg sm:w-64 sm:p-6">
-                <div className="text-4xl font-semibold tracking-tight">0 / 20</div>
+              <div className="flex flex-col justify-between rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-xl sm:w-64 sm:p-6">
+                <div className="text-4xl font-semibold tracking-tight text-emerald-300">0 / 20</div>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
                   defective invoices slipped through the final agent — the baseline approved 6 of
                   them, including every arithmetic error.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/10 p-5 backdrop-blur-lg sm:w-64 sm:p-6">
+              <div className="rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-xl sm:w-64 sm:p-6">
                 <div className="mb-3 flex items-center gap-2">
-                  <div className="flex h-6 w-6 items-center justify-center rounded bg-black text-xs font-bold">M</div>
+                  <div className="flex h-6 w-6 items-center justify-center rounded bg-emerald-400 text-xs font-bold text-black">M</div>
                   <span className="text-sm font-semibold">The audit packet</span>
                 </div>
                 <p className="text-sm leading-relaxed text-white/80">
@@ -144,8 +144,8 @@ export default function Home() {
             ["9.2 days", "average invoice cycle time; over 60% of invoices still need human touch", "Ardent Partners 2025"],
             ["76%", "of US organizations hit by payments fraud in 2025 — over a third of attacks are fake bank-change requests", "AFP Payments Fraud Survey 2026"],
           ].map(([n, l, s]) => (
-            <div key={l} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="text-3xl font-semibold tracking-tight">{n}</div>
+            <div key={l} className="rounded-2xl border border-white/15 bg-white/[0.07] p-6">
+              <div className="text-3xl font-semibold tracking-tight text-emerald-300">{n}</div>
               <p className="mt-2 text-sm leading-relaxed text-white/70">{l}</p>
               <p className="mt-3 text-xs text-white/40">{s}</p>
             </div>
@@ -179,7 +179,18 @@ export default function Home() {
       </section>
 
       {/* ---------- RESULTS ---------- */}
-      <section id="results" className="mx-auto max-w-5xl px-5 py-24 sm:px-8">
+      <section id="results" className="relative overflow-hidden py-24">
+        <div className="absolute inset-0 opacity-50">
+          <CloudShader
+            className="h-full w-full"
+            speed={0.6}
+            count={4}
+            cloudColor="#3d4f6e"
+            skyTopColor="#05070d"
+            skyBottomColor="#0d1526"
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Measured, not vibes</h2>
         <p className="mt-3 max-w-3xl text-white/70">
           Same 32 gold-labeled invoices, same model, same written AP policy for baseline and agent.
@@ -223,6 +234,7 @@ export default function Home() {
               ))}
             </tbody>
           </table>
+        </div>
         </div>
       </section>
 
