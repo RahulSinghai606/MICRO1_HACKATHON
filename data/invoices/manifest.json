@@ -1,0 +1,130 @@
+[
+  {
+    "invoice_id": "NIS-2025-101",
+    "png": "data/invoices/png/NIS-2025-101.png"
+  },
+  {
+    "invoice_id": "INV-2025-0101",
+    "png": "data/invoices/png/INV-2025-0101.png"
+  },
+  {
+    "invoice_id": "MF/25/101",
+    "png": "data/invoices/png/MF_25_101.png"
+  },
+  {
+    "invoice_id": "CCW-101",
+    "png": "data/invoices/png/CCW-101.png"
+  },
+  {
+    "invoice_id": "HEC-2025-101",
+    "png": "data/invoices/png/HEC-2025-101.png"
+  },
+  {
+    "invoice_id": "ALS-INV-101",
+    "png": "data/invoices/png/ALS-INV-101.png"
+  },
+  {
+    "invoice_id": "SOI-25-101",
+    "png": "data/invoices/png/SOI-25-101.png"
+  },
+  {
+    "invoice_id": "GP-101",
+    "png": "data/invoices/png/GP-101.png"
+  },
+  {
+    "invoice_id": "VPL-2025-101",
+    "png": "data/invoices/png/VPL-2025-101.png"
+  },
+  {
+    "invoice_id": "AMT-101",
+    "png": "data/invoices/png/AMT-101.png"
+  },
+  {
+    "invoice_id": "NIS-2025-104",
+    "png": "data/invoices/png/NIS-2025-104.png"
+  },
+  {
+    "invoice_id": "HEC-2025-104",
+    "png": "data/invoices/png/HEC-2025-104.png"
+  },
+  {
+    "invoice_id": "MF/25/104",
+    "png": "data/invoices/png/MF_25_104.png"
+  },
+  {
+    "invoice_id": "SOI-25-104",
+    "png": "data/invoices/png/SOI-25-104.png"
+  },
+  {
+    "invoice_id": "AMT-104",
+    "png": "data/invoices/png/AMT-104.png"
+  },
+  {
+    "invoice_id": "INV-2025-0104",
+    "png": "data/invoices/png/INV-2025-0104.png"
+  },
+  {
+    "invoice_id": "HEC-2025-107",
+    "png": "data/invoices/png/HEC-2025-107.png"
+  },
+  {
+    "invoice_id": "GP-104",
+    "png": "data/invoices/png/GP-104.png"
+  },
+  {
+    "invoice_id": "CCW-104",
+    "png": "data/invoices/png/CCW-104.png"
+  },
+  {
+    "invoice_id": "ALS-INV-104",
+    "png": "data/invoices/png/ALS-INV-104.png"
+  },
+  {
+    "invoice_id": "INV-2025-0107",
+    "png": "data/invoices/png/INV-2025-0107.png"
+  },
+  {
+    "invoice_id": "ALS-INV-107",
+    "png": "data/invoices/png/ALS-INV-107.png"
+  },
+  {
+    "invoice_id": "NIS-2025-107",
+    "png": "data/invoices/png/NIS-2025-107.png"
+  },
+  {
+    "invoice_id": "VPL-2025-104",
+    "png": "data/invoices/png/VPL-2025-104.png"
+  },
+  {
+    "invoice_id": "SOI-25-107",
+    "png": "data/invoices/png/SOI-25-107.png"
+  },
+  {
+    "invoice_id": "MF/25/107",
+    "png": "data/invoices/png/MF_25_107.png"
+  },
+  {
+    "invoice_id": "HEC-2025-110",
+    "png": "data/invoices/png/HEC-2025-110.png"
+  },
+  {
+    "invoice_id": "GP-107",
+    "png": "data/invoices/png/GP-107.png"
+  },
+  {
+    "invoice_id": "VPL-2025-107",
+    "png": "data/invoices/png/VPL-2025-107.png"
+  },
+  {
+    "invoice_id": "AMT-107",
+    "png": "data/invoices/png/AMT-107.png"
+  },
+  {
+    "invoice_id": "NIS-2025-110",
+    "png": "data/invoices/png/NIS-2025-110.png"
+  },
+  {
+    "invoice_id": "CCW-107",
+    "png": "data/invoices/png/CCW-107.png"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "vendor_id": "V01",
+    "name": "Northgate Industrial Supply LLC",
+    "city": "Columbus, OH",
+    "currency": "USD",
+    "payment_terms": "Net 60",
+    "bank_name": "First Commerce Bank",
+    "bank_routing": "021000021",
+    "bank_account": "4402198837",
+    "tax_rate": 0.0725
+  },
+  {
+    "vendor_id": "V02",
+    "name": "Bluefin Packaging Co.",
+    "city": "Savannah, GA",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "Coastal Georgia Bank",
+    "bank_routing": "061000104",
+    "bank_account": "7719045512",
+    "tax_rate": 0.07
+  },
+  {
+    "vendor_id": "V03",
+    "name": "Meridian Fasteners Inc.",
+    "city": "Erie, PA",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "Keystone National",
+    "bank_routing": "031000503",
+    "bank_account": "5583920164",
+    "tax_rate": 0.06
+  },
+  {
+    "vendor_id": "V04",
+    "name": "Cascadia Chemical Works",
+    "city": "Tacoma, WA",
+    "currency": "USD",
+    "payment_terms": "Net 60",
+    "bank_name": "Puget Sound Trust",
+    "bank_routing": "125000024",
+    "bank_account": "9027481133",
+    "tax_rate": 0.095
+  },
+  {
+    "vendor_id": "V05",
+    "name": "Helios Electrical Components",
+    "city": "Tucson, AZ",
+    "currency": "USD",
+    "payment_terms": "Net 45",
+    "bank_name": "Desert West Bank",
+    "bank_routing": "122100024",
+    "bank_account": "3348812706",
+    "tax_rate": 0.086
+  },
+  {
+    "vendor_id": "V06",
+    "name": "Auriga Logistics Services",
+    "city": "Memphis, TN",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "River City Bank",
+    "bank_routing": "084000026",
+    "bank_account": "6650371928",
+    "tax_rate": 0.0
+  },
+  {
+    "vendor_id": "V07",
+    "name": "Stellar Office Interiors",
+    "city": "Denver, CO",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "Front Range Credit Union",
+    "bank_routing": "107000233",
+    "bank_account": "8812204575",
+    "tax_rate": 0.081
+  },
+  {
+    "vendor_id": "V08",
+    "name": "Granite Peak Safety Gear",
+    "city": "Boise, ID",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "Sawtooth Community Bank",
+    "bank_routing": "123103729",
+    "bank_account": "2290156841",
+    "tax_rate": 0.06
+  },
+  {
+    "vendor_id": "V09",
+    "name": "Vireo Print & Label GmbH",
+    "city": "Hamburg, DE",
+    "currency": "EUR",
+    "payment_terms": "Net 60",
+    "bank_name": "Hansa Handelsbank",
+    "bank_routing": "DE44 5001 0517",
+    "bank_account": "5407 3249 31",
+    "tax_rate": 0.19
+  },
+  {
+    "vendor_id": "V10",
+    "name": "Ashford Machine Tools Ltd.",
+    "city": "Sheffield, UK",
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "bank_name": "Pennine & Yorkshire Bank",
+    "bank_routing": "GB29 NWBK 6016",
+    "bank_account": "1331 9268 19",
+    "tax_rate": 0.0
+  }
+]

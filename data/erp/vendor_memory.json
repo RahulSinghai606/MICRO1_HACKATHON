@@ -1,0 +1,22 @@
+{
+  "V01": {
+    "known_aliases": [
+      "Northgate Ind. Supply (a div. of NIS Holdings)",
+      "NIS Holdings LLC",
+      "Northgate Industrial"
+    ],
+    "notes": "Invoices under NIS Holdings trade names since 2024 reorg. Split deliveries common."
+  },
+  "V02": {
+    "known_aliases": [
+      "Bluefin Packaging Company"
+    ],
+    "notes": "Re-issued invoices previously arrived with reformatted numbers (INV-25-xxx vs INV-2025-0xxx)."
+  },
+  "V09": {
+    "known_aliases": [
+      "Vireo Print and Label"
+    ],
+    "notes": "Always bills in EUR. Any USD invoice from this vendor is anomalous."
+  }
+}
