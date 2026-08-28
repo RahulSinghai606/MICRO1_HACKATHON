@@ -1,0 +1,762 @@
+[
+  {
+    "grn_number": "GRN-88301",
+    "po_number": "PO-2025-4101",
+    "date": "2025-05-06",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "qty_received": 38
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-1180",
+        "qty_received": 25
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-4410",
+        "qty_received": 37
+      },
+      {
+        "line_no": 4,
+        "sku": "NG-7720",
+        "qty_received": 29
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88302",
+    "po_number": "PO-2025-4102",
+    "date": "2025-04-17",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-201",
+        "qty_received": 11
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-115",
+        "qty_received": 8
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88303",
+    "po_number": "PO-2025-4103",
+    "date": "2025-06-02",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-W-8",
+        "qty_received": 26
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-ANC-10",
+        "qty_received": 6
+      },
+      {
+        "line_no": 3,
+        "sku": "MF-M8-50",
+        "qty_received": 5
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88304",
+    "po_number": "PO-2025-4104",
+    "date": "2025-06-04",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "CC-DEG-5",
+        "qty_received": 6
+      },
+      {
+        "line_no": 2,
+        "sku": "CC-COOL-55",
+        "qty_received": 35
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88305",
+    "po_number": "PO-2025-4105",
+    "date": "2025-04-25",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-PSU-24",
+        "qty_received": 35
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CAB-14",
+        "qty_received": 30
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-REL-24",
+        "qty_received": 12
+      },
+      {
+        "line_no": 4,
+        "sku": "HE-CB-20",
+        "qty_received": 10
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88306",
+    "po_number": "PO-2025-4106",
+    "date": "2025-06-12",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-LIFT",
+        "qty_received": 37
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-FUEL",
+        "qty_received": 9
+      },
+      {
+        "line_no": 3,
+        "sku": "AL-LTL-STD",
+        "qty_received": 21
+      },
+      {
+        "line_no": 4,
+        "sku": "AL-WHS-P",
+        "qty_received": 33
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88307",
+    "po_number": "PO-2025-4107",
+    "date": "2025-06-24",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-FIL-3D",
+        "qty_received": 24
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-MON-ARM",
+        "qty_received": 10
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-CHR-T2",
+        "qty_received": 7
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88308",
+    "po_number": "PO-2025-4108",
+    "date": "2025-04-01",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-HH-CL2",
+        "qty_received": 30
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-BOOT-10",
+        "qty_received": 39
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-VIS-XL",
+        "qty_received": 4
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88309",
+    "po_number": "PO-2025-4109",
+    "date": "2025-06-18",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-LBL-4x6",
+        "qty_received": 23
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-RIB-110",
+        "qty_received": 9
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88310",
+    "po_number": "PO-2025-4110",
+    "date": "2025-04-22",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-INS-CNMG",
+        "qty_received": 4
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-VIS-6",
+        "qty_received": 7
+      },
+      {
+        "line_no": 3,
+        "sku": "AM-CHK-125",
+        "qty_received": 15
+      },
+      {
+        "line_no": 4,
+        "sku": "AM-END-12",
+        "qty_received": 27
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88311",
+    "po_number": "PO-2025-4111",
+    "date": "2025-04-23",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "qty_received": 2
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-7720",
+        "qty_received": 6
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-1180",
+        "qty_received": 18
+      },
+      {
+        "line_no": 4,
+        "sku": "NG-4410",
+        "qty_received": 6
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88312",
+    "po_number": "PO-2025-4111",
+    "date": "2025-04-23",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "qty_received": 3
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-7720",
+        "qty_received": 7
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-1180",
+        "qty_received": 18
+      },
+      {
+        "line_no": 4,
+        "sku": "NG-4410",
+        "qty_received": 7
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88313",
+    "po_number": "PO-2025-4112",
+    "date": "2025-04-13",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-CAB-14",
+        "qty_received": 24
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CB-20",
+        "qty_received": 14
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88314",
+    "po_number": "PO-2025-4113",
+    "date": "2025-04-01",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-ANC-10",
+        "qty_received": 5
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-W-8",
+        "qty_received": 8
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88315",
+    "po_number": "PO-2025-4114",
+    "date": "2025-04-01",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-MON-ARM",
+        "qty_received": 30
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-CHR-T2",
+        "qty_received": 27
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-FIL-3D",
+        "qty_received": 11
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88316",
+    "po_number": "PO-2025-4115",
+    "date": "2025-05-14",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-END-12",
+        "qty_received": 28
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-CHK-125",
+        "qty_received": 14
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88317",
+    "po_number": "PO-2025-4116",
+    "date": "2025-05-18",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-450",
+        "qty_received": 13
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-201",
+        "qty_received": 13
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88318",
+    "po_number": "PO-2025-4117",
+    "date": "2025-05-23",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-REL-24",
+        "qty_received": 10
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CAB-14",
+        "qty_received": 2
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-CB-20",
+        "qty_received": 4
+      },
+      {
+        "line_no": 4,
+        "sku": "HE-PSU-24",
+        "qty_received": 11
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88319",
+    "po_number": "PO-2025-4118",
+    "date": "2025-05-21",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-HH-CL2",
+        "qty_received": 13
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-VIS-XL",
+        "qty_received": 9
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-BOOT-10",
+        "qty_received": 1
+      },
+      {
+        "line_no": 4,
+        "sku": "GP-EAR-200",
+        "qty_received": 9
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88320",
+    "po_number": "PO-2025-4121",
+    "date": "2025-05-10",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-115",
+        "qty_received": 18
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-201",
+        "qty_received": 12
+      },
+      {
+        "line_no": 3,
+        "sku": "BP-330",
+        "qty_received": 33
+      },
+      {
+        "line_no": 4,
+        "sku": "BP-450",
+        "qty_received": 31
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88321",
+    "po_number": "PO-2025-4122",
+    "date": "2025-05-12",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-WHS-P",
+        "qty_received": 33
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-LIFT",
+        "qty_received": 10
+      },
+      {
+        "line_no": 3,
+        "sku": "AL-FUEL",
+        "qty_received": 9
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88322",
+    "po_number": "PO-2025-4123",
+    "date": "2025-05-27",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "qty_received": 30
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-1180",
+        "qty_received": 22
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88323",
+    "po_number": "PO-2025-4124",
+    "date": "2025-05-17",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-LBL-4x6",
+        "qty_received": 29
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-TAG-ASSET",
+        "qty_received": 17
+      },
+      {
+        "line_no": 3,
+        "sku": "VP-RIB-110",
+        "qty_received": 39
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88324",
+    "po_number": "PO-2025-4125",
+    "date": "2025-06-23",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-DSK-60",
+        "qty_received": 10
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-CHR-T2",
+        "qty_received": 13
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-MON-ARM",
+        "qty_received": 39
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88325",
+    "po_number": "PO-2025-4126",
+    "date": "2025-05-05",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-ANC-10",
+        "qty_received": 18
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-W-8",
+        "qty_received": 8
+      },
+      {
+        "line_no": 3,
+        "sku": "MF-M8-50",
+        "qty_received": 34
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88326",
+    "po_number": "PO-2025-4127",
+    "date": "2025-06-17",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-CAB-14",
+        "qty_received": 8
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-PSU-24",
+        "qty_received": 11
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-REL-24",
+        "qty_received": 38
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88327",
+    "po_number": "PO-2025-4128",
+    "date": "2025-06-04",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-EAR-200",
+        "qty_received": 37
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-BOOT-10",
+        "qty_received": 32
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-VIS-XL",
+        "qty_received": 36
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88328",
+    "po_number": "PO-2025-4129",
+    "date": "2025-05-23",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-TAG-ASSET",
+        "qty_received": 20
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-RIB-110",
+        "qty_received": 8
+      },
+      {
+        "line_no": 3,
+        "sku": "VP-LBL-4x6",
+        "qty_received": 15
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88329",
+    "po_number": "PO-2025-4130",
+    "date": "2025-05-02",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-INS-CNMG",
+        "qty_received": 24
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-VIS-6",
+        "qty_received": 2
+      },
+      {
+        "line_no": 3,
+        "sku": "AM-END-12",
+        "qty_received": 7
+      },
+      {
+        "line_no": 4,
+        "sku": "AM-CHK-125",
+        "qty_received": 18
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88330",
+    "po_number": "PO-2025-4131",
+    "date": "2025-05-15",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-7720",
+        "qty_received": 7
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-4410",
+        "qty_received": 11
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-3305",
+        "qty_received": 4
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88331",
+    "po_number": "PO-2025-4132",
+    "date": "2025-04-02",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "CC-COOL-55",
+        "qty_received": 8
+      },
+      {
+        "line_no": 2,
+        "sku": "CC-IPA-55",
+        "qty_received": 14
+      },
+      {
+        "line_no": 3,
+        "sku": "CC-DEG-5",
+        "qty_received": 15
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88332",
+    "po_number": "PO-2025-4133",
+    "date": "2025-04-20",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-4410",
+        "qty_received": 21
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-3305",
+        "qty_received": 3
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88333",
+    "po_number": "PO-2025-4134",
+    "date": "2025-06-06",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-M8-NUT",
+        "qty_received": 19
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-ANC-10",
+        "qty_received": 27
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88334",
+    "po_number": "PO-2025-4135",
+    "date": "2025-06-14",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-FUEL",
+        "qty_received": 22
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-LIFT",
+        "qty_received": 33
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-88335",
+    "po_number": "PO-2025-4136",
+    "date": "2025-05-19",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-RIB-110",
+        "qty_received": 23
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-TAG-ASSET",
+        "qty_received": 31
+      }
+    ]
+  }
+]

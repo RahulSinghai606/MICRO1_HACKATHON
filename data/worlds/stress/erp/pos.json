@@ -1,0 +1,1068 @@
+[
+  {
+    "po_number": "PO-2025-4101",
+    "vendor_id": "V01",
+    "date": "2025-05-06",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "description": "Absorbent pads, case",
+        "qty": 38,
+        "unit_price": 42.5
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-1180",
+        "description": "Steel shelving unit 72in",
+        "qty": 25,
+        "unit_price": 149.0
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-4410",
+        "description": "Nitrile work gloves, box of 100",
+        "qty": 37,
+        "unit_price": 18.4
+      },
+      {
+        "line_no": 4,
+        "sku": "NG-7720",
+        "description": "Safety goggles, anti-fog",
+        "qty": 29,
+        "unit_price": 6.95
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4102",
+    "vendor_id": "V02",
+    "date": "2025-04-17",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-201",
+        "description": "Corrugated boxes 18x12x10, bundle 25",
+        "qty": 11,
+        "unit_price": 31.25
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-115",
+        "description": "Stretch wrap roll 80ga",
+        "qty": 8,
+        "unit_price": 12.8
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4103",
+    "vendor_id": "V03",
+    "date": "2025-06-02",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-W-8",
+        "description": "Flat washers 8mm, box 1000",
+        "qty": 26,
+        "unit_price": 15.3
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-ANC-10",
+        "description": "Concrete anchors 10mm, box 100",
+        "qty": 6,
+        "unit_price": 62.75
+      },
+      {
+        "line_no": 3,
+        "sku": "MF-M8-50",
+        "description": "Hex bolts M8x50 zinc, box 500",
+        "qty": 5,
+        "unit_price": 44.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4104",
+    "vendor_id": "V04",
+    "date": "2025-06-04",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "CC-DEG-5",
+        "description": "Industrial degreaser, 5gal",
+        "qty": 6,
+        "unit_price": 87.4
+      },
+      {
+        "line_no": 2,
+        "sku": "CC-COOL-55",
+        "description": "Machine coolant concentrate, 55gal",
+        "qty": 35,
+        "unit_price": 744.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4105",
+    "vendor_id": "V05",
+    "date": "2025-04-25",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-PSU-24",
+        "description": "PSU 24V 10A DIN rail",
+        "qty": 35,
+        "unit_price": 96.3
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CAB-14",
+        "description": "Copper cable 14AWG, 500ft spool",
+        "qty": 30,
+        "unit_price": 118.0
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-REL-24",
+        "description": "Relay 24VDC 8-pin",
+        "qty": 12,
+        "unit_price": 14.2
+      },
+      {
+        "line_no": 4,
+        "sku": "HE-CB-20",
+        "description": "Circuit breaker 20A DIN",
+        "qty": 10,
+        "unit_price": 9.85
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4106",
+    "vendor_id": "V06",
+    "date": "2025-06-12",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-LIFT",
+        "description": "Liftgate service",
+        "qty": 37,
+        "unit_price": 45.0
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-FUEL",
+        "description": "Fuel surcharge",
+        "qty": 9,
+        "unit_price": 63.75
+      },
+      {
+        "line_no": 3,
+        "sku": "AL-LTL-STD",
+        "description": "LTL freight, standard lane",
+        "qty": 21,
+        "unit_price": 425.0
+      },
+      {
+        "line_no": 4,
+        "sku": "AL-WHS-P",
+        "description": "Warehouse handling, per pallet",
+        "qty": 33,
+        "unit_price": 18.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4107",
+    "vendor_id": "V07",
+    "date": "2025-06-24",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-FIL-3D",
+        "description": "File cabinet 3-drawer",
+        "qty": 24,
+        "unit_price": 156.8
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-MON-ARM",
+        "description": "Dual monitor arm",
+        "qty": 10,
+        "unit_price": 74.25
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-CHR-T2",
+        "description": "Task chair, mesh back",
+        "qty": 7,
+        "unit_price": 189.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4108",
+    "vendor_id": "V08",
+    "date": "2025-04-01",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-HH-CL2",
+        "description": "Hard hats class E, box 20",
+        "qty": 30,
+        "unit_price": 196.0
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-BOOT-10",
+        "description": "Steel toe boots size 10",
+        "qty": 39,
+        "unit_price": 112.0
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-VIS-XL",
+        "description": "Hi-vis vests XL, pack 10",
+        "qty": 4,
+        "unit_price": 84.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4109",
+    "vendor_id": "V09",
+    "date": "2025-06-18",
+    "currency": "EUR",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-LBL-4x6",
+        "description": "Thermal labels 4x6, roll 500",
+        "qty": 23,
+        "unit_price": 21.4
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-RIB-110",
+        "description": "TTR ribbon 110mm",
+        "qty": 9,
+        "unit_price": 9.6
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4110",
+    "vendor_id": "V10",
+    "date": "2025-04-22",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-INS-CNMG",
+        "description": "Turning inserts CNMG, box 10",
+        "qty": 4,
+        "unit_price": 94.8
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-VIS-6",
+        "description": "Machine vise 6in",
+        "qty": 7,
+        "unit_price": 289.0
+      },
+      {
+        "line_no": 3,
+        "sku": "AM-CHK-125",
+        "description": "Lathe chuck 125mm",
+        "qty": 15,
+        "unit_price": 412.6
+      },
+      {
+        "line_no": 4,
+        "sku": "AM-END-12",
+        "description": "End mill 12mm carbide",
+        "qty": 27,
+        "unit_price": 68.2
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4111",
+    "vendor_id": "V01",
+    "date": "2025-04-23",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "description": "Absorbent pads, case",
+        "qty": 5,
+        "unit_price": 42.5
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-7720",
+        "description": "Safety goggles, anti-fog",
+        "qty": 13,
+        "unit_price": 6.95
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-1180",
+        "description": "Steel shelving unit 72in",
+        "qty": 36,
+        "unit_price": 149.0
+      },
+      {
+        "line_no": 4,
+        "sku": "NG-4410",
+        "description": "Nitrile work gloves, box of 100",
+        "qty": 13,
+        "unit_price": 18.4
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4112",
+    "vendor_id": "V05",
+    "date": "2025-04-13",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-CAB-14",
+        "description": "Copper cable 14AWG, 500ft spool",
+        "qty": 24,
+        "unit_price": 118.0
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CB-20",
+        "description": "Circuit breaker 20A DIN",
+        "qty": 14,
+        "unit_price": 9.85
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4113",
+    "vendor_id": "V03",
+    "date": "2025-04-01",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-ANC-10",
+        "description": "Concrete anchors 10mm, box 100",
+        "qty": 5,
+        "unit_price": 62.75
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-W-8",
+        "description": "Flat washers 8mm, box 1000",
+        "qty": 8,
+        "unit_price": 15.3
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4114",
+    "vendor_id": "V07",
+    "date": "2025-04-01",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-MON-ARM",
+        "description": "Dual monitor arm",
+        "qty": 30,
+        "unit_price": 74.25
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-CHR-T2",
+        "description": "Task chair, mesh back",
+        "qty": 27,
+        "unit_price": 189.0
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-FIL-3D",
+        "description": "File cabinet 3-drawer",
+        "qty": 11,
+        "unit_price": 156.8
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4115",
+    "vendor_id": "V10",
+    "date": "2025-05-14",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-END-12",
+        "description": "End mill 12mm carbide",
+        "qty": 28,
+        "unit_price": 68.2
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-CHK-125",
+        "description": "Lathe chuck 125mm",
+        "qty": 14,
+        "unit_price": 412.6
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4116",
+    "vendor_id": "V02",
+    "date": "2025-05-18",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-450",
+        "description": "Foam inserts, custom cut",
+        "qty": 23,
+        "unit_price": 4.15
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-201",
+        "description": "Corrugated boxes 18x12x10, bundle 25",
+        "qty": 22,
+        "unit_price": 31.25
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4117",
+    "vendor_id": "V05",
+    "date": "2025-05-23",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-REL-24",
+        "description": "Relay 24VDC 8-pin",
+        "qty": 17,
+        "unit_price": 14.2
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-CAB-14",
+        "description": "Copper cable 14AWG, 500ft spool",
+        "qty": 4,
+        "unit_price": 118.0
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-CB-20",
+        "description": "Circuit breaker 20A DIN",
+        "qty": 7,
+        "unit_price": 9.85
+      },
+      {
+        "line_no": 4,
+        "sku": "HE-PSU-24",
+        "description": "PSU 24V 10A DIN rail",
+        "qty": 19,
+        "unit_price": 96.3
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4118",
+    "vendor_id": "V08",
+    "date": "2025-05-21",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-HH-CL2",
+        "description": "Hard hats class E, box 20",
+        "qty": 22,
+        "unit_price": 196.0
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-VIS-XL",
+        "description": "Hi-vis vests XL, pack 10",
+        "qty": 16,
+        "unit_price": 84.5
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-BOOT-10",
+        "description": "Steel toe boots size 10",
+        "qty": 2,
+        "unit_price": 112.0
+      },
+      {
+        "line_no": 4,
+        "sku": "GP-EAR-200",
+        "description": "Ear plugs, box 200 pr",
+        "qty": 15,
+        "unit_price": 38.9
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4119",
+    "vendor_id": "V04",
+    "date": "2025-06-18",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "CC-COOL-55",
+        "description": "Machine coolant concentrate, 55gal",
+        "qty": 32,
+        "unit_price": 744.5
+      },
+      {
+        "line_no": 2,
+        "sku": "CC-DEG-5",
+        "description": "Industrial degreaser, 5gal",
+        "qty": 30,
+        "unit_price": 87.4
+      },
+      {
+        "line_no": 3,
+        "sku": "CC-IPA-55",
+        "description": "Isopropyl alcohol 99%, 55gal drum",
+        "qty": 21,
+        "unit_price": 612.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4120",
+    "vendor_id": "V06",
+    "date": "2025-06-04",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-WHS-P",
+        "description": "Warehouse handling, per pallet",
+        "qty": 15,
+        "unit_price": 18.5
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-LIFT",
+        "description": "Liftgate service",
+        "qty": 11,
+        "unit_price": 45.0
+      },
+      {
+        "line_no": 3,
+        "sku": "AL-FUEL",
+        "description": "Fuel surcharge",
+        "qty": 40,
+        "unit_price": 63.75
+      },
+      {
+        "line_no": 4,
+        "sku": "AL-LTL-STD",
+        "description": "LTL freight, standard lane",
+        "qty": 3,
+        "unit_price": 425.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4121",
+    "vendor_id": "V02",
+    "date": "2025-05-10",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "BP-115",
+        "description": "Stretch wrap roll 80ga",
+        "qty": 18,
+        "unit_price": 12.8
+      },
+      {
+        "line_no": 2,
+        "sku": "BP-201",
+        "description": "Corrugated boxes 18x12x10, bundle 25",
+        "qty": 12,
+        "unit_price": 31.25
+      },
+      {
+        "line_no": 3,
+        "sku": "BP-330",
+        "description": "Packing tape, case of 36",
+        "qty": 33,
+        "unit_price": 58.9
+      },
+      {
+        "line_no": 4,
+        "sku": "BP-450",
+        "description": "Foam inserts, custom cut",
+        "qty": 31,
+        "unit_price": 4.15
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4122",
+    "vendor_id": "V06",
+    "date": "2025-05-12",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-WHS-P",
+        "description": "Warehouse handling, per pallet",
+        "qty": 33,
+        "unit_price": 18.5
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-LIFT",
+        "description": "Liftgate service",
+        "qty": 10,
+        "unit_price": 45.0
+      },
+      {
+        "line_no": 3,
+        "sku": "AL-FUEL",
+        "description": "Fuel surcharge",
+        "qty": 9,
+        "unit_price": 63.75
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4123",
+    "vendor_id": "V01",
+    "date": "2025-05-27",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-3305",
+        "description": "Absorbent pads, case",
+        "qty": 30,
+        "unit_price": 42.5
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-1180",
+        "description": "Steel shelving unit 72in",
+        "qty": 22,
+        "unit_price": 149.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4124",
+    "vendor_id": "V09",
+    "date": "2025-05-17",
+    "currency": "EUR",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-LBL-4x6",
+        "description": "Thermal labels 4x6, roll 500",
+        "qty": 29,
+        "unit_price": 21.4
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-TAG-ASSET",
+        "description": "Asset tags, custom, 1000",
+        "qty": 17,
+        "unit_price": 340.0
+      },
+      {
+        "line_no": 3,
+        "sku": "VP-RIB-110",
+        "description": "TTR ribbon 110mm",
+        "qty": 39,
+        "unit_price": 9.6
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4125",
+    "vendor_id": "V07",
+    "date": "2025-06-23",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "SO-DSK-60",
+        "description": "Sit-stand desk 60in",
+        "qty": 10,
+        "unit_price": 415.0
+      },
+      {
+        "line_no": 2,
+        "sku": "SO-CHR-T2",
+        "description": "Task chair, mesh back",
+        "qty": 13,
+        "unit_price": 189.0
+      },
+      {
+        "line_no": 3,
+        "sku": "SO-MON-ARM",
+        "description": "Dual monitor arm",
+        "qty": 39,
+        "unit_price": 74.25
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4126",
+    "vendor_id": "V03",
+    "date": "2025-05-05",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-ANC-10",
+        "description": "Concrete anchors 10mm, box 100",
+        "qty": 18,
+        "unit_price": 62.75
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-W-8",
+        "description": "Flat washers 8mm, box 1000",
+        "qty": 8,
+        "unit_price": 15.3
+      },
+      {
+        "line_no": 3,
+        "sku": "MF-M8-50",
+        "description": "Hex bolts M8x50 zinc, box 500",
+        "qty": 34,
+        "unit_price": 44.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4127",
+    "vendor_id": "V05",
+    "date": "2025-06-17",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "HE-CAB-14",
+        "description": "Copper cable 14AWG, 500ft spool",
+        "qty": 8,
+        "unit_price": 118.0
+      },
+      {
+        "line_no": 2,
+        "sku": "HE-PSU-24",
+        "description": "PSU 24V 10A DIN rail",
+        "qty": 11,
+        "unit_price": 96.3
+      },
+      {
+        "line_no": 3,
+        "sku": "HE-REL-24",
+        "description": "Relay 24VDC 8-pin",
+        "qty": 38,
+        "unit_price": 14.2
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4128",
+    "vendor_id": "V08",
+    "date": "2025-06-04",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "GP-EAR-200",
+        "description": "Ear plugs, box 200 pr",
+        "qty": 37,
+        "unit_price": 38.9
+      },
+      {
+        "line_no": 2,
+        "sku": "GP-BOOT-10",
+        "description": "Steel toe boots size 10",
+        "qty": 32,
+        "unit_price": 112.0
+      },
+      {
+        "line_no": 3,
+        "sku": "GP-VIS-XL",
+        "description": "Hi-vis vests XL, pack 10",
+        "qty": 36,
+        "unit_price": 84.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4129",
+    "vendor_id": "V09",
+    "date": "2025-05-23",
+    "currency": "EUR",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-TAG-ASSET",
+        "description": "Asset tags, custom, 1000",
+        "qty": 20,
+        "unit_price": 340.0
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-RIB-110",
+        "description": "TTR ribbon 110mm",
+        "qty": 8,
+        "unit_price": 9.6
+      },
+      {
+        "line_no": 3,
+        "sku": "VP-LBL-4x6",
+        "description": "Thermal labels 4x6, roll 500",
+        "qty": 15,
+        "unit_price": 21.4
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4130",
+    "vendor_id": "V10",
+    "date": "2025-05-02",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AM-INS-CNMG",
+        "description": "Turning inserts CNMG, box 10",
+        "qty": 24,
+        "unit_price": 94.8
+      },
+      {
+        "line_no": 2,
+        "sku": "AM-VIS-6",
+        "description": "Machine vise 6in",
+        "qty": 2,
+        "unit_price": 289.0
+      },
+      {
+        "line_no": 3,
+        "sku": "AM-END-12",
+        "description": "End mill 12mm carbide",
+        "qty": 7,
+        "unit_price": 68.2
+      },
+      {
+        "line_no": 4,
+        "sku": "AM-CHK-125",
+        "description": "Lathe chuck 125mm",
+        "qty": 18,
+        "unit_price": 412.6
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4131",
+    "vendor_id": "V01",
+    "date": "2025-05-15",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-7720",
+        "description": "Safety goggles, anti-fog",
+        "qty": 15,
+        "unit_price": 6.95
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-4410",
+        "description": "Nitrile work gloves, box of 100",
+        "qty": 22,
+        "unit_price": 18.4
+      },
+      {
+        "line_no": 3,
+        "sku": "NG-3305",
+        "description": "Absorbent pads, case",
+        "qty": 9,
+        "unit_price": 42.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4132",
+    "vendor_id": "V04",
+    "date": "2025-04-02",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "CC-COOL-55",
+        "description": "Machine coolant concentrate, 55gal",
+        "qty": 8,
+        "unit_price": 744.5
+      },
+      {
+        "line_no": 2,
+        "sku": "CC-IPA-55",
+        "description": "Isopropyl alcohol 99%, 55gal drum",
+        "qty": 14,
+        "unit_price": 612.0
+      },
+      {
+        "line_no": 3,
+        "sku": "CC-DEG-5",
+        "description": "Industrial degreaser, 5gal",
+        "qty": 15,
+        "unit_price": 87.4
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4133",
+    "vendor_id": "V01",
+    "date": "2025-04-20",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "NG-4410",
+        "description": "Nitrile work gloves, box of 100",
+        "qty": 21,
+        "unit_price": 18.4
+      },
+      {
+        "line_no": 2,
+        "sku": "NG-3305",
+        "description": "Absorbent pads, case",
+        "qty": 3,
+        "unit_price": 42.5
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4134",
+    "vendor_id": "V03",
+    "date": "2025-06-06",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "MF-M8-NUT",
+        "description": "Hex nuts M8 zinc, box 1000",
+        "qty": 19,
+        "unit_price": 27.6
+      },
+      {
+        "line_no": 2,
+        "sku": "MF-ANC-10",
+        "description": "Concrete anchors 10mm, box 100",
+        "qty": 27,
+        "unit_price": 62.75
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4135",
+    "vendor_id": "V06",
+    "date": "2025-06-14",
+    "currency": "USD",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "AL-FUEL",
+        "description": "Fuel surcharge",
+        "qty": 22,
+        "unit_price": 63.75
+      },
+      {
+        "line_no": 2,
+        "sku": "AL-LIFT",
+        "description": "Liftgate service",
+        "qty": 33,
+        "unit_price": 45.0
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "po_number": "PO-2025-4136",
+    "vendor_id": "V09",
+    "date": "2025-05-19",
+    "currency": "EUR",
+    "lines": [
+      {
+        "line_no": 1,
+        "sku": "VP-RIB-110",
+        "description": "TTR ribbon 110mm",
+        "qty": 23,
+        "unit_price": 9.6
+      },
+      {
+        "line_no": 2,
+        "sku": "VP-TAG-ASSET",
+        "description": "Asset tags, custom, 1000",
+        "qty": 31,
+        "unit_price": 340.0
+      }
+    ],
+    "status": "open"
+  }
+]

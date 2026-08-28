@@ -1,0 +1,236 @@
+{
+  "NIS-2025-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4101",
+    "explanation": "Clean 3-way match."
+  },
+  "INV-2025-0401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4102",
+    "explanation": "Clean 3-way match."
+  },
+  "MF/25/401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4103",
+    "explanation": "Clean 3-way match."
+  },
+  "CCW-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4104",
+    "explanation": "Clean 3-way match."
+  },
+  "HEC-2025-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4105",
+    "explanation": "Clean 3-way match."
+  },
+  "ALS-INV-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4106",
+    "explanation": "Clean 3-way match."
+  },
+  "SOI-25-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4107",
+    "explanation": "Clean 3-way match."
+  },
+  "GP-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4108",
+    "explanation": "Clean 3-way match."
+  },
+  "VPL-2025-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4109",
+    "explanation": "Clean 3-way match."
+  },
+  "AMT-401": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4110",
+    "explanation": "Clean 3-way match."
+  },
+  "NIS-2025-404": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4111",
+    "explanation": "Alias trade name and split GRNs are legitimate; totals match PO within tolerance."
+  },
+  "HEC-2025-404": {
+    "decision": "approve",
+    "discrepancies": [],
+    "po_number": "PO-2025-4112",
+    "explanation": "One-cent tax rounding is within policy tolerance (\u00b1$0.02)."
+  },
+  "MF/25/404": {
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "po_number": "PO-2025-4113",
+    "explanation": "Line 1 unit price is 12% above the PO price."
+  },
+  "SOI-25-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "po_number": "PO-2025-4114",
+    "explanation": "Line 1 unit price is 8% above the PO price."
+  },
+  "AMT-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "po_number": "PO-2025-4115",
+    "explanation": "Line 1 unit price is 15% above the PO price."
+  },
+  "INV-2025-0404": {
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "po_number": "PO-2025-4116",
+    "explanation": "Billed quantity exceeds received quantity on the goods receipt."
+  },
+  "HEC-2025-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "po_number": "PO-2025-4117",
+    "explanation": "Billed quantity exceeds received quantity on the goods receipt."
+  },
+  "GP-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "po_number": "PO-2025-4118",
+    "explanation": "Billed quantity exceeds received quantity on the goods receipt."
+  },
+  "CCW-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "GRN_MISSING"
+    ],
+    "po_number": "PO-2025-4119",
+    "explanation": "No goods receipt note found for this PO; cannot verify delivery."
+  },
+  "ALS-INV-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "GRN_MISSING"
+    ],
+    "po_number": "PO-2025-4120",
+    "explanation": "No goods receipt note found for this PO; cannot verify delivery."
+  },
+  "INV-2025-0407": {
+    "decision": "reject",
+    "discrepancies": [
+      "DUPLICATE"
+    ],
+    "po_number": "PO-2025-4121",
+    "explanation": "Same vendor, PO and amount already paid on 2025-06-14 as INV-25-407."
+  },
+  "ALS-INV-407": {
+    "decision": "reject",
+    "discrepancies": [
+      "DUPLICATE"
+    ],
+    "po_number": "PO-2025-4122",
+    "explanation": "Invoice number already appears in payment history (paid 2025-07-02)."
+  },
+  "NIS-2025-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "TAX_ERROR"
+    ],
+    "po_number": "PO-2025-4123",
+    "explanation": "Tax amount exceeds tax_rate x subtotal by 37.14."
+  },
+  "VPL-2025-404": {
+    "decision": "hold",
+    "discrepancies": [
+      "TAX_ERROR"
+    ],
+    "po_number": "PO-2025-4124",
+    "explanation": "Tax amount exceeds tax_rate x subtotal by 52.6."
+  },
+  "SOI-25-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "TOTAL_ERROR"
+    ],
+    "po_number": "PO-2025-4125",
+    "explanation": "Line amount does not equal qty x unit price; totals inflated."
+  },
+  "MF/25/407": {
+    "decision": "hold",
+    "discrepancies": [
+      "TOTAL_ERROR"
+    ],
+    "po_number": "PO-2025-4126",
+    "explanation": "Line amount does not equal qty x unit price; totals inflated."
+  },
+  "HEC-2025-410": {
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "po_number": "PO-2025-4127",
+    "explanation": "Remit-to bank account does not match vendor master record."
+  },
+  "GP-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "po_number": "PO-2025-4128",
+    "explanation": "Remit-to bank account does not match vendor master record."
+  },
+  "VPL-2025-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "CURRENCY_MISMATCH"
+    ],
+    "po_number": "PO-2025-4129",
+    "explanation": "Invoice currency USD does not match PO currency EUR."
+  },
+  "AMT-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "PO_NOT_FOUND"
+    ],
+    "po_number": "PO-2025-9911",
+    "explanation": "Referenced PO does not exist in the purchase order system."
+  },
+  "NIS-2025-410": {
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH",
+      "QTY_MISMATCH"
+    ],
+    "po_number": "PO-2025-4131",
+    "explanation": "Line 1 price 10% above PO and billed qty exceeds received qty."
+  },
+  "CCW-407": {
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE",
+      "TAX_ERROR"
+    ],
+    "po_number": "PO-2025-4132",
+    "explanation": "Remit-to bank differs from master and tax is overstated."
+  }
+}

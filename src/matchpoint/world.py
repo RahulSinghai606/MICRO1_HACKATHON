@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 
-from .config import ERP, DATA, GOLD
+from .config import ERP, GOLD, MANIFEST
 
 
 def load_world() -> dict:
@@ -20,7 +20,7 @@ def load_vendor_memory() -> dict:
 
 
 def load_manifest() -> list[dict]:
-    return json.loads((DATA / "invoices" / "manifest.json").read_text())
+    return json.loads(MANIFEST.read_text())
 
 
 def load_gold() -> dict:

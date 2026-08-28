@@ -22,11 +22,14 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
+# default world; overridden by --world for the held-out stress batch
 ERP = ROOT / "data" / "erp"
 PNG = ROOT / "data" / "invoices" / "png"
 GOLD = ROOT / "data" / "gold"
+INV_DIR = ROOT / "data" / "invoices"
 
 rng = random.Random(42)
+INV_START = 101  # shifted per seed so held-out batches get disjoint invoice numbers
 
 # ---------------------------------------------------------------- vendors ---
 
@@ -180,7 +183,7 @@ def main():
         gold[inv_id] = {"decision": decision, "discrepancies": sorted(discrepancies),
                         "po_number": po_number, "explanation": explanation}
 
-    inv_counter = {vid: 101 for vid, *_ in VENDORS}
+    inv_counter = {vid: INV_START for vid, *_ in VENDORS}
 
     def next_inv_no(vid):
         prefix = next(p for v, *_x, p, _t in [(a, b, c, d, e, f, g) for a, b, c, d, e, f, g in VENDORS] if v == vid)
@@ -397,7 +400,7 @@ def main():
 
     manifest = [{"invoice_id": inv["invoice_no"],
                  "png": f"data/invoices/png/{safe(inv['invoice_no'])}.png"} for inv in invoices]
-    (ROOT / "data" / "invoices" / "manifest.json").write_text(json.dumps(manifest, indent=2))
+    (INV_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2))
     print(f"Generated {len(invoices)} invoices, {len(pos)} POs, {len(grns)} GRNs, "
           f"{len(payments)} payment records, {len(gold)} gold labels.")
 
@@ -516,4 +519,20 @@ def render_invoice(inv: dict) -> None:
 
 
 if __name__ == "__main__":
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--world", default=None,
+                    help="write into data/worlds/<name>/ instead of the default data/ "
+                         "layout (used for the held-out stress batch)")
+    args = ap.parse_args()
+    rng = random.Random(args.seed)
+    INV_START = 101 + (args.seed - 42) * 300
+    if args.world:
+        base = ROOT / "data" / "worlds" / args.world
+        ERP = base / "erp"
+        GOLD = base / "gold"
+        INV_DIR = base / "invoices"
+        PNG = INV_DIR / "png"
     main()

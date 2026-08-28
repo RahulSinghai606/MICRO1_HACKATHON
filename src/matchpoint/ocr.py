@@ -14,7 +14,7 @@ import time
 
 import requests
 
-from .config import INVOICE_PNG, OCR_CACHE, DATA, load_env
+from .config import INVOICE_PNG, OCR_CACHE, MANIFEST, load_env
 
 
 def ocr_image(png_path) -> str:
@@ -46,7 +46,7 @@ def get_ocr_text(invoice_id: str) -> str:
 def main(live: bool) -> None:
     load_env()
     OCR_CACHE.mkdir(parents=True, exist_ok=True)
-    manifest = json.loads((DATA / "invoices" / "manifest.json").read_text())
+    manifest = json.loads(MANIFEST.read_text())
     done = 0
     for entry in manifest:
         safe = entry["invoice_id"].replace("/", "_").replace("#", "n")

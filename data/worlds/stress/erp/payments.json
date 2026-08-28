@@ -1,0 +1,42 @@
+[
+  {
+    "invoice_no": "INV-25-407",
+    "vendor_id": "V02",
+    "po_number": "PO-2025-4121",
+    "amount": 2865.19,
+    "currency": "USD",
+    "paid_date": "2025-06-14"
+  },
+  {
+    "invoice_no": "ALS-INV-407",
+    "vendor_id": "V06",
+    "po_number": "PO-2025-4122",
+    "amount": 1634.25,
+    "currency": "USD",
+    "paid_date": "2025-07-02"
+  },
+  {
+    "invoice_no": "HIST-7100",
+    "vendor_id": "V01",
+    "po_number": "PO-2025-4050",
+    "amount": 3821.9,
+    "currency": "USD",
+    "paid_date": "2025-04-14"
+  },
+  {
+    "invoice_no": "HIST-7101",
+    "vendor_id": "V04",
+    "po_number": "PO-2025-4051",
+    "amount": 3363.28,
+    "currency": "USD",
+    "paid_date": "2025-04-27"
+  },
+  {
+    "invoice_no": "HIST-7102",
+    "vendor_id": "V07",
+    "po_number": "PO-2025-4052",
+    "amount": 575.66,
+    "currency": "USD",
+    "paid_date": "2025-03-15"
+  }
+]

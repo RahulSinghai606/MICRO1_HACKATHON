@@ -6,10 +6,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
-ERP = DATA / "erp"
-INVOICE_PNG = DATA / "invoices" / "png"
-OCR_CACHE = DATA / "invoices" / "ocr_cache"
-GOLD = DATA / "gold"
+# MATCHPOINT_WORLD=<name> points every pipeline at data/worlds/<name>/ —
+# used for the held-out stress batch (seed 43) without touching any code.
+_WORLD = os.environ.get("MATCHPOINT_WORLD")
+_BASE = (DATA / "worlds" / _WORLD) if _WORLD else DATA
+ERP = _BASE / "erp"
+INVOICE_PNG = _BASE / "invoices" / "png"
+OCR_CACHE = _BASE / "invoices" / "ocr_cache"
+GOLD = _BASE / "gold"
+MANIFEST = _BASE / "invoices" / "manifest.json"
 OUT = ROOT / "out"
 TRAJ = ROOT / "trajectories"
 RESULTS = ROOT / "eval" / "results"

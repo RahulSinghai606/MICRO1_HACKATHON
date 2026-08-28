@@ -1,0 +1,34 @@
+# Seeded evaluation cases
+
+- **NIS-2025-401** (Northgate Industrial Supply LLC, PO PO-2025-4101) — gold: `approve`  — Clean 3-way match. 
+- **INV-2025-0401** (Bluefin Packaging Co., PO PO-2025-4102) — gold: `approve`  — Clean 3-way match. 
+- **MF/25/401** (Meridian Fasteners Inc., PO PO-2025-4103) — gold: `approve`  — Clean 3-way match. 
+- **CCW-401** (Cascadia Chemical Works, PO PO-2025-4104) — gold: `approve`  — Clean 3-way match. 
+- **HEC-2025-401** (Helios Electrical Components, PO PO-2025-4105) — gold: `approve`  — Clean 3-way match. 
+- **ALS-INV-401** (Auriga Logistics Services, PO PO-2025-4106) — gold: `approve`  — Clean 3-way match. 
+- **SOI-25-401** (Stellar Office Interiors, PO PO-2025-4107) — gold: `approve`  — Clean 3-way match. 
+- **GP-401** (Granite Peak Safety Gear, PO PO-2025-4108) — gold: `approve`  — Clean 3-way match. 
+- **VPL-2025-401** (Vireo Print & Label GmbH, PO PO-2025-4109) — gold: `approve`  — Clean 3-way match. 
+- **AMT-401** (Ashford Machine Tools Ltd., PO PO-2025-4110) — gold: `approve`  — Clean 3-way match. 
+- **NIS-2025-404** (Northgate Ind. Supply (a div. of NIS Holdings), PO PO-2025-4111) — gold: `approve`  — Alias trade name and split GRNs are legitimate; totals match PO within tolerance. CHALLENGING: alias vendor name + two partial GRNs summing to full qty. Legitimate — must APPROVE.
+- **HEC-2025-404** (Helios Electrical Components, PO PO-2025-4112) — gold: `approve`  — One-cent tax rounding is within policy tolerance (±$0.02). CHALLENGING: tax rounded up by $0.01 (within ±$0.02 tolerance). Must APPROVE.
+- **MF/25/404** (Meridian Fasteners Inc., PO PO-2025-4113) — gold: `hold` ['PRICE_MISMATCH'] — Line 1 unit price is 12% above the PO price. Unit price on line 1 raised 12% above PO.
+- **SOI-25-404** (Stellar Office Interiors, PO PO-2025-4114) — gold: `hold` ['PRICE_MISMATCH'] — Line 1 unit price is 8% above the PO price. Unit price on line 1 raised 8% above PO.
+- **AMT-404** (Ashford Machine Tools Ltd., PO PO-2025-4115) — gold: `hold` ['PRICE_MISMATCH'] — Line 1 unit price is 15% above the PO price. Unit price on line 1 raised 15% above PO.
+- **INV-2025-0404** (Bluefin Packaging Co., PO PO-2025-4116) — gold: `hold` ['QTY_MISMATCH'] — Billed quantity exceeds received quantity on the goods receipt. Invoice bills full PO qty but only ~60% received on GRN.
+- **HEC-2025-407** (Helios Electrical Components, PO PO-2025-4117) — gold: `hold` ['QTY_MISMATCH'] — Billed quantity exceeds received quantity on the goods receipt. Invoice bills full PO qty but only ~60% received on GRN.
+- **GP-404** (Granite Peak Safety Gear, PO PO-2025-4118) — gold: `hold` ['QTY_MISMATCH'] — Billed quantity exceeds received quantity on the goods receipt. Invoice bills full PO qty but only ~60% received on GRN.
+- **CCW-404** (Cascadia Chemical Works, PO PO-2025-4119) — gold: `hold` ['GRN_MISSING'] — No goods receipt note found for this PO; cannot verify delivery. No goods receipt exists for the referenced PO.
+- **ALS-INV-404** (Auriga Logistics Services, PO PO-2025-4120) — gold: `hold` ['GRN_MISSING'] — No goods receipt note found for this PO; cannot verify delivery. No goods receipt exists for the referenced PO.
+- **INV-2025-0407** (Bluefin Packaging Co., PO PO-2025-4121) — gold: `reject` ['DUPLICATE'] — Same vendor, PO and amount already paid on 2025-06-14 as INV-25-407. CHALLENGING: duplicate of already-paid INV-25-407 (same PO + amount, different number format).
+- **ALS-INV-407** (Auriga Logistics Services, PO PO-2025-4122) — gold: `reject` ['DUPLICATE'] — Invoice number already appears in payment history (paid 2025-07-02). Exact duplicate — same invoice number already paid.
+- **NIS-2025-407** (Northgate Industrial Supply LLC, PO PO-2025-4123) — gold: `hold` ['TAX_ERROR'] — Tax amount exceeds tax_rate x subtotal by 37.14. Tax overstated by 37.14 vs rate x subtotal.
+- **VPL-2025-404** (Vireo Print & Label GmbH, PO PO-2025-4124) — gold: `hold` ['TAX_ERROR'] — Tax amount exceeds tax_rate x subtotal by 52.6. Tax overstated by 52.6 vs rate x subtotal.
+- **SOI-25-407** (Stellar Office Interiors, PO PO-2025-4125) — gold: `hold` ['TOTAL_ERROR'] — Line amount does not equal qty x unit price; totals inflated. Last line amount inflated by 90.0; qty x unit_price no longer equals amount.
+- **MF/25/407** (Meridian Fasteners Inc., PO PO-2025-4126) — gold: `hold` ['TOTAL_ERROR'] — Line amount does not equal qty x unit price; totals inflated. Last line amount inflated by 28.0; qty x unit_price no longer equals amount.
+- **HEC-2025-410** (Helios Electrical Components, PO PO-2025-4127) — gold: `hold` ['BANK_CHANGE'] — Remit-to bank account does not match vendor master record. Remit-to bank details differ from vendor master (classic fraud signal).
+- **GP-407** (Granite Peak Safety Gear, PO PO-2025-4128) — gold: `hold` ['BANK_CHANGE'] — Remit-to bank account does not match vendor master record. Remit-to bank details differ from vendor master (classic fraud signal).
+- **VPL-2025-407** (Vireo Print & Label GmbH, PO PO-2025-4129) — gold: `hold` ['CURRENCY_MISMATCH'] — Invoice currency USD does not match PO currency EUR. Invoice issued in USD while PO/vendor currency is EUR.
+- **AMT-407** (Ashford Machine Tools Ltd., PO PO-2025-9911) — gold: `hold` ['PO_NOT_FOUND'] — Referenced PO does not exist in the purchase order system. References PO-2025-9911 which does not exist in the ERP.
+- **NIS-2025-410** (Northgate Industrial Supply LLC, PO PO-2025-4131) — gold: `hold` ['PRICE_MISMATCH', 'QTY_MISMATCH'] — Line 1 price 10% above PO and billed qty exceeds received qty. Double defect: price +10% AND only half the goods received.
+- **CCW-407** (Cascadia Chemical Works, PO PO-2025-4132) — gold: `hold` ['BANK_CHANGE', 'TAX_ERROR'] — Remit-to bank differs from master and tax is overstated. Double defect: changed bank account AND overstated tax.
