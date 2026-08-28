@@ -1,0 +1,1978 @@
+[
+  {
+    "invoice_id": "NIS-2025-101",
+    "po_number": "PO-2025-4101",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All four invoice lines match PO-2025-4101 unit prices exactly ($18.40, $149.00, $6.95, $42.50) and billed quantities (3/7/15/16) equal total received quantities on GRN-88301. Arithmetic passed: tax of $136.48 equals 7.25% x subtotal $1,882.45 and total $2,018.93 = subtotal + tax; remit-to bank (First Commerce Bank, routing 021000021, acct 4402198837) matches the vendor master, currency is USD on both PO and invoice, and payment history shows no duplicate for this invoice number, PO, or amount.",
+    "latency_s": 71.33,
+    "extracted": {
+      "invoice_no": "NIS-2025-101",
+      "vendor_name": "Northgate Industrial Supply LLC",
+      "date": "2025-06-18",
+      "po_number": "PO-2025-4101",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "NG-4410",
+          "description": "Nitrile work gloves, box of 100",
+          "qty": 3,
+          "unit_price": 18.4,
+          "amount": 55.2
+        },
+        {
+          "sku": "NG-1180",
+          "description": "Steel shelving unit 72in",
+          "qty": 7,
+          "unit_price": 149.0,
+          "amount": 1043.0
+        },
+        {
+          "sku": "NG-7720",
+          "description": "Safety goggles, anti-fog",
+          "qty": 15,
+          "unit_price": 6.95,
+          "amount": 104.25
+        },
+        {
+          "sku": "NG-3305",
+          "description": "Absorbent pads, case",
+          "qty": 16,
+          "unit_price": 42.5,
+          "amount": 680.0
+        }
+      ],
+      "subtotal": 1882.45,
+      "tax": 136.48,
+      "total": 2018.93,
+      "bank_name": "First Commerce Bank",
+      "bank_routing": "021000021",
+      "bank_account": "4402198837",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4101 found (vendor V01).",
+      "SKU NG-4410: price OK (18.40).",
+      "SKU NG-4410: qty OK (3 <= received 3).",
+      "SKU NG-1180: price OK (149.00).",
+      "SKU NG-1180: qty OK (7 <= received 7).",
+      "SKU NG-7720: price OK (6.95).",
+      "SKU NG-7720: qty OK (15 <= received 15).",
+      "SKU NG-3305: price OK (42.50).",
+      "SKU NG-3305: qty OK (16 <= received 16).",
+      "Tax OK (136.48 ~= 136.48).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "INV-2025-0101",
+    "po_number": "PO-2025-4102",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All lines match the PO exactly (BP-450: 30 @ $4.15, BP-201: 39 @ $31.25) and billed quantities equal the received quantities on GRN-88302 (30 and 39). Arithmetic passes: subtotal $1,343.25, tax $94.03 = 7% rate ($94.0275, within $0.02 tolerance), total $1,437.28; currency (USD), bank details, and payment history (no duplicates) all verify clean.",
+    "latency_s": 40.98,
+    "extracted": {
+      "invoice_no": "INV-2025-0101",
+      "vendor_name": "Bluefin Packaging Co.",
+      "date": "2025-06-25",
+      "po_number": "PO-2025-4102",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "BP-450",
+          "description": "Foam inserts, custom cut",
+          "qty": 30,
+          "unit_price": 4.15,
+          "amount": 124.5
+        },
+        {
+          "sku": "BP-201",
+          "description": "Corrugated boxes 18x12x10, bundle 25",
+          "qty": 39,
+          "unit_price": 31.25,
+          "amount": 1218.75
+        }
+      ],
+      "subtotal": 1343.25,
+      "tax": 94.03,
+      "total": 1437.28,
+      "bank_name": "Coastal Georgia Bank",
+      "bank_routing": "061000104",
+      "bank_account": "7719045512",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4102 found (vendor V02).",
+      "SKU BP-450: price OK (4.15).",
+      "SKU BP-450: qty OK (30 <= received 30).",
+      "SKU BP-201: price OK (31.25).",
+      "SKU BP-201: qty OK (39 <= received 39).",
+      "Tax OK (94.03 ~= 94.03).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "MF/25/101",
+    "po_number": "PO-2025-4103",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "PO-2025-4103 exists and matches: both lines bill the exact PO prices (62.75 and 27.60) and quantities (19 and 11) fully received on GRN-88303, and currency is USD on both sides. Arithmetic check passed (subtotal 1495.85 = 1192.25 + 303.60; tax 89.75 = 6% of 1495.85; total 1585.60 = subtotal + tax) and remit-to bank (Keystone National, routing 031000503, acct 5583920164) matches vendor master V03. Payment history shows no duplicate for this invoice number, PO, or total amount, so the invoice is approved.",
+    "latency_s": 33.96,
+    "extracted": {
+      "invoice_no": "MF/25/101",
+      "vendor_name": "Meridian Fasteners Inc.",
+      "date": "2025-07-04",
+      "po_number": "PO-2025-4103",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "MF-ANC-10",
+          "description": "Concrete anchors 10mm, box 100",
+          "qty": 19,
+          "unit_price": 62.75,
+          "amount": 1192.25
+        },
+        {
+          "sku": "MF-M8-NUT",
+          "description": "Hex nuts M8 zinc, box 1000",
+          "qty": 11,
+          "unit_price": 27.6,
+          "amount": 303.6
+        }
+      ],
+      "subtotal": 1495.85,
+      "tax": 89.75,
+      "total": 1585.6,
+      "bank_name": "Keystone National",
+      "bank_routing": "031000503",
+      "bank_account": "5583920164",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4103 found (vendor V03).",
+      "SKU MF-ANC-10: price OK (62.75).",
+      "SKU MF-ANC-10: qty OK (19 <= received 19).",
+      "SKU MF-M8-NUT: price OK (27.60).",
+      "SKU MF-M8-NUT: qty OK (11 <= received 11).",
+      "Tax OK (89.75 ~= 89.75).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "CCW-101",
+    "po_number": "PO-2025-4104",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "Invoice CCW-101 matches PO-2025-4104 exactly: both line prices ($87.40 and $612.00) equal PO prices, billed quantities (24/24) equal total received on GRN-88304, and currency is USD on both. Arithmetic check passed (subtotal $16,785.60, tax $1,594.63 = 9.5% rate, total $18,380.23), remit-to bank details match vendor master V04, and no duplicates exist in payment history. No discrepancy codes apply, so the invoice is approved.",
+    "latency_s": 41.91,
+    "extracted": {
+      "invoice_no": "CCW-101",
+      "vendor_name": "Cascadia Chemical Works",
+      "date": "2025-06-24",
+      "po_number": "PO-2025-4104",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "CC-DEG-5",
+          "description": "Industrial degreaser, 5gal",
+          "qty": 24,
+          "unit_price": 87.4,
+          "amount": 2097.6
+        },
+        {
+          "sku": "CC-IPA-55",
+          "description": "Isopropyl alcohol 99%, 55gal drum",
+          "qty": 24,
+          "unit_price": 612.0,
+          "amount": 14688.0
+        }
+      ],
+      "subtotal": 16785.6,
+      "tax": 1594.63,
+      "total": 18380.23,
+      "bank_name": "Puget Sound Trust",
+      "bank_routing": "125000024",
+      "bank_account": "9027481133",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4104 found (vendor V04).",
+      "SKU CC-DEG-5: price OK (87.40).",
+      "SKU CC-DEG-5: qty OK (24 <= received 24).",
+      "SKU CC-IPA-55: price OK (612.00).",
+      "SKU CC-IPA-55: qty OK (24 <= received 24).",
+      "Tax OK (1594.63 ~= 1594.63).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "HEC-2025-101",
+    "po_number": "PO-2025-4105",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All three lines match PO-2025-4105 exactly on price (9.85/14.20/96.30) and billed quantities equal the total received on GRN-88305 (37/20/25). Arithmetic verified: subtotal 3055.95 = sum of line amounts, tax 262.81 = 8.6% \u00d7 3055.95, total 3318.76 = subtotal + tax. Currency (USD), remit-to bank details (Desert West Bank, routing 122100024, acct 3348812706), and payment history (no duplicates) all match vendor master V05.",
+    "latency_s": 43.24,
+    "extracted": {
+      "invoice_no": "HEC-2025-101",
+      "vendor_name": "Helios Electrical Components",
+      "date": "2025-06-02",
+      "po_number": "PO-2025-4105",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "HE-CB-20",
+          "description": "Circuit breaker 20A DIN",
+          "qty": 37,
+          "unit_price": 9.85,
+          "amount": 364.45
+        },
+        {
+          "sku": "HE-REL-24",
+          "description": "Relay 24VDC 8-pin",
+          "qty": 20,
+          "unit_price": 14.2,
+          "amount": 284.0
+        },
+        {
+          "sku": "HE-PSU-24",
+          "description": "PSU 24V 10A DIN rail",
+          "qty": 25,
+          "unit_price": 96.3,
+          "amount": 2407.5
+        }
+      ],
+      "subtotal": 3055.95,
+      "tax": 262.81,
+      "total": 3318.76,
+      "bank_name": "Desert West Bank",
+      "bank_routing": "122100024",
+      "bank_account": "3348812706",
+      "payment_terms": "Net 45"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4105 found (vendor V05).",
+      "SKU HE-CB-20: price OK (9.85).",
+      "SKU HE-CB-20: qty OK (37 <= received 37).",
+      "SKU HE-REL-24: price OK (14.20).",
+      "SKU HE-REL-24: qty OK (20 <= received 20).",
+      "SKU HE-PSU-24: price OK (96.30).",
+      "SKU HE-PSU-24: qty OK (25 <= received 25).",
+      "Tax OK (262.81 ~= 262.81).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "ALS-INV-101",
+    "po_number": "PO-2025-4106",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All four lines match PO-2025-4106 unit prices exactly (63.75/18.50/425.00/45.00), and billed quantities (8/26/19/31) equal total received quantities on GRN-88306. Arithmetic check passed (subtotal 10461.00, tax 0.00 at 0% rate, total 10461.00), currency is USD per PO, remit-to bank matches vendor master, and no duplicate payment exists for this vendor/PO/amount or invoice number.",
+    "latency_s": 40.23,
+    "extracted": {
+      "invoice_no": "ALS-INV-101",
+      "vendor_name": "Auriga Logistics Services",
+      "date": "2025-07-06",
+      "po_number": "PO-2025-4106",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AL-FUEL",
+          "description": "Fuel surcharge",
+          "qty": 8,
+          "unit_price": 63.75,
+          "amount": 510.0
+        },
+        {
+          "sku": "AL-WHS-P",
+          "description": "Warehouse handling, per pallet",
+          "qty": 26,
+          "unit_price": 18.5,
+          "amount": 481.0
+        },
+        {
+          "sku": "AL-LTL-STD",
+          "description": "LTL freight, standard lane",
+          "qty": 19,
+          "unit_price": 425.0,
+          "amount": 8075.0
+        },
+        {
+          "sku": "AL-LIFT",
+          "description": "Liftgate service",
+          "qty": 31,
+          "unit_price": 45.0,
+          "amount": 1395.0
+        }
+      ],
+      "subtotal": 10461.0,
+      "tax": 0.0,
+      "total": 10461.0,
+      "bank_name": "River City Bank",
+      "bank_routing": "084000026",
+      "bank_account": "6650371928",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4106 found (vendor V06).",
+      "SKU AL-FUEL: price OK (63.75).",
+      "SKU AL-FUEL: qty OK (8 <= received 8).",
+      "SKU AL-WHS-P: price OK (18.50).",
+      "SKU AL-WHS-P: qty OK (26 <= received 26).",
+      "SKU AL-LTL-STD: price OK (425.00).",
+      "SKU AL-LTL-STD: qty OK (19 <= received 19).",
+      "SKU AL-LIFT: price OK (45.00).",
+      "SKU AL-LIFT: qty OK (31 <= received 31).",
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "SOI-25-101",
+    "po_number": "PO-2025-4107",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All three lines match PO-2025-4107 exactly (prices $74.25/$189.00/$415.00, 0% variance) and billed quantities (6/40/12) equal total received per GRN-88307. Arithmetic verified: tax $1,051.83 equals 8.1% of the $12,985.50 subtotal, and total $14,037.33 is correct. No duplicate found in payment history, currency is USD on both invoice and PO, and remit-to bank details (Front Range CU, routing 107000233, acct 8812204575) match vendor master V07.",
+    "latency_s": 58.73,
+    "extracted": {
+      "invoice_no": "SOI-25-101",
+      "vendor_name": "Stellar Office Interiors",
+      "date": "2025-06-06",
+      "po_number": "PO-2025-4107",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "SO-MON-ARM",
+          "description": "Dual monitor arm",
+          "qty": 6,
+          "unit_price": 74.25,
+          "amount": 445.5
+        },
+        {
+          "sku": "SO-CHR-T2",
+          "description": "Task chair, mesh back",
+          "qty": 40,
+          "unit_price": 189.0,
+          "amount": 7560.0
+        },
+        {
+          "sku": "SO-DSK-60",
+          "description": "Sit-stand desk 60in",
+          "qty": 12,
+          "unit_price": 415.0,
+          "amount": 4980.0
+        }
+      ],
+      "subtotal": 12985.5,
+      "tax": 1051.83,
+      "total": 14037.33,
+      "bank_name": "Front Range Credit Union",
+      "bank_routing": "107000233",
+      "bank_account": "8812204575",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4107 found (vendor V07).",
+      "SKU SO-MON-ARM: price OK (74.25).",
+      "SKU SO-MON-ARM: qty OK (6 <= received 6).",
+      "SKU SO-CHR-T2: price OK (189.00).",
+      "SKU SO-CHR-T2: qty OK (40 <= received 40).",
+      "SKU SO-DSK-60: price OK (415.00).",
+      "SKU SO-DSK-60: qty OK (12 <= received 12).",
+      "Tax OK (1051.83 ~= 1051.83).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "GP-101",
+    "po_number": "PO-2025-4108",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All three lines match PO-2025-4108 exactly on unit price ($38.90/$84.50/$196.00) and billed quantities (22/5/16) equal the full received quantities on GRN-88308. Arithmetic check passed: tax $264.86 = 6% of subtotal $4,414.30 within tolerance, and total $4,679.16 = subtotal + tax. Remit-to bank (Sawtooth Community Bank, routing 123103729) matches vendor master V08, currency is USD on both PO and invoice, and payment history shows no duplicates.",
+    "latency_s": 41.4,
+    "extracted": {
+      "invoice_no": "GP-101",
+      "vendor_name": "Granite Peak Safety Gear",
+      "date": "2025-07-13",
+      "po_number": "PO-2025-4108",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "GP-EAR-200",
+          "description": "Ear plugs, box 200 pr",
+          "qty": 22,
+          "unit_price": 38.9,
+          "amount": 855.8
+        },
+        {
+          "sku": "GP-VIS-XL",
+          "description": "Hi-vis vests XL, pack 10",
+          "qty": 5,
+          "unit_price": 84.5,
+          "amount": 422.5
+        },
+        {
+          "sku": "GP-HH-CL2",
+          "description": "Hard hats class E, box 20",
+          "qty": 16,
+          "unit_price": 196.0,
+          "amount": 3136.0
+        }
+      ],
+      "subtotal": 4414.3,
+      "tax": 264.86,
+      "total": 4679.16,
+      "bank_name": "Sawtooth Community Bank",
+      "bank_routing": "123103729",
+      "bank_account": "2290156841",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4108 found (vendor V08).",
+      "SKU GP-EAR-200: price OK (38.90).",
+      "SKU GP-EAR-200: qty OK (22 <= received 22).",
+      "SKU GP-VIS-XL: price OK (84.50).",
+      "SKU GP-VIS-XL: qty OK (5 <= received 5).",
+      "SKU GP-HH-CL2: price OK (196.00).",
+      "SKU GP-HH-CL2: qty OK (16 <= received 16).",
+      "Tax OK (264.86 ~= 264.86).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "VPL-2025-101",
+    "po_number": "PO-2025-4109",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "Invoice VPL-2025-101 matches PO-2025-4109 on all three lines (15 x 21.40, 33 x 9.60, 27 x 340.00) with billed quantities equal to GRN-88309 receipts (15/33/27). Deterministic arithmetic check passed (subtotal 9817.80, tax 1865.38 = 19% of subtotal, total 11683.18), currency EUR matches PO and vendor master, remit-to bank details match the master record, and no duplicates exist in payment history.",
+    "latency_s": 46.6,
+    "extracted": {
+      "invoice_no": "VPL-2025-101",
+      "vendor_name": "Vireo Print & Label GmbH",
+      "date": "2025-06-09",
+      "po_number": "PO-2025-4109",
+      "currency": "EUR",
+      "lines": [
+        {
+          "sku": "VP-LBL-4x6",
+          "description": "Thermal labels 4x6, roll 500",
+          "qty": 15,
+          "unit_price": 21.4,
+          "amount": 321.0
+        },
+        {
+          "sku": "VP-RIB-110",
+          "description": "TTR ribbon 110mm",
+          "qty": 33,
+          "unit_price": 9.6,
+          "amount": 316.8
+        },
+        {
+          "sku": "VP-TAG-ASSET",
+          "description": "Asset tags, custom, 1000",
+          "qty": 27,
+          "unit_price": 340.0,
+          "amount": 9180.0
+        }
+      ],
+      "subtotal": 9817.8,
+      "tax": 1865.38,
+      "total": 11683.18,
+      "bank_name": "Hansa Handelsbank",
+      "bank_routing": "DE44 5001 0517",
+      "bank_account": "5407 3249 31",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4109 found (vendor V09).",
+      "SKU VP-LBL-4x6: price OK (21.40).",
+      "SKU VP-LBL-4x6: qty OK (15 <= received 15).",
+      "SKU VP-RIB-110: price OK (9.60).",
+      "SKU VP-RIB-110: qty OK (33 <= received 33).",
+      "SKU VP-TAG-ASSET: price OK (340.00).",
+      "SKU VP-TAG-ASSET: qty OK (27 <= received 27).",
+      "Tax OK (1865.38 ~= 1865.38).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "AMT-101",
+    "po_number": "PO-2025-4110",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "Invoice AMT-101 fully matches PO-2025-4110: line prices (289.00 and 412.60) equal PO unit prices exactly, billed quantities (37 and 36) equal total received on GRN-88310 (37 and 36), and totals verify (subtotal 25,546.60 = 10,693.00 + 14,853.60; tax 0.00 = 0.0% rate; total 25,546.60). Currency (USD), remit-to bank details, and payment terms match the vendor master, and no duplicate payment was found for vendor V10 on this PO or invoice number.",
+    "latency_s": 40.97,
+    "extracted": {
+      "invoice_no": "AMT-101",
+      "vendor_name": "Ashford Machine Tools Ltd.",
+      "date": "2025-07-19",
+      "po_number": "PO-2025-4110",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AM-VIS-6",
+          "description": "Machine vise 6in",
+          "qty": 37,
+          "unit_price": 289.0,
+          "amount": 10693.0
+        },
+        {
+          "sku": "AM-CHK-125",
+          "description": "Lathe chuck 125mm",
+          "qty": 36,
+          "unit_price": 412.6,
+          "amount": 14853.6
+        }
+      ],
+      "subtotal": 25546.6,
+      "tax": 0.0,
+      "total": 25546.6,
+      "bank_name": "Pennine & Yorkshire Bank",
+      "bank_routing": "GB29 NWBK 6016",
+      "bank_account": "1331 9268 19",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4110 found (vendor V10).",
+      "SKU AM-VIS-6: price OK (289.00).",
+      "SKU AM-VIS-6: qty OK (37 <= received 37).",
+      "SKU AM-CHK-125: price OK (412.60).",
+      "SKU AM-CHK-125: qty OK (36 <= received 36).",
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "NIS-2025-104",
+    "po_number": "PO-2025-4111",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All three lines match PO-2025-4111 exactly on unit price ($149.00, $18.40, $42.50) and billed quantities equal total received (34/33/7 across GRN-88311 and GRN-88312, summing to 34/33/7). Arithmetic verified by tool: tax $432.88 = 7.25% of $5,970.70 subtotal, total $6,403.58 correct; no duplicates in payment history; remit-to bank (routing 021000021, account 4402198837) matches vendor master; vendor trade name is a known alias.",
+    "latency_s": 43.67,
+    "extracted": {
+      "invoice_no": "NIS-2025-104",
+      "vendor_name": "Northgate Ind. Supply (a div. of NIS Holdings)",
+      "date": "2025-06-05",
+      "po_number": "PO-2025-4111",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "NG-1180",
+          "description": "Steel shelving unit 72in",
+          "qty": 34,
+          "unit_price": 149.0,
+          "amount": 5066.0
+        },
+        {
+          "sku": "NG-4410",
+          "description": "Nitrile work gloves, box of 100",
+          "qty": 33,
+          "unit_price": 18.4,
+          "amount": 607.2
+        },
+        {
+          "sku": "NG-3305",
+          "description": "Absorbent pads, case",
+          "qty": 7,
+          "unit_price": 42.5,
+          "amount": 297.5
+        }
+      ],
+      "subtotal": 5970.7,
+      "tax": 432.88,
+      "total": 6403.58,
+      "bank_name": "First Commerce Bank",
+      "bank_routing": "021000021",
+      "bank_account": "4402198837",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4111 found (vendor V01).",
+      "SKU NG-1180: price OK (149.00).",
+      "SKU NG-1180: qty OK (34 <= received 34).",
+      "SKU NG-4410: price OK (18.40).",
+      "SKU NG-4410: qty OK (33 <= received 33).",
+      "SKU NG-3305: price OK (42.50).",
+      "SKU NG-3305: qty OK (7 <= received 7).",
+      "Tax OK (432.88 ~= 432.88).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "HEC-2025-104",
+    "po_number": "PO-2025-4112",
+    "decision": "approve",
+    "discrepancies": [],
+    "explanation": "All four lines match PO-2025-4112 unit prices exactly (14.20/118.00/96.30/9.85), billed quantities (26/26/40/31) equal total received quantities per GRN-88313, and currency is USD on both invoice and PO. Arithmetic_check confirms subtotal 7594.55, tax 653.14 (\u2248 0.086 \u00d7 7594.55 = 653.13, within $0.02), and total 8247.69; remit-to bank (Desert West Bank, routing 122100024, account 3348812706) matches vendor master V05, and payment history shows no duplicates.",
+    "latency_s": 96.49,
+    "extracted": {
+      "invoice_no": "HEC-2025-104",
+      "vendor_name": "Helios Electrical Components",
+      "date": "2025-06-22",
+      "po_number": "PO-2025-4112",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "HE-REL-24",
+          "description": "Relay 24VDC 8-pin",
+          "qty": 26,
+          "unit_price": 14.2,
+          "amount": 369.2
+        },
+        {
+          "sku": "HE-CAB-14",
+          "description": "Copper cable 14AWG, 500ft spool",
+          "qty": 26,
+          "unit_price": 118.0,
+          "amount": 3068.0
+        },
+        {
+          "sku": "HE-PSU-24",
+          "description": "PSU 24V 10A DIN rail",
+          "qty": 40,
+          "unit_price": 96.3,
+          "amount": 3852.0
+        },
+        {
+          "sku": "HE-CB-20",
+          "description": "Circuit breaker 20A DIN",
+          "qty": 31,
+          "unit_price": 9.85,
+          "amount": 305.35
+        }
+      ],
+      "subtotal": 7594.55,
+      "tax": 653.14,
+      "total": 8247.69,
+      "bank_name": "Desert West Bank",
+      "bank_routing": "122100024",
+      "bank_account": "3348812706",
+      "payment_terms": "Net 45"
+    },
+    "engine_evidence": [],
+    "checks_passed": [
+      "PO PO-2025-4112 found (vendor V05).",
+      "SKU HE-REL-24: price OK (14.20).",
+      "SKU HE-REL-24: qty OK (26 <= received 26).",
+      "SKU HE-CAB-14: price OK (118.00).",
+      "SKU HE-CAB-14: qty OK (26 <= received 26).",
+      "SKU HE-PSU-24: price OK (96.30).",
+      "SKU HE-PSU-24: qty OK (40 <= received 40).",
+      "SKU HE-CB-20: price OK (9.85).",
+      "SKU HE-CB-20: qty OK (31 <= received 31).",
+      "Tax OK (653.14 ~= 653.13).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "MF/25/104",
+    "po_number": "PO-2025-4113",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "Line 1 (MF-M8-50) is billed at 49.28/unit vs. the PO price of 44.00/unit \u2014 a $5.28 (12.0%) overcharge, exceeding the 0.5% tolerance (adds $47.52 to the invoice). All other checks pass: quantities billed match GRN-88314 receipts (9/20/29/12), arithmetic and 6% tax are correct, currency and bank details match vendor master V03, and no duplicate payment exists. Hold pending price correction or PO amendment.",
+    "latency_s": 76.06,
+    "extracted": {
+      "invoice_no": "MF/25/104",
+      "vendor_name": "Meridian Fasteners Inc.",
+      "date": "2025-07-17",
+      "po_number": "PO-2025-4113",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "MF-M8-50",
+          "description": "Hex bolts M8x50 zinc, box 500",
+          "qty": 9,
+          "unit_price": 49.28,
+          "amount": 443.52
+        },
+        {
+          "sku": "MF-W-8",
+          "description": "Flat washers 8mm, box 1000",
+          "qty": 20,
+          "unit_price": 15.3,
+          "amount": 306.0
+        },
+        {
+          "sku": "MF-M8-NUT",
+          "description": "Hex nuts M8 zinc, box 1000",
+          "qty": 29,
+          "unit_price": 27.6,
+          "amount": 800.4
+        },
+        {
+          "sku": "MF-ANC-10",
+          "description": "Concrete anchors 10mm, box 100",
+          "qty": 12,
+          "unit_price": 62.75,
+          "amount": 753.0
+        }
+      ],
+      "subtotal": 2302.92,
+      "tax": 138.18,
+      "total": 2441.1,
+      "bank_name": "Keystone National",
+      "bank_routing": "031000503",
+      "bank_account": "5583920164",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "PRICE_MISMATCH",
+        "evidence": "SKU MF-M8-50: billed 49.28 vs PO 44.00 (12.0% > 0.5% tolerance)."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4113 found (vendor V03).",
+      "SKU MF-M8-50: qty OK (9 <= received 9).",
+      "SKU MF-W-8: price OK (15.30).",
+      "SKU MF-W-8: qty OK (20 <= received 20).",
+      "SKU MF-M8-NUT: price OK (27.60).",
+      "SKU MF-M8-NUT: qty OK (29 <= received 29).",
+      "SKU MF-ANC-10: price OK (62.75).",
+      "SKU MF-ANC-10: qty OK (12 <= received 12).",
+      "Tax OK (138.18 ~= 138.18).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "SOI-25-104",
+    "po_number": "PO-2025-4114",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "Line 1 (SO-CHR-T2) is billed at $204.12/unit vs the PO price of $189.00, an 8.0% overcharge that exceeds the 0.5% tolerance. All other checks pass: billed quantities (21, 34) match GRN-88315 receipts, tax of $551.69 equals 8.1% of the $6,811.02 subtotal, bank details match vendor master V07, currency is USD, and no duplicate payment exists.",
+    "latency_s": 51.64,
+    "extracted": {
+      "invoice_no": "SOI-25-104",
+      "vendor_name": "Stellar Office Interiors",
+      "date": "2025-06-12",
+      "po_number": "PO-2025-4114",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "SO-CHR-T2",
+          "description": "Task chair, mesh back",
+          "qty": 21,
+          "unit_price": 204.12,
+          "amount": 4286.52
+        },
+        {
+          "sku": "SO-MON-ARM",
+          "description": "Dual monitor arm",
+          "qty": 34,
+          "unit_price": 74.25,
+          "amount": 2524.5
+        }
+      ],
+      "subtotal": 6811.02,
+      "tax": 551.69,
+      "total": 7362.71,
+      "bank_name": "Front Range Credit Union",
+      "bank_routing": "107000233",
+      "bank_account": "8812204575",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "PRICE_MISMATCH",
+        "evidence": "SKU SO-CHR-T2: billed 204.12 vs PO 189.00 (8.0% > 0.5% tolerance)."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4114 found (vendor V07).",
+      "SKU SO-CHR-T2: qty OK (21 <= received 21).",
+      "SKU SO-MON-ARM: price OK (74.25).",
+      "SKU SO-MON-ARM: qty OK (34 <= received 34).",
+      "Tax OK (551.69 ~= 551.69).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "AMT-104",
+    "po_number": "PO-2025-4115",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH"
+    ],
+    "explanation": "Line 1 (AM-END-12) is billed at $78.43/unit vs the PO price of $68.20/unit \u2014 a $10.23 (15.0%) overcharge, exceeding the 0.5% tolerance. All other checks pass: quantities match receipts (22/22 and 33/33 on GRN-88316), arithmetic is correct, currency USD matches, bank details match vendor master, and no duplicates were found, so the invoice is placed on hold pending a price correction or PO amendment.",
+    "latency_s": 47.61,
+    "extracted": {
+      "invoice_no": "AMT-104",
+      "vendor_name": "Ashford Machine Tools Ltd.",
+      "date": "2025-07-27",
+      "po_number": "PO-2025-4115",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AM-END-12",
+          "description": "End mill 12mm carbide",
+          "qty": 22,
+          "unit_price": 78.43,
+          "amount": 1725.46
+        },
+        {
+          "sku": "AM-CHK-125",
+          "description": "Lathe chuck 125mm",
+          "qty": 33,
+          "unit_price": 412.6,
+          "amount": 13615.8
+        }
+      ],
+      "subtotal": 15341.26,
+      "tax": 0.0,
+      "total": 15341.26,
+      "bank_name": "Pennine & Yorkshire Bank",
+      "bank_routing": "GB29 NWBK 6016",
+      "bank_account": "1331 9268 19",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "PRICE_MISMATCH",
+        "evidence": "SKU AM-END-12: billed 78.43 vs PO 68.20 (15.0% > 0.5% tolerance)."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4115 found (vendor V10).",
+      "SKU AM-END-12: qty OK (22 <= received 22).",
+      "SKU AM-CHK-125: price OK (412.60).",
+      "SKU AM-CHK-125: qty OK (33 <= received 33).",
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "INV-2025-0104",
+    "po_number": "PO-2025-4116",
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "explanation": "All three lines are billed above received quantities: BP-115 billed 38 vs 22 received, BP-201 billed 7 vs 4 received, and BP-330 billed 7 vs 4 received (per GRN-88317, the only GRN for PO-2025-4116). Prices, tax (78.22 = 7% of 1117.45), total, currency, bank details, and duplicate screening all passed, so the invoice is held pending receipt of the outstanding goods.",
+    "latency_s": 49.58,
+    "extracted": {
+      "invoice_no": "INV-2025-0104",
+      "vendor_name": "Bluefin Packaging Co.",
+      "date": "2025-06-25",
+      "po_number": "PO-2025-4116",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "BP-115",
+          "description": "Stretch wrap roll 80ga",
+          "qty": 38,
+          "unit_price": 12.8,
+          "amount": 486.4
+        },
+        {
+          "sku": "BP-201",
+          "description": "Corrugated boxes 18x12x10, bundle 25",
+          "qty": 7,
+          "unit_price": 31.25,
+          "amount": 218.75
+        },
+        {
+          "sku": "BP-330",
+          "description": "Packing tape, case of 36",
+          "qty": 7,
+          "unit_price": 58.9,
+          "amount": 412.3
+        }
+      ],
+      "subtotal": 1117.45,
+      "tax": 78.22,
+      "total": 1195.67,
+      "bank_name": "Coastal Georgia Bank",
+      "bank_routing": "061000104",
+      "bank_account": "7719045512",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU BP-115: billed qty 38 > received 22 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU BP-201: billed qty 7 > received 4 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU BP-330: billed qty 7 > received 4 (summed across 1 GRN(s))."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4116 found (vendor V02).",
+      "SKU BP-115: price OK (12.80).",
+      "SKU BP-201: price OK (31.25).",
+      "SKU BP-330: price OK (58.90).",
+      "Tax OK (78.22 ~= 78.22).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "HEC-2025-107",
+    "po_number": "PO-2025-4117",
+    "decision": "hold",
+    "discrepancies": [
+      "QTY_MISMATCH"
+    ],
+    "explanation": "All four lines are billed ahead of receipts: invoice bills 18/35/40/29 units against only 10/21/24/17 units received on GRN-88318 (the sole GRN for PO-2025-4117), so billed quantities exceed total received on every line. Prices, currency, tax (677.19 \u2248 7874.35 \u00d7 8.6%), totals, bank details, and duplicate screening all passed, so the invoice is held pending receipt of the remaining goods.",
+    "latency_s": 50.76,
+    "extracted": {
+      "invoice_no": "HEC-2025-107",
+      "vendor_name": "Helios Electrical Components",
+      "date": "2025-06-23",
+      "po_number": "PO-2025-4117",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "HE-REL-24",
+          "description": "Relay 24VDC 8-pin",
+          "qty": 18,
+          "unit_price": 14.2,
+          "amount": 255.6
+        },
+        {
+          "sku": "HE-CB-20",
+          "description": "Circuit breaker 20A DIN",
+          "qty": 35,
+          "unit_price": 9.85,
+          "amount": 344.75
+        },
+        {
+          "sku": "HE-PSU-24",
+          "description": "PSU 24V 10A DIN rail",
+          "qty": 40,
+          "unit_price": 96.3,
+          "amount": 3852.0
+        },
+        {
+          "sku": "HE-CAB-14",
+          "description": "Copper cable 14AWG, 500ft spool",
+          "qty": 29,
+          "unit_price": 118.0,
+          "amount": 3422.0
+        }
+      ],
+      "subtotal": 7874.35,
+      "tax": 677.19,
+      "total": 8551.54,
+      "bank_name": "Desert West Bank",
+      "bank_routing": "122100024",
+      "bank_account": "3348812706",
+      "payment_terms": "Net 45"
+    },
+    "engine_evidence": [
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU HE-REL-24: billed qty 18 > received 10 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU HE-CB-20: billed qty 35 > received 21 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU HE-PSU-24: billed qty 40 > received 24 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU HE-CAB-14: billed qty 29 > received 17 (summed across 1 GRN(s))."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4117 found (vendor V05).",
+      "SKU HE-REL-24: price OK (14.20).",
+      "SKU HE-CB-20: price OK (9.85).",
+      "SKU HE-PSU-24: price OK (96.30).",
+      "SKU HE-CAB-14: price OK (118.00).",
+      "Tax OK (677.19 ~= 677.19).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "GP-104",
+    "decision": "error",
+    "discrepancies": [],
+    "explanation": "PIPELINE ERROR: no JSON object found in: {",
+    "latency_s": null
+  },
+  {
+    "invoice_id": "CCW-104",
+    "po_number": "PO-2025-4119",
+    "decision": "hold",
+    "discrepancies": [
+      "GRN_MISSING"
+    ],
+    "explanation": "Invoice CCW-104 matches PO-2025-4119 on all three line prices ($612.00, $744.50, $87.40), currency (USD), arithmetic (tax $582.16 = 9.5% x $6,128.00; total $6,710.16), and remit-to bank details, and no duplicate payment was found. However, no goods receipt notes exist for PO-2025-4119, so delivery is unverified \u2014 GRN_MISSING applies and the invoice is held. QTY_MISMATCH is not separately coded because with zero GRNs the received-quantity comparison is undefined; GRN_MISSING is the governing discrepancy.",
+    "latency_s": 120.8,
+    "extracted": {
+      "invoice_no": "CCW-104",
+      "vendor_name": "Cascadia Chemical Works",
+      "date": "2025-06-28",
+      "po_number": "PO-2025-4119",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "CC-IPA-55",
+          "description": "Isopropyl alcohol 99%, 55gal drum",
+          "qty": 2,
+          "unit_price": 612.0,
+          "amount": 1224.0
+        },
+        {
+          "sku": "CC-COOL-55",
+          "description": "Machine coolant concentrate, 55gal",
+          "qty": 6,
+          "unit_price": 744.5,
+          "amount": 4467.0
+        },
+        {
+          "sku": "CC-DEG-5",
+          "description": "Industrial degreaser, 5gal",
+          "qty": 5,
+          "unit_price": 87.4,
+          "amount": 437.0
+        }
+      ],
+      "subtotal": 6128.0,
+      "tax": 582.16,
+      "total": 6710.16,
+      "bank_name": "Puget Sound Trust",
+      "bank_routing": "125000024",
+      "bank_account": "9027481133",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "GRN_MISSING",
+        "evidence": "No goods receipt notes exist for PO-2025-4119."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4119 found (vendor V04).",
+      "SKU CC-IPA-55: price OK (612.00).",
+      "SKU CC-COOL-55: price OK (744.50).",
+      "SKU CC-DEG-5: price OK (87.40).",
+      "Tax OK (582.16 ~= 582.16).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": false,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "ALS-INV-104",
+    "po_number": "PO-2025-4120",
+    "decision": "hold",
+    "discrepancies": [
+      "GRN_MISSING"
+    ],
+    "explanation": "No goods receipt notes exist for PO-2025-4120, so the three-way match cannot be completed: the billed quantities (19 LTL, 33 liftgate, 15 pallets) cannot be validated against any receipts, and the PO remains open. All other checks pass \u2014 line prices match the PO exactly (425.00/45.00/18.50), arithmetic_check confirms subtotal 9837.50, tax 0.00, and total 9837.50, currency (USD) matches the PO, remit-to bank details match vendor master (routing 084000026, account 6650371928), and the duplicate screen found no matches. Hold pending receipt of valid GRNs for this PO.",
+    "latency_s": 120.96,
+    "extracted": {
+      "invoice_no": "ALS-INV-104",
+      "vendor_name": "AURIGA LOGISTICS SERVICES",
+      "date": "2025-07-08",
+      "po_number": "PO-2025-4120",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AL-LTL-STD",
+          "description": "LTL freight, standard lane",
+          "qty": 19,
+          "unit_price": 425.0,
+          "amount": 8075.0
+        },
+        {
+          "sku": "AL-LIFT",
+          "description": "Liftgate service",
+          "qty": 33,
+          "unit_price": 45.0,
+          "amount": 1485.0
+        },
+        {
+          "sku": "AL-WHS-P",
+          "description": "Warehouse handling, per pallet",
+          "qty": 15,
+          "unit_price": 18.5,
+          "amount": 277.5
+        }
+      ],
+      "subtotal": 9837.5,
+      "tax": 0.0,
+      "total": 9837.5,
+      "bank_name": "River City Bank",
+      "bank_routing": "084000026",
+      "bank_account": "6650371928",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "GRN_MISSING",
+        "evidence": "No goods receipt notes exist for PO-2025-4120."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4120 found (vendor V06).",
+      "SKU AL-LTL-STD: price OK (425.00).",
+      "SKU AL-LIFT: price OK (45.00).",
+      "SKU AL-WHS-P: price OK (18.50).",
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": false,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "INV-2025-0107",
+    "decision": "error",
+    "discrepancies": [],
+    "explanation": "PIPELINE ERROR: Extra data: line 8 column 1 (char 678)",
+    "latency_s": null
+  },
+  {
+    "invoice_id": "ALS-INV-107",
+    "po_number": "PO-2025-4122",
+    "decision": "reject",
+    "discrepancies": [
+      "DUPLICATE"
+    ],
+    "explanation": "Payment history shows invoice ALS-INV-107 for vendor V06 on PO-2025-4122 was already paid $13,741.75 (USD) on 2025-07-02 \u2014 both the invoice number and the vendor+PO+total combination match an existing payment. All other checks pass (4/4 line prices match PO, billed qty equals GRN-88321 received qty of 27/23/8/17, arithmetic and bank details verified), but per policy a DUPLICATE requires rejection.",
+    "latency_s": 37.14,
+    "extracted": {
+      "invoice_no": "ALS-INV-107",
+      "vendor_name": "Auriga Logistics Services",
+      "date": "2025-07-05",
+      "po_number": "PO-2025-4122",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AL-LTL-STD",
+          "description": "LTL freight, standard lane",
+          "qty": 27,
+          "unit_price": 425.0,
+          "amount": 11475.0
+        },
+        {
+          "sku": "AL-LIFT",
+          "description": "Liftgate service",
+          "qty": 23,
+          "unit_price": 45.0,
+          "amount": 1035.0
+        },
+        {
+          "sku": "AL-WHS-P",
+          "description": "Warehouse handling, per pallet",
+          "qty": 8,
+          "unit_price": 18.5,
+          "amount": 148.0
+        },
+        {
+          "sku": "AL-FUEL",
+          "description": "Fuel surcharge",
+          "qty": 17,
+          "unit_price": 63.75,
+          "amount": 1083.75
+        }
+      ],
+      "subtotal": 13741.75,
+      "tax": 0.0,
+      "total": 13741.75,
+      "bank_name": "River City Bank",
+      "bank_routing": "084000026",
+      "bank_account": "6650371928",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "DUPLICATE",
+        "evidence": "Paid 2025-07-02 as ALS-INV-107 (13741.75 USD): invoice number already paid (normalized match); same vendor + PO + amount already paid."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4122 found (vendor V06).",
+      "SKU AL-LTL-STD: price OK (425.00).",
+      "SKU AL-LTL-STD: qty OK (27 <= received 27).",
+      "SKU AL-LIFT: price OK (45.00).",
+      "SKU AL-LIFT: qty OK (23 <= received 23).",
+      "SKU AL-WHS-P: price OK (18.50).",
+      "SKU AL-WHS-P: qty OK (8 <= received 8).",
+      "SKU AL-FUEL: price OK (63.75).",
+      "SKU AL-FUEL: qty OK (17 <= received 17).",
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "NIS-2025-107",
+    "po_number": "PO-2025-4123",
+    "decision": "hold",
+    "discrepancies": [
+      "TAX_ERROR"
+    ],
+    "explanation": "Invoiced tax of $388.27 exceeds the expected 7.25% x $4,843.15 subtotal = $351.13 by $37.14, well beyond the $0.02 tolerance (TAX_ERROR). All other checks pass: line prices match PO-2025-4123 exactly ($6.95/$42.50/$149.00), billed quantities (17/6/30) equal total received per GRN-88322 (17/6/30), line math/subtotal/total verify, currency is USD, remit-to bank matches vendor master, and the duplicate screen found no prior payment for this vendor/PO/total or invoice number.",
+    "latency_s": 62.3,
+    "extracted": {
+      "invoice_no": "NIS-2025-107",
+      "vendor_name": "Northgate Industrial Supply LLC",
+      "date": "2025-06-21",
+      "po_number": "PO-2025-4123",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "NG-7720",
+          "description": "Safety goggles, anti-fog",
+          "qty": 17,
+          "unit_price": 6.95,
+          "amount": 118.15
+        },
+        {
+          "sku": "NG-3305",
+          "description": "Absorbent pads, case",
+          "qty": 6,
+          "unit_price": 42.5,
+          "amount": 255.0
+        },
+        {
+          "sku": "NG-1180",
+          "description": "Steel shelving unit 72in",
+          "qty": 30,
+          "unit_price": 149.0,
+          "amount": 4470.0
+        }
+      ],
+      "subtotal": 4843.15,
+      "tax": 388.27,
+      "total": 5231.42,
+      "bank_name": "First Commerce Bank",
+      "bank_routing": "021000021",
+      "bank_account": "4402198837",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "TAX_ERROR",
+        "evidence": "Tax 388.27 != tax_rate 0.0725 x subtotal 4843.15 = 351.13 (tolerance $0.02)."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4123 found (vendor V01).",
+      "SKU NG-7720: price OK (6.95).",
+      "SKU NG-7720: qty OK (17 <= received 17).",
+      "SKU NG-3305: price OK (42.50).",
+      "SKU NG-3305: qty OK (6 <= received 6).",
+      "SKU NG-1180: price OK (149.00).",
+      "SKU NG-1180: qty OK (30 <= received 30).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "VPL-2025-104",
+    "po_number": "PO-2025-4124",
+    "decision": "hold",
+    "discrepancies": [
+      "TAX_ERROR"
+    ],
+    "explanation": "All three lines match PO-2025-4124 prices exactly (\u20ac21.40/\u20ac9.60/\u20ac340.00), billed quantities equal GRN-88323 received quantities (12/28/33), currency is EUR, bank details match vendor master V09, and no duplicate payments exist. However, tax of \u20ac2,284.26 differs from the expected 19% \u00d7 subtotal \u20ac11,745.60 = \u20ac2,231.66 by \u20ac52.60, exceeding the $0.02 tolerance, so the invoice is held for tax correction.",
+    "latency_s": 53.32,
+    "extracted": {
+      "invoice_no": "VPL-2025-104",
+      "vendor_name": "Vireo Print & Label GmbH",
+      "date": "2025-07-02",
+      "po_number": "PO-2025-4124",
+      "currency": "EUR",
+      "lines": [
+        {
+          "sku": "VP-LBL-4x6",
+          "description": "Thermal labels 4x6, roll 500",
+          "qty": 12,
+          "unit_price": 21.4,
+          "amount": 256.8
+        },
+        {
+          "sku": "VP-RIB-110",
+          "description": "TTR ribbon 110mm",
+          "qty": 28,
+          "unit_price": 9.6,
+          "amount": 268.8
+        },
+        {
+          "sku": "VP-TAG-ASSET",
+          "description": "Asset tags, custom, 1000",
+          "qty": 33,
+          "unit_price": 340.0,
+          "amount": 11220.0
+        }
+      ],
+      "subtotal": 11745.6,
+      "tax": 2284.26,
+      "total": 14029.86,
+      "bank_name": "Hansa Handelsbank",
+      "bank_routing": "DE44 5001 0517",
+      "bank_account": "5407 3249 31",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "TAX_ERROR",
+        "evidence": "Tax 2284.26 != tax_rate 0.1900 x subtotal 11745.60 = 2231.66 (tolerance $0.02)."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4124 found (vendor V09).",
+      "SKU VP-LBL-4x6: price OK (21.40).",
+      "SKU VP-LBL-4x6: qty OK (12 <= received 12).",
+      "SKU VP-RIB-110: price OK (9.60).",
+      "SKU VP-RIB-110: qty OK (28 <= received 28).",
+      "SKU VP-TAG-ASSET: price OK (340.00).",
+      "SKU VP-TAG-ASSET: qty OK (33 <= received 33).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "SOI-25-107",
+    "po_number": "PO-2025-4125",
+    "decision": "hold",
+    "discrepancies": [
+      "TOTAL_ERROR"
+    ],
+    "explanation": "Line 2 (SO-CHR-T2) shows an amount of $3,492.00, but qty 18 x unit price $189.00 = $3,402.00 \u2014 a $90.00 overstatement far beyond the $0.02 tolerance, so TOTAL_ERROR applies. All other checks pass: prices and quantities match the PO and GRN-88324 received totals (26/18), currency is USD, tax of $613.07 equals 8.1% of $7,568.80, bank details match vendor master V07, and no duplicate payments were found.",
+    "latency_s": 37.91,
+    "extracted": {
+      "invoice_no": "SOI-25-107",
+      "vendor_name": "Stellar Office Interiors",
+      "date": "2025-07-23",
+      "po_number": "PO-2025-4125",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "SO-FIL-3D",
+          "description": "File cabinet 3-drawer",
+          "qty": 26,
+          "unit_price": 156.8,
+          "amount": 4076.8
+        },
+        {
+          "sku": "SO-CHR-T2",
+          "description": "Task chair, mesh back",
+          "qty": 18,
+          "unit_price": 189.0,
+          "amount": 3492.0
+        }
+      ],
+      "subtotal": 7568.8,
+      "tax": 613.07,
+      "total": 8181.87,
+      "bank_name": "Front Range Credit Union",
+      "bank_routing": "107000233",
+      "bank_account": "8812204575",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "TOTAL_ERROR",
+        "evidence": "Line SO-CHR-T2: amount 3492.00 != qty 18 x unit price 189.00 = 3402.00."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4125 found (vendor V07).",
+      "SKU SO-FIL-3D: price OK (156.80).",
+      "SKU SO-FIL-3D: qty OK (26 <= received 26).",
+      "SKU SO-CHR-T2: price OK (189.00).",
+      "SKU SO-CHR-T2: qty OK (18 <= received 18).",
+      "Tax OK (613.07 ~= 613.07).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "MF/25/107",
+    "po_number": "PO-2025-4126",
+    "decision": "hold",
+    "discrepancies": [
+      "TOTAL_ERROR"
+    ],
+    "explanation": "Line 4 (MF-M8-NUT) shows an amount of $1,021.60 but 36 boxes \u00d7 $27.60 = $993.60, a $28.00 overstatement exceeding the $0.02 tolerance. All other checks pass: prices and quantities match PO-2025-4126 and GRN-88325 exactly, tax of $166.77 equals 6% of the subtotal, bank details match vendor master V03, and no duplicate payments were found. Hold pending a corrected invoice.",
+    "latency_s": 68.46,
+    "extracted": {
+      "invoice_no": "MF/25/107",
+      "vendor_name": "Meridian Fasteners Inc.",
+      "date": "2025-07-02",
+      "po_number": "PO-2025-4126",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "MF-ANC-10",
+          "description": "Concrete anchors 10mm, box 100",
+          "qty": 15,
+          "unit_price": 62.75,
+          "amount": 941.25
+        },
+        {
+          "sku": "MF-M8-50",
+          "description": "Hex bolts M8x50 zinc, box 500",
+          "qty": 5,
+          "unit_price": 44.0,
+          "amount": 220.0
+        },
+        {
+          "sku": "MF-W-8",
+          "description": "Flat washers 8mm, box 1000",
+          "qty": 39,
+          "unit_price": 15.3,
+          "amount": 596.7
+        },
+        {
+          "sku": "MF-M8-NUT",
+          "description": "Hex nuts M8 zinc, box 1000",
+          "qty": 36,
+          "unit_price": 27.6,
+          "amount": 1021.6
+        }
+      ],
+      "subtotal": 2779.55,
+      "tax": 166.77,
+      "total": 2946.32,
+      "bank_name": "Keystone National",
+      "bank_routing": "031000503",
+      "bank_account": "5583920164",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "TOTAL_ERROR",
+        "evidence": "Line MF-M8-NUT: amount 1021.60 != qty 36 x unit price 27.60 = 993.60."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4126 found (vendor V03).",
+      "SKU MF-ANC-10: price OK (62.75).",
+      "SKU MF-ANC-10: qty OK (15 <= received 15).",
+      "SKU MF-M8-50: price OK (44.00).",
+      "SKU MF-M8-50: qty OK (5 <= received 5).",
+      "SKU MF-W-8: price OK (15.30).",
+      "SKU MF-W-8: qty OK (39 <= received 39).",
+      "SKU MF-M8-NUT: price OK (27.60).",
+      "SKU MF-M8-NUT: qty OK (36 <= received 36).",
+      "Tax OK (166.77 ~= 166.77).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "HEC-2025-110",
+    "po_number": "PO-2025-4127",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "explanation": "All three-way match checks pass: quantities (35/35 and 12/12) match GRN-88326 receipts, prices ($96.30 and $118.00) match the PO exactly, and arithmetic/tax ($411.64 = 0.086 x $4,786.50; total $5,198.14) verify with no duplicates. However, the remit-to bank account 7791024468 (Meridian Trust Bank) differs from the vendor master account 3348812706 (Desert West Bank), triggering BANK_CHANGE; hold and verify the new bank details with the vendor before payment.",
+    "latency_s": 36.59,
+    "extracted": {
+      "invoice_no": "HEC-2025-110",
+      "vendor_name": "Helios Electrical Components",
+      "date": "2025-06-28",
+      "po_number": "PO-2025-4127",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "HE-PSU-24",
+          "description": "PSU 24V 10A DIN rail",
+          "qty": 35,
+          "unit_price": 96.3,
+          "amount": 3370.5
+        },
+        {
+          "sku": "HE-CAB-14",
+          "description": "Copper cable 14AWG, 500ft spool",
+          "qty": 12,
+          "unit_price": 118.0,
+          "amount": 1416.0
+        }
+      ],
+      "subtotal": 4786.5,
+      "tax": 411.64,
+      "total": 5198.14,
+      "bank_name": "Meridian Trust Bank",
+      "bank_routing": "122100024",
+      "bank_account": "7791024468",
+      "payment_terms": "Net 45"
+    },
+    "engine_evidence": [
+      {
+        "code": "BANK_CHANGE",
+        "evidence": "Remit-to account 7791024468 != vendor master 3348812706 \u2014 verify with vendor before payment."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4127 found (vendor V05).",
+      "SKU HE-PSU-24: price OK (96.30).",
+      "SKU HE-PSU-24: qty OK (35 <= received 35).",
+      "SKU HE-CAB-14: price OK (118.00).",
+      "SKU HE-CAB-14: qty OK (12 <= received 12).",
+      "Tax OK (411.64 ~= 411.64)."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "GP-107",
+    "po_number": "PO-2025-4128",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE"
+    ],
+    "explanation": "Invoice GP-107 matches PO-2025-4128 on prices ($196.00 and $112.00), quantities (6/6 and 17/17 received per GRN-88327), currency (USD), and arithmetic (tax $184.80 = 6% of $3,080.00; total $3,264.80), and no duplicate payments were found. However, the remit-to bank account 4456108823 on the invoice differs from the vendor master account 2290156841 for V08 (routing 123103729 matches), triggering BANK_CHANGE. Hold payment until the bank account change is verified directly with the vendor.",
+    "latency_s": 37.72,
+    "extracted": {
+      "invoice_no": "GP-107",
+      "vendor_name": "Granite Peak Safety Gear",
+      "date": "2025-06-19",
+      "po_number": "PO-2025-4128",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "GP-HH-CL2",
+          "description": "Hard hats class E, box 20",
+          "qty": 6,
+          "unit_price": 196.0,
+          "amount": 1176.0
+        },
+        {
+          "sku": "GP-BOOT-10",
+          "description": "Steel toe boots size 10",
+          "qty": 17,
+          "unit_price": 112.0,
+          "amount": 1904.0
+        }
+      ],
+      "subtotal": 3080.0,
+      "tax": 184.8,
+      "total": 3264.8,
+      "bank_name": "Meridian Trust Bank",
+      "bank_routing": "123103729",
+      "bank_account": "4456108823",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "BANK_CHANGE",
+        "evidence": "Remit-to account 4456108823 != vendor master 2290156841 \u2014 verify with vendor before payment."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4128 found (vendor V08).",
+      "SKU GP-HH-CL2: price OK (196.00).",
+      "SKU GP-HH-CL2: qty OK (6 <= received 6).",
+      "SKU GP-BOOT-10: price OK (112.00).",
+      "SKU GP-BOOT-10: qty OK (17 <= received 17).",
+      "Tax OK (184.80 ~= 184.80)."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "VPL-2025-107",
+    "po_number": "PO-2025-4129",
+    "decision": "hold",
+    "discrepancies": [
+      "CURRENCY_MISMATCH"
+    ],
+    "explanation": "Invoice is billed in USD (total 15,588.29) while PO-2025-4129, the vendor master record, and vendor history are all in EUR, triggering CURRENCY_MISMATCH. All other checks pass: line prices match PO exactly (21.40/9.60/340.00), billed qty 39/38/35 equals GRN-88328 received qty 39/38/35, arithmetic (tax 2,488.89 = 19% of 13,099.40 subtotal) verifies within tolerance, bank details match vendor master, and no duplicates were found. Hold for currency reconciliation before payment.",
+    "latency_s": 63.92,
+    "extracted": {
+      "invoice_no": "VPL-2025-107",
+      "vendor_name": "Vireo Print & Label GmbH",
+      "date": "2025-06-22",
+      "po_number": "PO-2025-4129",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "VP-LBL-4x6",
+          "description": "Thermal labels 4x6, roll 500",
+          "qty": 39,
+          "unit_price": 21.4,
+          "amount": 834.6
+        },
+        {
+          "sku": "VP-RIB-110",
+          "description": "TTR ribbon 110mm",
+          "qty": 38,
+          "unit_price": 9.6,
+          "amount": 364.8
+        },
+        {
+          "sku": "VP-TAG-ASSET",
+          "description": "Asset tags, custom, 1000",
+          "qty": 35,
+          "unit_price": 340.0,
+          "amount": 11900.0
+        }
+      ],
+      "subtotal": 13099.4,
+      "tax": 2488.89,
+      "total": 15588.29,
+      "bank_name": "Hansa Handelsbank",
+      "bank_routing": "DE44 5001 0517",
+      "bank_account": "5407 3249 31",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "CURRENCY_MISMATCH",
+        "evidence": "Invoice currency USD != PO currency EUR."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4129 found (vendor V09).",
+      "SKU VP-LBL-4x6: price OK (21.40).",
+      "SKU VP-LBL-4x6: qty OK (39 <= received 39).",
+      "SKU VP-RIB-110: price OK (9.60).",
+      "SKU VP-RIB-110: qty OK (38 <= received 38).",
+      "SKU VP-TAG-ASSET: price OK (340.00).",
+      "SKU VP-TAG-ASSET: qty OK (35 <= received 35).",
+      "Tax OK (2488.89 ~= 2488.89).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "AMT-107",
+    "po_number": "PO-2025-9911",
+    "decision": "hold",
+    "discrepancies": [
+      "PO_NOT_FOUND"
+    ],
+    "explanation": "Referenced PO PO-2025-9911 does not exist in the PO system, so PO_NOT_FOUND is the sole discrepancy; the missing GRN is a consequence of the nonexistent PO, not an independent code. All arithmetic passes (tax $0.00 = 0.0% \u00d7 $16,602.80 subtotal, total $16,602.80), remit-to bank matches vendor master V10, and no duplicate payments exist \u2014 so the invoice is held pending a valid PO reference rather than rejected.",
+    "latency_s": 85.92,
+    "extracted": {
+      "invoice_no": "AMT-107",
+      "vendor_name": "Ashford Machine Tools Ltd.",
+      "date": "2025-07-20",
+      "po_number": "PO-2025-9911",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "AM-CHK-125",
+          "description": "Lathe chuck 125mm",
+          "qty": 10,
+          "unit_price": 412.6,
+          "amount": 4126.0
+        },
+        {
+          "sku": "AM-END-12",
+          "description": "End mill 12mm carbide",
+          "qty": 21,
+          "unit_price": 68.2,
+          "amount": 1432.2
+        },
+        {
+          "sku": "AM-VIS-6",
+          "description": "Machine vise 6in",
+          "qty": 31,
+          "unit_price": 289.0,
+          "amount": 8959.0
+        },
+        {
+          "sku": "AM-INS-CNMG",
+          "description": "Turning inserts CNMG, box 10",
+          "qty": 22,
+          "unit_price": 94.8,
+          "amount": 2085.6
+        }
+      ],
+      "subtotal": 16602.8,
+      "tax": 0.0,
+      "total": 16602.8,
+      "bank_name": "Pennine & Yorkshire Bank",
+      "bank_routing": "GB29 NWBK 6016",
+      "bank_account": "1331 9268 19",
+      "payment_terms": "Net 30"
+    },
+    "engine_evidence": [
+      {
+        "code": "PO_NOT_FOUND",
+        "evidence": "PO 'PO-2025-9911' not present in the PO system."
+      }
+    ],
+    "checks_passed": [
+      "Tax OK (0.00 ~= 0.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": false,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "NIS-2025-110",
+    "po_number": "PO-2025-4131",
+    "decision": "hold",
+    "discrepancies": [
+      "PRICE_MISMATCH",
+      "QTY_MISMATCH"
+    ],
+    "explanation": "Line 1 (NG-4410) is billed at $20.24/unit vs the PO price of $18.40, a +10% price deviation exceeding the 0.5% tolerance. Additionally, all four lines are billed above total received quantities per GRN-88330 (billed/received: 10/5, 24/12, 6/3, 17/8), so no line can be fully receipted. Arithmetic, tax ($162.00 at 7.25%), currency (USD), remit-to bank details, and duplicate screening all passed.",
+    "latency_s": 59.65,
+    "extracted": {
+      "invoice_no": "NIS-2025-110",
+      "vendor_name": "Northgate Industrial Supply LLC",
+      "date": "2025-06-15",
+      "po_number": "PO-2025-4131",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "NG-4410",
+          "description": "Nitrile work gloves, box of 100",
+          "qty": 10,
+          "unit_price": 20.24,
+          "amount": 202.4
+        },
+        {
+          "sku": "NG-3305",
+          "description": "Absorbent pads, case",
+          "qty": 24,
+          "unit_price": 42.5,
+          "amount": 1020.0
+        },
+        {
+          "sku": "NG-1180",
+          "description": "Steel shelving unit 72in",
+          "qty": 6,
+          "unit_price": 149.0,
+          "amount": 894.0
+        },
+        {
+          "sku": "NG-7720",
+          "description": "Safety goggles, anti-fog",
+          "qty": 17,
+          "unit_price": 6.95,
+          "amount": 118.15
+        }
+      ],
+      "subtotal": 2234.55,
+      "tax": 162.0,
+      "total": 2396.55,
+      "bank_name": "First Commerce Bank",
+      "bank_routing": "021000021",
+      "bank_account": "4402198837",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "PRICE_MISMATCH",
+        "evidence": "SKU NG-4410: billed 20.24 vs PO 18.40 (10.0% > 0.5% tolerance)."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU NG-4410: billed qty 10 > received 5 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU NG-3305: billed qty 24 > received 12 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU NG-1180: billed qty 6 > received 3 (summed across 1 GRN(s))."
+      },
+      {
+        "code": "QTY_MISMATCH",
+        "evidence": "SKU NG-7720: billed qty 17 > received 8 (summed across 1 GRN(s))."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4131 found (vendor V01).",
+      "SKU NG-3305: price OK (42.50).",
+      "SKU NG-1180: price OK (149.00).",
+      "SKU NG-7720: price OK (6.95).",
+      "Tax OK (162.00 ~= 162.00).",
+      "Remit-to bank details match vendor master."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  },
+  {
+    "invoice_id": "CCW-107",
+    "po_number": "PO-2025-4132",
+    "decision": "hold",
+    "discrepancies": [
+      "BANK_CHANGE",
+      "TAX_ERROR"
+    ],
+    "explanation": "Prices (744.50/87.40/612.00), quantities (37/21/8 billed vs 37/21/8 received on GRN-88331), and currency all match, and no duplicate payment exists, but tax of 3,300.50 exceeds the master-rate expectation of 3,256.40 (0.095 \u00d7 34,277.90) by $44.10 (TAX_ERROR), and the remit-to account 6120087745 differs from the vendor master 9027481133 (BANK_CHANGE). Hold pending corrected tax and vendor-verified bank details.",
+    "latency_s": 33.68,
+    "extracted": {
+      "invoice_no": "CCW-107",
+      "vendor_name": "Cascadia Chemical Works",
+      "date": "2025-06-04",
+      "po_number": "PO-2025-4132",
+      "currency": "USD",
+      "lines": [
+        {
+          "sku": "CC-COOL-55",
+          "description": "Machine coolant concentrate, 55gal",
+          "qty": 37,
+          "unit_price": 744.5,
+          "amount": 27546.5
+        },
+        {
+          "sku": "CC-DEG-5",
+          "description": "Industrial degreaser, 5gal",
+          "qty": 21,
+          "unit_price": 87.4,
+          "amount": 1835.4
+        },
+        {
+          "sku": "CC-IPA-55",
+          "description": "Isopropyl alcohol 99%, 55gal drum",
+          "qty": 8,
+          "unit_price": 612.0,
+          "amount": 4896.0
+        }
+      ],
+      "subtotal": 34277.9,
+      "tax": 3300.5,
+      "total": 37578.4,
+      "bank_name": "Meridian Trust Bank",
+      "bank_routing": "125000024",
+      "bank_account": "6120087745",
+      "payment_terms": "Net 60"
+    },
+    "engine_evidence": [
+      {
+        "code": "TAX_ERROR",
+        "evidence": "Tax 3300.50 != tax_rate 0.0950 x subtotal 34277.90 = 3256.40 (tolerance $0.02)."
+      },
+      {
+        "code": "BANK_CHANGE",
+        "evidence": "Remit-to account 6120087745 != vendor master 9027481133 \u2014 verify with vendor before payment."
+      }
+    ],
+    "checks_passed": [
+      "PO PO-2025-4132 found (vendor V04).",
+      "SKU CC-COOL-55: price OK (744.50).",
+      "SKU CC-COOL-55: qty OK (37 <= received 37).",
+      "SKU CC-DEG-5: price OK (87.40).",
+      "SKU CC-DEG-5: qty OK (21 <= received 21).",
+      "SKU CC-IPA-55: price OK (612.00).",
+      "SKU CC-IPA-55: qty OK (8 <= received 8)."
+    ],
+    "verifier": {
+      "initial_agree": true,
+      "final_agree": true
+    }
+  }
+]
