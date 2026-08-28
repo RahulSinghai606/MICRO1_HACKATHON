@@ -1,20 +1,58 @@
-# Matchpoint — an agentic 3-way match that an AP specialist can actually sign
+<div align="center">
 
-**micro1 Agentic Workflows Hackathon submission.**
-Everything in this repository was built during the competition. Pre-existing components:
-Python, Pillow, Requests, the LLM APIs (Azure AI Foundry / OpenRouter) and Mistral OCR.
-Everything else — dataset, generator, agents, tools, verifier, evaluation harness, UI — is ours.
+# 🧾 Matchpoint
+
+### Agents that close the books. **Humans that sign them.**
+
+An agentic **3-way invoice match** (invoice ↔ purchase order ↔ goods receipt) that an
+accounts-payable specialist can actually sign — measured **81.3% → 100%** over a fair baseline.
+
+[![Decision accuracy](https://img.shields.io/badge/decision_accuracy-100%25-34d399?style=for-the-badge)](eval/results/agent_final.json)
+[![Baseline](https://img.shields.io/badge/baseline-81.3%25-6b7280?style=for-the-badge)](eval/results/baseline.json)
+[![Missed defects](https://img.shields.io/badge/missed_defects-0%25-34d399?style=for-the-badge)](eval/results/agent_final.json)
+[![Held-out batch](https://img.shields.io/badge/held--out_batch-100%25-34d399?style=for-the-badge)](eval/results/agent_final_stress.json)
+
+[![Python](https://img.shields.io/badge/python-3.11+-3776AB?logo=python&logoColor=white)](REPRODUCE.md)
+[![LLM](https://img.shields.io/badge/LLM-any_OpenAI--compatible-8b5cf6)](src/matchpoint/llm.py)
+[![OCR](https://img.shields.io/badge/OCR-Mistral_%28cached_in_repo%29-f97316)](data/invoices/ocr_cache)
+[![Eval cases](https://img.shields.io/badge/gold--labeled_cases-64-0ea5e9)](data/gold/cases.md)
+[![HITL](https://img.shields.io/badge/payments-human_approved_·_sandboxed-eab308)](src/matchpoint/hitl.py)
+
+**[🌐 Live site](https://matchpoint-teal.vercel.app)** ·
+**[🎬 Solution video](docs/demo/Matchpoint_Solution_Video.mp4)** ·
+**[📖 Reproduce it](REPRODUCE.md)** ·
+**[🧪 Every seeded case](data/gold/cases.md)** ·
+**[🛰️ Trajectories](trajectories/)**
+
+<img src="docs/assets/site-hero.png" alt="Matchpoint" width="920">
+
+</div>
 
 ---
 
-## 1. Who has the problem
+> **micro1 Agentic Workflows Hackathon submission.**
+> Everything in this repository was built during the competition. Pre-existing components:
+> Python, Pillow, Requests, the LLM APIs (Azure AI Foundry / OpenRouter) and Mistral OCR.
+> Everything else — dataset, generator, agents, tools, verifier, evaluation harness, UI — is ours.
+
+## ✨ What it looks like
+
+| The agent's work, end to end | Human approval queue |
+|---|---|
+| ![One realistic execution](docs/assets/execution.png) | ![Approval queue](docs/assets/approval-queue.png) |
+| **The audit packet** — batch overview | **Evidence per invoice** — the $37.14 tax error the baseline approved |
+| ![Audit packet](docs/assets/audit-packet.png) | ![Case evidence](docs/assets/audit-case.png) |
+
+---
+
+## 👤 1. Who has the problem
 
 An **accounts-payable specialist** at a mid-size company. Before any supplier invoice is
 paid, she must **three-way match** it: the invoice against the **purchase order** (did we
 order this, at this price?) and against the **goods receipt** (did it actually arrive?) —
 then screen for duplicates, tax errors, and changed bank details.
 
-## 2. The bottleneck, and why solving it matters
+## 🧱 2. The bottleneck, and why solving it matters
 
 - Manual invoice processing costs **$12.88–$19.83 per invoice**; even the industry
   average all-in cost is **$9.40** vs **$2.78** for best-in-class automated teams
@@ -31,38 +69,35 @@ then screen for duplicates, tax errors, and changed bank details.
 A missed price bump, a duplicate, or a swapped bank account is money that does not come
 back (only 22% of defrauded organizations recovered ≥75% of funds in 2024, per AFP).
 
-## 3. What Matchpoint does
+## ⚙️ 3. What Matchpoint does
 
 One realistic batch, end to end:
 
-```
-32 invoice images (PNG)
-   │  Mistral OCR
-   ▼
-Extraction agent      LLM turns OCR markdown into strict JSON. Forbidden from "fixing"
-   │                  numbers — the printed numbers are the evidence.
-   ▼
-Matching agent        LLM investigates with deterministic tools: get_po,
-   │                  get_received_totals (partial deliveries summed), search_payments
-   │                  (duplicate detection), arithmetic_check, vendor resolution with
-   │                  learned aliases. The LLM never does arithmetic.
-   ▼
-Verifier              An independent deterministic match engine recomputes every check
-   │                  from the extracted JSON. Disagreement → one feedback round to the
-   │                  matcher → if still unresolved, deterministic evidence wins (flagged).
-   ▼
-Human approval queue  Nothing is ever paid by a machine. Web UI or CLI review; payments
-   │                  post only to a sandbox CSV ledger after human sign-off.
-   ▼
-Audit packet          A single self-contained HTML report: every decision, the exact
-                      numbers that justify it, checks passed, and the human review trail.
+```mermaid
+flowchart TD
+    A["🧾 32 invoice images (PNG)"] -->|Mistral OCR — raw output committed| B["🔍 Extraction agent<br/><i>OCR markdown → strict JSON.<br/>Forbidden from 'fixing' numbers —<br/>the printed numbers are the evidence.</i>"]
+    B --> C["🕵️ Matching agent<br/><i>investigates with deterministic tools —<br/>the LLM never does arithmetic</i>"]
+    C <-->|"function calls"| T["🧰 Deterministic tools<br/>get_po · get_received_totals (partials summed)<br/>search_payments (duplicates) · arithmetic_check<br/>vendor resolution + learned aliases"]
+    C --> V["⚖️ Independent verifier<br/><i>deterministic match engine recomputes every check;<br/>disagreement → one feedback round →<br/>deterministic evidence wins (flagged)</i>"]
+    V --> H["🧑‍⚖️ Human approval queue<br/><i>web UI / CLI — nothing is ever paid by a machine;<br/>payments post only to a sandbox ledger</i>"]
+    H --> P["📋 Audit packet<br/><i>every decision + the exact numbers that justify it,<br/>checks passed, human review trail</i>"]
+    M[("🧠 Vendor memory<br/>aliases · history notes")] -.-> C
+    M -.-> V
+    style A fill:#0d1322,stroke:#34d399,color:#fff
+    style B fill:#0d1322,stroke:#60a5fa,color:#fff
+    style C fill:#0d1322,stroke:#60a5fa,color:#fff
+    style T fill:#080c16,stroke:#fbbf24,color:#fff
+    style V fill:#0d1322,stroke:#34d399,color:#fff
+    style H fill:#0d1322,stroke:#eab308,color:#fff
+    style P fill:#0d1322,stroke:#34d399,color:#fff
+    style M fill:#080c16,stroke:#8b5cf6,color:#fff
 ```
 
 Decisions follow a written AP policy (`src/matchpoint/policy.py`) shared **verbatim** by
 the baseline and the agent: `approve` / `hold` (with one of 9 discrepancy codes) /
 `reject` (duplicates).
 
-## 4. Evaluation design (defined before running)
+## 📐 4. Evaluation design (defined before running)
 
 - **32 invoices** per batch: 12 clean, 20 defective across 9 seeded discrepancy types
   (price, quantity, missing goods receipt, duplicate, currency, tax arithmetic, line-math,
@@ -79,7 +114,7 @@ the baseline and the agent: `approve` / `hold` (with one of 9 discrepancy codes)
 - A **held-out stress batch** (seed 43, disjoint invoice numbers, never seen during
   development) verifies we didn't tune to our own test set.
 
-## 5. Results
+## 📊 5. Results
 
 Main batch (same 32 cases, same model — Azure `gpt-5.4`):
 
@@ -101,7 +136,7 @@ per invoice; with Matchpoint the 12 clean invoices need only a sign-off glance a
 20 flagged ones arrive with the discrepancy already isolated and evidenced — minutes, not
 document hunts. At Ardent's $12.88 manual cost, the model spend is **0.16%** of the manual cost.
 
-## 6. Improvement Changelog
+## 📜 6. Improvement Changelog
 
 Every stage is still runnable (`make agent-v1` … `make agent-final`), every number comes
 from a committed results file in `eval/results/`, and full trajectories for every run are
@@ -119,7 +154,7 @@ in `trajectories/`.
 | **Robustness — cheap model** | Swap gpt-5.4 → GLM-5.3-flash (reasoning model) on the identical pipeline, baseline and final. | Baseline-GLM: 96.9% acc by brute-forcing arithmetic through ~38K reasoning tokens/case — yet **still silently approved a defective invoice**. Final-GLM: every completed case correct (30/30 exact match, 0 missed defects); 2 cases failed **loudly** with JSON-format errors instead of deciding. | The scaffolding, not the model, guarantees the floor — and it converts model weakness from *silent wrong approvals* into *visible pipeline failures* a human can see and retry. `eval/results/baseline_glm.json`, `eval/results/agent_final_glm.json` |
 | **Generalization — held-out batch** | Fresh world, seed 43, disjoint invoice numbers, zero prompt/tool changes. | Baseline 81.3% vs final **100%** decision accuracy. | The gain is the workflow's, not the test set's. `eval/results/agent_final_stress.json` |
 
-## 7. Main failure mode
+## 💥 7. Main failure mode
 
 **The baseline's catastrophic failure is silent approval.** It never spammed false holds —
 it *confidently approved* invoices with overstated tax, inflated line amounts, and goods
@@ -130,7 +165,7 @@ the final system is extraction: if OCR+extraction misreads a printed number, the
 verifies a fiction. That's why extraction is forbidden from "correcting" values, why the
 verifier works only from printed evidence, and why a human signs every payment.
 
-## 8. Hot take
+## 🔥 8. Hot take
 
 **The most reliable agent is the one with the smallest possible LLM surface area.**
 Every measured gain came from *taking a responsibility away from the model*: retrieval
@@ -144,7 +179,7 @@ resolving "NIS Holdings" to "Northgate Industrial Supply", explaining decisions 
 humans). We came in building an agent and left having measured exactly which parts of it
 deserve to be an agent.
 
-## 9. Repository map
+## 🗺️ 9. Repository map
 
 ```
 data/generate.py            deterministic world generator (--seed, --world)
@@ -169,7 +204,7 @@ out/                        runs, audit packet, approval queue, sandbox ledger
 - **Video script:** [docs/video_script.md](docs/video_script.md)
 - **Seeded cases:** [data/gold/cases.md](data/gold/cases.md)
 
-## 10. Responsible use
+## 🛡️ 10. Responsible use
 
 Entirely synthetic data — no real companies, people, invoices or bank accounts. No real
 payment is ever executed: consequential actions are sandboxed (CSV ledger) behind a human
